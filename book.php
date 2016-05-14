@@ -1,10 +1,10 @@
-<? include '/include/header_share.php'; ?>
-<title>이사카코타로</title>
+<? include 'include/header_share.php'; ?>
+<title>Book | 이사카코타로</title>
 </head>
 <body>
 
 <div id="wrap" class="book">
-	<? include '/include/header.php'; ?>
+	<? include 'include/header.php'; ?>
 
 	<div id="content" class="container">
 		<div class="page-header">
@@ -111,6 +111,7 @@
 				<img src="/images/book/s_07_01.jpg" alt="">
 				<img src="/images/book/s_07_02.jpg" alt="">
 				<img src="/images/book/s_07_03.jpg" alt="">
+				<img src="/images/book/s_07_04.jpg" alt="">
 			</div>
 			<dl class="book-info col-sm-4">
 				<dt>원서출간일 : </dt>
@@ -120,7 +121,7 @@
 			</dl>
 		</div>
 
-		<h4>사신치바 <span>[死神の精度]</span></h4>
+		<h4>사신치바(사신의정도) <span>[死神の精度]</span></h4>
 		<div class="book-list">
 			<div class="book-img col-sm-8">
 				<img src="/images/book/s_09_01.jpg" alt="">
@@ -228,7 +229,7 @@
 			</dl>
 		</div>
 
-		<h4>實驗4號 後藤を待ちながら (DVD북)</h4>
+		<h4>실험 4호 고토를 기다리며 <span>實驗4號 後藤を待ちながら (DVD북)</span></h4>
 		<div class="book-list">
 			<div class="book-img col-sm-8">
 				<img src="/images/book/s_19_01.jpg" alt="">
@@ -236,8 +237,6 @@
 			<dl class="book-info col-sm-4">
 				<dt>원서출간일 : </dt>
 				<dd>2008/4/25(講談社)</dd>
-				<dt>번역출간일 : </dt>
-				<dd></dd>
 			</dl>
 		</div>
 
@@ -277,10 +276,11 @@
 			<div class="book-img col-sm-8">
 				<img src="/images/book/s_23_01.jpg" alt="">
 				<img src="/images/book/s_23_02.jpg" alt="">
+				<img src="/images/book/s_23_03.jpg" alt="">
 			</div>
 			<dl class="book-info col-sm-4">
 				<dt>원서출간일 : </dt>
-				<dd>2009/8/26(徳間書店)</dd>
+				<dd>2009/8/26(徳間書店), 2015/4/30()</dd>
 				<dt>번역출간일 : </dt>
 				<dd>2010/10/25(웅진지식하우스)</dd>
 			</dl>
@@ -291,10 +291,11 @@
 			<div class="book-img col-sm-8">
 				<img src="/images/book/s_24_01.jpg" alt="">
 				<img src="/images/book/s_24_02.jpg" alt="">
+				<img src="/images/book/s_24_03.jpg" alt="">
 			</div>
 			<dl class="book-info col-sm-4">
 				<dt>원서출간일 : </dt>
-				<dd>2009/11/25 (中央公論新社)</dd>
+				<dd>2009/11/25 (中央公論新社), 2012/11/22()</dd>
 				<dt>번역출간일 : </dt>
 				<dd>2010/07/23 (랜덤하우스)</dd>
 			</dl>
@@ -348,12 +349,117 @@
 			<div class="book-img col-sm-8">
 				<img src="/images/book/s_28_01.jpg" alt="">
 				<img src="/images/book/s_28_02.jpg" alt="">
+				<img src="/images/book/s_28_03.jpg" alt="">
 			</div>
 			<dl class="book-info col-sm-4">
 				<dt>원서출간일 : </dt>
-				<dd>2010/9/23(角川書店)</dd>
+				<dd>2010/9/23(角川書店), 2013/9/25</dd>
 				<dt>번역출간일 : </dt>
 				<dd>2011/06/28(21세기북스)</dd>
+			</dl>
+		</div>
+
+		<h4>PK</h4>
+		<div class="book-list">
+			<div class="book-img col-sm-8">
+				<img src="/images/book/s_36_01.jpg" alt="">
+				<img src="/images/book/s_36_02.jpg" alt="">
+			</div>
+			<dl class="book-info col-sm-4">
+				<dt></dt>
+				<dd></dd>
+			</dl>
+		</div>
+
+		<h4>밤의 나라 쿠파 <span>[ 夜の国のクーパー ]</span></h4>
+		<div class="book-list">
+			<div class="book-img col-sm-8">
+				<img src="/images/book/s_37_01.jpg" alt="">
+				<img src="/images/book/s_37_02.jpg" alt="">
+				<img src="/images/book/s_37_03.jpg" alt="">
+			</div>
+			<dl class="book-info col-sm-4">
+				<dt></dt>
+				<dd></dd>
+			</dl>
+		</div>
+
+		<h4>남은 날은 전부 휴가 <span>[残り全部バケーション ]</span></h4>
+		<div class="book-list">
+			<div class="book-img col-sm-8">
+				<img src="/images/book/s_38_01.jpg" alt="">
+			</div>
+			<dl class="book-info col-sm-4">
+				<dt></dt>
+				<dd></dd>
+			</dl>
+		</div>
+
+		<h4>가솔린 생활 <span>[ガソリン生活 ]</span></h4>
+		<div class="book-list">
+			<div class="book-img col-sm-8">
+				<img src="/images/book/s_39_01.jpg" alt="">
+				<img src="/images/book/s_39_02.jpg" alt="">
+			</div>
+			<dl class="book-info col-sm-4">
+				<dt></dt>
+				<dd></dd>
+			</dl>
+		</div>
+
+		<h4>사신의 7일(사신의 부력) <span>[死神の浮力]</span></h4>
+		<div class="book-list">
+			<div class="book-img col-sm-8">
+				<img src="/images/book/s_40_01.jpg" alt="">
+				<img src="/images/book/s_40_02.jpg" alt="">
+			</div>
+			<dl class="book-info col-sm-4">
+				<dt></dt>
+				<dd></dd>
+			</dl>
+		</div>
+
+		<h4>목 부러뜨리는 남자를 위한 협주곡 <span>[首折り男のための協奏曲 ]</span></h4>
+		<div class="book-list">
+			<div class="book-img col-sm-8">
+				<img src="/images/book/s_41_01.jpg" alt="">
+			</div>
+			<dl class="book-info col-sm-4">
+				<dt></dt>
+				<dd></dd>
+			</dl>
+		</div>
+
+		<h4>아이네 클라이네 나흐트무지크 <span>[アイネクライネナハトムジーク]</span></h4>
+		<div class="book-list">
+			<div class="book-img col-sm-8">
+				<img src="/images/book/s_42_01.jpg" alt="">
+			</div>
+			<dl class="book-info col-sm-4">
+				<dt></dt>
+				<dd></dd>
+			</dl>
+		</div>
+
+		<h4>캡틴선더볼트 <span>[キャプテンサンダーボルト ]</span></h4>
+		<div class="book-list">
+			<div class="book-img col-sm-8">
+				<img src="/images/book/s_43_01.jpg" alt="">
+			</div>
+			<dl class="book-info col-sm-4">
+				<dt></dt>
+				<dd></dd>
+			</dl>
+		</div>
+
+		<h4>화성에 살것인가?<span>[火星に住むつもりかい？ ]</span></h4>
+		<div class="book-list">
+			<div class="book-img col-sm-8">
+				<img src="/images/book/s_44_01.jpg" alt="">
+			</div>
+			<dl class="book-info col-sm-4">
+				<dt></dt>
+				<dd></dd>
 			</dl>
 		</div>
 
@@ -429,6 +535,19 @@
 			</dl>
 		</div>
 
+		<h4>크리스마스는 탐정과 함께 (세계의 문학 154)</h4>
+		<div class="book-list">
+			<div class="book-img col-sm-8">
+				<img src="/images/book/s_31_02.jpg" alt="">
+			</div>
+			<dl class="book-info col-sm-4">
+				<dt>원서출간일 : </dt>
+				<dd></dd>
+				<dt>번역출간일 : </dt>
+				<dd></dd>
+			</dl>
+		</div>
+
 		<h3>에세이</h3>
 		<h4>그것도 괜찮겠네 <span>3652(伊坂幸太郞エッセイ集)</span></h4>
 		<div class="book-list">
@@ -459,10 +578,10 @@
 		</div>
 	</div>
 
-	<? include '/include/footer.php'; ?>
+	<? include 'include/footer.php'; ?>
 </div>
 
-<script src="js/ui.common.js"></script>
+<script src="/js/ui.common.js"></script>
 <script type="text/javascript">
 function setCurrentDepth(){return 31; /*현재위치*/ }
 </script>

@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>집오리와 들오리의 코인 로커 촬영지 MAP| 센다이·미야기 필름 커미션</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<script type="text/javascript" src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=AIzaSyAG_gEUNo3VKDEp0flyQgChh5cp7XM71_I"></script>
+<script type="text/javascript" src="map03.js"></script>
+</head>
+
+<body class="index" onload="load()" onunload="GUnload()">
+<div id="map" class="ahiru-kamo"></div>
+<form>
+<select id="geoPoint">
+	<option value="" selected>각 현장 지도를 볼</option>
+	<optgroup label="이즈미 지역">
+		<option value="38.329375, 140.902309">도호쿠 가쿠인 대학 이즈 캠퍼스</option>
+		<option value="38.323277, 140.90837">걸음 사카 쵸우</option>
+		<option value="38.315919, 140.880797">高柳公園付近地下鉄高架下</option>
+		<option value="38.319115, 140.881376">ユアテックスタジアム仙台</option>
+		<option value="38.328592, 140.885106">洋菓子店フレーズ</option>
+		</optgroup>
+	<optgroup label="야키야마 지역">
+		<option value="38.243978, 140.843568">仙台市八木山動物公園</option>
+		<option value="38.245865, 140.87535">아타고 신사</option>
+		<option value="38.249055, 140.884426">대접 만 리나</option>
+	</optgroup>
+	<optgroup label="센다이 역 지역">
+		<option value="38.260297, 140.882049">센다이 역</option>
+		<option value="38.258246, 140.902547">풀 캐스트 스타디움 미야기</option>
+		<option value="38.227324, 140.719109">아 키우온 천</option>
+		<option value="38.331608, 140.613496">사쿠나 미온천</option>
+	</optgroup>
+	<optgroup label="시오 가마·히가시 마쓰시마 지역">
+		<option value="38.307067, 141.034929">북스 나니와</option>
+		<option value="38.319443, 141.029763">마린 게이트 시오 가마</option>
+		<option value="38.360554, 141.157966">노비루 해안</option>
+		<option value="38.354025, 141.157638">사가 케이 관광 유람선</option>
+		<option value="38.370212, 141.064309">고 다이도</option>
+		<option value="38.372122, 141.059999">즈이 간지</option>
+		<option value="38.369507, 141.061479">관란 정류장</option>
+	</optgroup>
+</select>
+</form>
+</body>
+</html>

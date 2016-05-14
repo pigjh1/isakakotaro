@@ -1,10 +1,10 @@
-<? include '/include/header_share.php'; ?>
+<? include 'include/header_share.php'; ?>
 <title>이사카코타로</title>
 </head>
 <body>
 
 <div id="wrap" class="movie">
-	<? include '/include/header.php'; ?>
+	<? include 'include/header.php'; ?>
 
 	<div id="content" class="container">
 		<div class="page-header">
@@ -174,14 +174,14 @@
 			</div>
 		</div>
 		<h4>왈츠 1~6</h4>
-		<div class="movie-list">
-			<div class="movie-img col-sm-12">
-				<img src="/images/movie/waltz-ko-1.jpg" alt="">
-				<img src="/images/movie/waltz-ko-2.jpg" alt="">
-				<img src="/images/movie/waltz-ko-3.jpg" alt="">
-				<img src="/images/movie/waltz-ko-4.jpg" alt="">
-				<img src="/images/movie/waltz-ko-5.jpg" alt="">
-				<img src="/images/movie/waltz-ko-6.jpg" alt="">
+		<div class="comic-list">
+			<div class="comic-img col-sm-12">
+				<img src="/images/comic/waltz-ko-1.jpg" alt="">
+				<img src="/images/comic/waltz-ko-2.jpg" alt="">
+				<img src="/images/comic/waltz-ko-3.jpg" alt="">
+				<img src="/images/comic/waltz-ko-4.jpg" alt="">
+				<img src="/images/comic/waltz-ko-5.jpg" alt="">
+				<img src="/images/comic/waltz-ko-6.jpg" alt="">
 			</div>
 		</div>
 
@@ -206,10 +206,10 @@
 		-->
 	</div>
 
-	<? include '/include/footer.php'; ?>
+	<? include 'include/footer.php'; ?>
 </div>
 
-<script src="js/ui.common.js"></script>
+<script src="/js/ui.common.js"></script>
 <script type="text/javascript">
 function setCurrentDepth(){return 41; /*현재위치*/ }
 </script>

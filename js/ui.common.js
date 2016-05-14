@@ -7,7 +7,6 @@
 
 $(window).ready(function(){
 	setNaviCurrentDepth();
-
 });
 
 function setNaviCurrentDepth(){
@@ -29,9 +28,46 @@ function setNaviCurrentDepth(){
 	}
 }
 
+function initNews(){
+	var article = $('.news-list .article');
+	article.addClass('hd');
+	article.find('.cont').slideUp(100);
 
+	$('.news-list .article .trigger').click(function(){
+		var myArticle = $(this).parents('.article:first');
+		if(myArticle.hasClass('hd')){
+			article.addClass('hd').removeClass('sh'); // 아코디언 효과를 원치 않으면 이 라인을 지우세요
+			article.find('.cont').slideUp(100); // 아코디언 효과를 원치 않으면 이 라인을 지우세요
+			myArticle.removeClass('hd').addClass('sh');
+			myArticle.find('.cont').slideDown(100);
+		} else {
+			myArticle.removeClass('sh').addClass('hd');
+			myArticle.find('.cont').slideUp(100);
+		}
+	});
 
-function inifSNS(){
+	$('.news-list .hgroup .trigger').click(function(){
+		var hidden = $('.news-list .article.hd').length;
+		if(hidden > 0){
+			article.removeClass('hd').addClass('sh');
+			article.find('.cont').slideDown(100);
+		} else {
+			article.removeClass('sh').addClass('hd');
+			article.find('.cont').slideUp(100);
+		}
+	});
+}
+
+function initSNS(val){
+	var tagname;
+	if (val == 1)	{
+		tagname="伊坂幸太郎"
+	} else if (val == 2)	{
+		tagname="이사카코타로"
+	} else if (val == 3)	{
+		tagname="이사카코타로책장"
+	}
+
 	// instagram
 	var access_token = "16384709.6ac06b4.49b97800d7fd4ac799a2c889f50f2587",
 	access_parameters = {
@@ -64,5 +100,5 @@ function inifSNS(){
 		}
 	}
 
-	grabImages('伊坂幸太郎', 30, access_parameters);
+	grabImages(tagname, 30, access_parameters);
 }
