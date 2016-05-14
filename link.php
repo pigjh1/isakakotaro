@@ -1,4 +1,5 @@
 <? include 'include/header_share.php'; ?>
+<meta name="description" content="일본 작가 이사카코타로 관련 링크">
 <title>Link | 이사카코타로</title>
 </head>
 <body>
@@ -21,7 +22,7 @@
 
 		<h3>일본사이트</h3>
 		<div class="link-list">
-			공식팬사이트 : http://isakakotaro.cork.mu<br>
+			공식사이트 : http://isakakotaro.cork.mu<br>
 			팬사이트(업데이트 중단됨) : http://www.mtnk.net/<br>
 			NAVER japan 작가소개 : http://matome.naver.jp/topic/1LvT3<br>
 			그래스호퍼 : http://www.kadokawa.co.jp/sp/200407-07/<br>
@@ -35,11 +36,17 @@
 			종이 비행기 문고 : http://isaka.kamihiko-ki.com/
 		</div>
 
+		<h3>해외사이트</h3>
+		<div class="link-list">
+			웨이보 : http://tw.weibo.com/isakakotaro
+		</div>
+
 		<h3>국내관련 출판사</h3>
 		<div class="link-list">
 			은행나무 : http://www.ehbook.co.kr/<br>
 			황매 : http://www.hwangmae.co.kr/<br>
 			작가정신 : http://www.jakka.co.kr/<br>
+			현대문학 : http://www.hdmh.co.kr/<br>
 			한스미디어 : http://www.hansmedia.com/<br>
 			랜덤하우스코리아 : http://www.randombooks.co.kr/<br>
 			해냄출판사 : http://www.hainaim.com/<br>
@@ -84,7 +91,7 @@
 
 <script src="/js/ui.common.js"></script>
 <script type="text/javascript">
-function setCurrentDepth(){return 61; /*현재위치*/ }
+function setCurrentDepth(){return 71; /*현재위치*/ }
 </script>
 </body>
 </html>

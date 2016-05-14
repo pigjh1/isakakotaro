@@ -20,20 +20,24 @@ function setNaviCurrentDepth(){
 
 	var depth1 = parseInt(currentDepth.charAt(0))-1;
 	var depth2 = parseInt(currentDepth.substr(1,1))-1;
+	var o = $("#navbar");
 
 	if(depth1>=0){
-		var o = $("nav");
-		var d1 = o.find("li").eq(depth1);
+		var d1 = o.find(".d1").eq(depth1);
 		d1.addClass("active");
+	}
+	if(depth2>=0){
+		var d2 = d1.find("li").eq(depth2);
+		d2.addClass("active");
 	}
 }
 
-function initNews(){
-	var article = $('.news-list .article');
+function initQna(){
+	var article = $('.qna-list .article');
 	article.addClass('hd');
 	article.find('.cont').slideUp(100);
 
-	$('.news-list .article .trigger').click(function(){
+	$('.qna-list .article .trigger').click(function(){
 		var myArticle = $(this).parents('.article:first');
 		if(myArticle.hasClass('hd')){
 			article.addClass('hd').removeClass('sh'); // 아코디언 효과를 원치 않으면 이 라인을 지우세요
@@ -46,8 +50,8 @@ function initNews(){
 		}
 	});
 
-	$('.news-list .hgroup .trigger').click(function(){
-		var hidden = $('.news-list .article.hd').length;
+	$('.qna-list .hgroup .trigger').click(function(){
+		var hidden = $('.qna-list .article.hd').length;
 		if(hidden > 0){
 			article.removeClass('hd').addClass('sh');
 			article.find('.cont').slideDown(100);

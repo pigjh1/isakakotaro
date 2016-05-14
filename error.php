@@ -1,5 +1,6 @@
 <? include 'include/header_share.php'; ?>
-<title>이사카코타로</title>
+<meta name="description" content="일본 작가 이사카코타로 팬사이트">
+<title>페이지를 찾을 수 없습니다. | 이사카코타로</title>
 </head>
 <body>
 <div id="wrap">

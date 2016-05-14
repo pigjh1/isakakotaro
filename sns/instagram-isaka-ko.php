@@ -1,5 +1,6 @@
 <? include '../include/header_share.php'; ?>
-<title>SNS | 이사카코타로</title>
+<meta name="description" content="일본 작가 이사카코타로 인스타그램 #이사카코타로">
+<title>#이사카코타로 &gt; SNS | 이사카코타로</title>
 </head>
 <body>
 
@@ -20,9 +21,10 @@
 
 <script src="/js/ui.common.js"></script>
 <script type="text/javascript">
+function setCurrentDepth(){return 53; /*현재위치*/ }
 $(document).ready(function(){
 	initSNS(2);
 });
 </script>
 </body>
-</html><u></u>
+</html>
