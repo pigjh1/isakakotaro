@@ -1,0 +1,148 @@
+@charset "utf-8";
+
+/**********************************************************
+ * 파일명	:base.css (ver 1.0)
+ * 설명		:기본 스타일 시트
+ * 작성자	:Joo Hee Kim (pigjh1)
+ * 작성일	:2014.07.02
+ ***********************************************************/
+
+/*
+* Nanum Gothic (Korean) http://www.google.com/webfonts/earlyaccess
+*/
+
+@font-face{
+	font-family:'Nanum Gothic';
+	font-style:normal;
+	font-weight:400;
+	src:url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v2/NanumGothic-Regular.eot);
+	src:url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v2/NanumGothic-Regular.eot?#iefix) format('embedded-opentype'),
+	url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v2/NanumGothic-Regular.woff2) format('x-woff2'),
+	url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v2/NanumGothic-Regular.woff) format('woff'),
+	url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v2/NanumGothic-Regular.ttf) format('truetype');
+}
+
+/* Reset */
+*{margin:0;padding:0;}
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;}
+article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section{display:block;}
+ol, ul{list-style:none;}
+table{border-collapse:collapse;border-spacing:0;}
+hr{float:left;color:gray;border-width:1px 0px 0px;border-style:dotted;width:100%;margin:10px 0;}
+
+/* Type selector */
+body, input, select, textarea,button{font-family:'Nanum Gothic', NanumGothic,'돋움',Dotum, DotumChe, Arial, sans-serif;font-size:12px;line-height:1.8;color:#333;}
+
+/* Basic link */
+a{text-decoration:none;cursor:pointer;}
+a:link{text-decoration:none;}
+a:visited{text-decoration:none;}
+a:hover{text-decoration:none;}
+a.underline{text-decoration:underline;}
+
+/* From element */
+input, select, textarea,button{vertical-align:middle;}
+input[type=text]{height:22px;line-height:22px;border:solid #666 1px;}
+input[type=password]{height:22px;line-height:22px;border:solid #666 1px;}
+input[type=file]{height:22px;line-height:22px;border:solid #666 1px}
+input[type=radio]{margin:0 0 0 15px;}
+input[type=radio]:first-child{margin-left:0;}
+input[type=checkbox]{margin:0 0 0 15px;}
+input[type=checkbox]:first-child{margin-left:0;}
+select{font-size:12px;line-height:21px;color:#666;}
+textarea{padding:5px;border:solid #666 1px;overflow:auto;}
+
+/* Layout & Align */
+.f_l{float:left;}
+.f_r{float:right;}
+.t_c{text-align:center;}
+.btn{display:block;width:100%;padding-top:5px;}
+.btn_l{display:block;float:left;width:45%;padding-top:5px;}
+.btn_r{display:block;float:right;width:45%;padding-top:5px;text-align:right;}
+.clear{clear:both;}
+
+/* Font */
+.f_10{font-size:10px;}
+.f_11{font-size:11px;}
+.f_12{font-size:12px;}
+.f_13{font-size:13px;}
+.f_black{color:#000;}
+.f_gray{color:#333;}
+.f_red{color:#ed1c24;}
+.f_blue{color:#0054a6;}
+
+/* Basic others */
+.show{display:block}
+.hide{display:none}
+.forDesktop{display:block}
+.forMoblie{display:none}
+.ir *,
+.blind{position:absolute;width:0;height:0;font-size:0;line-height:0;overflow:hidden;visibility:hidden}
+.btn{width:100%;margin-top:10px;clear:both}
+.btn img{vertical-align:middle}
+.btn_r{float:right;width:45%;margin-top:10px;text-align:right}
+.btn_l{float:left;width:45%;margin-top:10px}
+
+/* Skip */
+#skiptoContent{position:absolute;top:0;left:0;width:100%;z-index:1000}
+#skiptoContent a{display:block;position:absolute;top:0;left:-99999px;width:100%;h`eight:28px;background:#999;color:#FFF;font-weight:bold;line-height:1.8;text-align:center}
+#skiptoContent a:focus, #skiptoContent a:active{left:0;text-decoration:none}
+#skiptoContent a:hover{text-decoration:underline}
+
+/* Site Layout */
+body{background:#f3f3f3;}
+#content{ background:#FFF;margin-top:70px;padding:0 30px 70px;}
+#footer{clear:both;width:100%;margin:30px 0;text-align:center;}
+.container {width:960px}
+
+@media (max-width:768px){
+	.container {width:100%}
+}
+
+/* heading */
+h2 {font-size:24px;padding:25px 0;font-weight:bold;}
+h3 {font-size:18px;margin:25px 0;padding:10px 20px;font-weight:bold;color:#666;background:#EEE;font-style:italic;border-radius:10px;text-align:center;}
+h4 {font-size:16px;padding:25px 0 15px;color:#666;font-weight:bold;}
+h4 span {font-size:13px;font-weight:normal;}
+
+/* home */
+.home {}
+.home .notice{text-align:center;padding:50px 0; font-size:13px;}
+.home .notice p {padding-bottom:20px;}
+
+/* profile */
+.profile {}
+.profile dt {display:block;float:left;width:15%;}
+.profile dd {display:block;float:left;width:75%;}
+.profile .txt {line-height:1.8;}
+.profile .txt p{padding-bottom:10px;}
+.profile .pic li {float:left;}
+.profile .pic img {width:100px;height:100px;}
+
+/* book */
+.book-list {position:relative;width:100%;overflow:hidden;padding:9px 0 24px;border-bottom:1px solid #ddd;}
+.book-img {float:left;}
+.book-img img {width:100px;}
+.book-info {float:left;}
+.book-info dl {float:left;width:100%;}
+.book-info dt {clear:both;display:block;float:left;width:65px;}
+.book-info dd {display:block;float:left;width:180px;}
+
+/* movie */
+.movie-list {position:relative;width:100%;overflow:hidden;padding:9px 0 24px;border-bottom:1px solid #ddd;}
+.movie-img {float:left;}
+.movie-img img {width:120px;}
+.movie-info {float:left;}
+
+/* comic */
+.comic-list {position:relative;width:100%;overflow:hidden;padding:9px 0 24px;border-bottom:1px solid #ddd;}
+.comic-img {float:left;}
+.comic-img img {width:80px;}
+.comic-info {float:left;}
+
+/* world */
+.world .txt {line-height:1.8;padding:10px 0;}
+.world .txt h3 {font-size:15px;margin:25px 0;padding:0;color:#000;background:none;font-style:italic;border-radius:0;text-align:left;}
+
+/* sns*/
+.insta img {display: block;float: left;}
