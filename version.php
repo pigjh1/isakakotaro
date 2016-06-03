@@ -26,6 +26,16 @@
 			worst작품선택 1위 하나랑 다중선택
 			인기 캐릭터 랭킹
 		Quiz - 이사카 검정 시험 100문 / 초급편 / 중급, 상급편 / 해답지
+
+		<div class="col col-md-6">
+			<h3>ver 1.1</h3>
+			<p class="date">2015.11.25</p>
+			<ul>
+				<li>"메인" 페이지 BookCase 변경</li>
+				<li>라이브리 버전 업데이트 - 160514</li>
+				<li>"Link" 페이지 바로 이동할 수 있도록 a링크 추가</li>
+			</ul>
+		</div>
 		-->
 
 		<div class="col col-md-6">

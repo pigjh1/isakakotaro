@@ -15,7 +15,7 @@
 
 		<p>이사카씨의 작품을 말하는데 있어 빠뜨릴수 없는, 등장인물이나 사건 등 작품간으로의 링크를 정리해 보았습니다.<br>
 		추측 부분도 포함되어 있으므로 주의하시기 바랍니다.<br>
-		정정할 부분이나 추가할 사항이 있으면 하단에 코멘트 남겨주시면 확인 후 수정하겠습니다</p>
+		정정할 부분이나 추가할 사항이 있으면 <a href="/community/bbs.php">BBS</a>에 코멘트 남겨주시면 확인 후 수정하겠습니다</p>
 		<p>등장인물 및 참고내용을 정리 : <a href="http://tw.gs/YXW9Cx" target="_blank">http://tw.gs/YXW9Cx</a></p>
 
 		<div class="txt">
@@ -314,21 +314,6 @@
 			「왕을 위한 팬클럽은 없다」학교 끝나고 야마다가 연습하러 간다 (p58)<br>
 			「집오리와 들오리의 코인로커」고토미가 정기권 케이스를 잃어버리고 불길함 기분을 떨치려 야구 연습장에 간다 (p105) -  쾌음을 발하고있는 초등학생(야마다)이 있다고 하는데 못찾겠습니다.
 		</div>
-
-		<div id="livereContainer">
-			<script type="text/javascript">
-				var consumer_seq 	= "200";
-				var livere_seq 		= "23455";
-				var smartlogin_seq 	= "228";
-
-				var title = "이사카월드"
-				var refer = "isakakotaro.co.kr/world.php"
-
-				livereReply = new Livere( livere_seq , refer , title );
-				livereLib.start();
-			</script>
-		</div>
-
 	</div>
 
 	<? include '../include/footer.php'; ?>

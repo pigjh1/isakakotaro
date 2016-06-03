@@ -66,15 +66,6 @@ img{max-width:100%;}
 .btn-r{display:block;float:right;width:45%;padding-top:5px;text-align:right;}
 .clear{clear:both;}
 
-/* Font */
-.f-10{font-size:10px;}
-.f-11{font-size:11px;}
-.f-12{font-size:12px;}
-.f-13{font-size:13px;}
-.f-black{color:#000;}
-.f-gray{color:#333;}
-.f-red{color:#ed1c24;}
-.f-blue{color:#0054a6;}
 
 /* Basic others */
 .show{display:block}
@@ -103,7 +94,7 @@ img{max-width:100%;}
 body{background:#f3f3f3;}
 .container {width:960px;}
 #content{background:#FFF;margin-top:70px;padding:0 30px 70px;}
-.share .container {text-align:center;background:#FFF;padding:0 0 50px;}
+.share .container {text-align:center; background:#FFF;padding:0 0 50px;}
 .footer{clear:both;}
 .footer .container{padding:20px 0 10px;border-top:1px solid #f3f3f3;}
 .footer .info {font-size:11px;}
@@ -126,7 +117,7 @@ h4 span {font-size:13px;font-weight:normal;}
 @media all and (max-width:960px){
 	.container {width:100%;}
 	#content{padding:0 2% 30px;}
-	..footer .container{padding:10px 0 0;}
+	.footer .container{padding:10px 0 0;}
 	.footer .info,
 	.footer .sns {font-size:0.75em;text-align:center;}
 }
@@ -138,6 +129,18 @@ h4 span {font-size:13px;font-weight:normal;}
 .home .notice p {padding-bottom:20px;}
 .home-event {padding-top:20px;}
 .home-event p {text-align:center;padding-bottom:10px;}
+
+.bookcase {width:858px;margin:0 auto;margin-top:50px;}
+.bookcase h2 {padding:0}
+.bookcase ul {float:left;width:100%;padding:0 5%;background:url(/images/main/bookcase_bg.gif);}
+.bookcase li {position:relative;float:left;width:10%;height:117px;margin-top:33px;text-align:center;}
+.bookcase li img {width:65px}
+.bookcase li .new {position:absolute;top:68px;right:-1px;width:62px;height:29px;background:url(/images/main/icon-new.png);font-size:0;line-height:0;}
+
+@media all and (max-width:858px){
+	.bookcase {width: 100%;}
+	.bookcase ul {background-size: 100% 100%}
+}
 
 /* profile */
 .profile {}
@@ -207,7 +210,7 @@ h4 span {font-size:13px;font-weight:normal;}
 }
 
 .prayer {background:url(/images/book/special/prayer-bg.jpg) center 0}
-.lush {background:url(/images/book/special/lush-bg.jpg) center 0}
+.lush {background:url(/images/book/special/lush-bg.jpg) center 0 #FFF no-repeat}
 .gturns {background:url(/images/book/special/gturns-bg.jpg) center 0}
 .pierrot {background:url(/images/book/special/pierrot-bg.jpg) center 0}
 .coin {background:url(/images/book/special/coin-bg.jpg) center 0}
@@ -259,15 +262,11 @@ h4 span {font-size:13px;font-weight:normal;}
 #livereContainer {padding-top:20px;}
 
 /* sns*/
-.twitter-warp {width:560px; margin:0 auto; margin-top:30px;}
+.twitter-warp {width:100%; margin:0 auto; margin-top:30px;}
 .insta {float:left;margin-bottom:20px;}
 .insta img {display:block;float:left;}
 
 .event .col p {text-align:center;margin-bottom:10px;}
-
-@media all and (max-width:560px){
-	.twitter-warp {width:100%}
-}
 
 /* version*/
 .version .date {font-weight:bold;}

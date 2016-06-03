@@ -8,11 +8,16 @@
 	<? include '../include/header.php'; ?>
 
 	<div id="content" class="container">
+		<div class="page-header">
+			<h2>Instagram</h2>
+		</div>
+
+		<p>사진보러 바로가기 : <a href="https://www.instagram.com/explore/tags/이사카코타로책장" target="_blank">https://www.instagram.com/explore/tags/이사카코타로책장</a></p>
+
 		<h2 class="blind">#이사카코타로책장 인스타그램 해시태그 이벤트</h2>
 		<p class="t-c" style="margin-top:20px;"><img src="/images/sns/instagram-150604.jpg" alt="" /></p>
-		<h3>이사카코타로책장</h3>
-		<p>사진보러 바로가기 : <a href="https://www.instagram.com/explore/tags/이사카코타로책장" target="_blank">https://www.instagram.com/explore/tags/이사카코타로책장</a></p>
 		<!--
+		<h3>이사카코타로책장</h3>
 		<div id="target" class="insta"></div>
 		-->
 	</div>
