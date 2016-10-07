@@ -109,7 +109,7 @@ h4 span {font-size:13px;font-weight:normal;}
 @media all and (max-width:320px){
 	.container {width:100%;}
 	#content{padding:0 2% 30px;}
-	..footer .container{padding:10px 0 0;}
+	.footer .container{padding:10px 0 0;}
 	.footer .info,
 	.footer .sns {font-size:0.75em;text-align:center;}
 }
@@ -132,14 +132,15 @@ h4 span {font-size:13px;font-weight:normal;}
 
 .bookcase {width:858px;margin:0 auto;margin-top:50px;}
 .bookcase h2 {padding:0}
-.bookcase ul {float:left;width:100%;padding:0 5%;background:url(/images/main/bookcase_bg.gif);}
+.bookcase ul {float:left;width:100%;padding:0 5%;background:url(/images/main/bookcase_bg_large.gif);}
 .bookcase li {position:relative;float:left;width:10%;height:117px;margin-top:33px;text-align:center;}
 .bookcase li img {width:65px}
 .bookcase li .new {position:absolute;top:68px;right:-1px;width:62px;height:29px;background:url(/images/main/icon-new.png);font-size:0;line-height:0;}
 
 @media all and (max-width:858px){
 	.bookcase {width: 100%;}
-	.bookcase ul {background-size: 100% 100%}
+	.bookcase ul {padding:30px 5%;background-image:url(/images/main/bookcase_bg.gif);background-size: 100%;}
+	.bookcase li {height:auto;width:33%;}
 }
 
 /* profile */
