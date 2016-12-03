@@ -12,7 +12,8 @@
 			<div class="bookcase">
 				<h2><img src='/images/main/bookcase_top.gif' alt='Isaka Kotaro Bookcase'></h2>
 				<ul>
-					<li><a href="/book/lush-life.php"><img src='/images/book/s_02_04.jpg' alt='러시라이프'><i class="new">신간</i></a></li>
+					<li><a href="/book/aine.php"><img src='/images/book/s_42_02.jpg' alt='아이네 클라이네 나흐트무지크'><i class="new">신간</i></a></li>
+					<li><a href="/book/lush-life.php"><img src='/images/book/s_02_04.jpg' alt='러시라이프'></a></li>
 					<li><img src='/images/book/s_41_02.jpg' alt='목 부러뜨리는 남자를 위한 협주곡'></li>
 					<li><img src='/images/book/s_06_04.jpg' alt='칠드런'></li>
 					<li><img src='/images/book/s_13_04.jpg' alt='종말의바보'></li>
@@ -58,9 +59,8 @@
 				</ul>
 			</div>
 
-			<h2>출간 예정 도서</h2>
+			<h2 style="clear:both;">출간 예정 도서</h2>
 			<ul style="list-style: none;">
-				<li>아이네 클라이네 나흐트 무지크  / 현대문학 / 2016년</li>
 				<li>모던타임스 개정판 (일러스트 없는 텍스트본) / 웅진지식하우스 / 2016년</li>
 				<li>화성에 살 생각이냐? / 한국 출간 확정</li>
 			</ul>
