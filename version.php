@@ -9,7 +9,7 @@
 
 	<div id="content" class="container">
 		<div class="page-header">
-			<h2>사이트 소개</h2>
+			<h2>사이트 변경이력</h2>
 		</div>
 
 		<p>이 사이트는 <a href="http://cafe.naver.com/isakakotaro" target="_blank">네이버 팬카페</a>에서 시작하여 정보 수집 전달을 위해 만든 홈페이지입니다.<br>
