@@ -7,7 +7,7 @@
  * Copyright (c) 2007 Christian Bach
  * Examples and docs at: http://tablesorter.com
  * Dual licensed under the MIT and GPL licenses:
- * http://www.opensource.org/licenses/mit-license.php
+ * http://www.opensource.org/licenses/mit-license.html
  * http://www.gnu.org/licenses/gpl.html
  * 
  */
@@ -415,7 +415,7 @@
             };
 
             // from:
-            // http://www.javascripttoolbox.com/lib/table/examples.php
+            // http://www.javascripttoolbox.com/lib/table/examples.html
             // http://www.javascripttoolbox.com/temp/table_cellindex.html
 
 
