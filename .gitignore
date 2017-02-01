@@ -1,0 +1,10 @@
+# Node
+node_modules
+
+# Project
+dist
+*.rej
+*.zip
+*.map
+*.bundle.js
+debug.log
