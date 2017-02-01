@@ -21,13 +21,6 @@
 @import 'modules/tables';
 
 
-/* Basic link */
-a{text-decoration:none;cursor:pointer;}
-a:link{text-decoration:none;}
-a:visited{text-decoration:none;}
-a:hover{text-decoration:none;}
-a.underline{text-decoration:underline;}
-
 
 img{max-width:100%;}
 
@@ -53,14 +46,7 @@ img{max-width:100%;}
 body{background:#f3f3f3;}
 .container {width:960px;font-size:12px;}
 #content{background:#FFF;margin-top:70px;padding:0 30px 70px;}
-.share .container {text-align:center; background:#FFF;padding:0 0 50px;}
-.share a {font-size: 18px;color: $gray;}
-.footer{clear:both;}
-.footer .container{padding:20px 0 10px;border-top:1px solid #f3f3f3;}
-.footer .info {font-size:11px;}
-.footer .info span {font-size:7px;}
-.footer .info .copyright {font-size:10px;padding-top:5px;text-transform:uppercase;}
-.footer .sns {text-align:right;}
+
 h2 {font-size:24px;padding:25px 0;font-weight:bold;}
 h3 {font-size:18px;margin:25px 0;padding:10px 20px;font-weight:bold;color:#666;background:#EEE;font-style:italic;border-radius:10px;text-align:center;clear:both;}
 h4 {font-size:16px;padding:25px 0 15px;color:#666;font-weight:bold;}
@@ -69,17 +55,11 @@ h4 span {font-size:13px;font-weight:normal;}
 @media all and (max-width:320px){
 	.container {width:100%;}
 	#content{padding:0 2% 30px;}
-	.footer .container{padding:10px 0 0;}
-	.footer .info,
-	.footer .sns {font-size:0.75em;text-align:center;}
 }
 
 @media all and (max-width:960px){
 	.container {width:100%;}
 	#content{padding:0 2% 30px;}
-	.footer .container{padding:10px 0 0;}
-	.footer .info,
-	.footer .sns {font-size:0.75em;text-align:center;}
 }
 
 
@@ -95,21 +75,18 @@ h4 span {font-size:13px;font-weight:normal;}
 .version .date {font-weight:bold;}
 .version .col li {list-style:inside;}
 
-/* error */
-#error {padding:20px;color:#666;text-align:center;}
-#error h2 { font-family:verdana, tahoma, sans-serif;font-weight:bold;font-size:50px;color:black;line-height:100%;}
-#error p { font-size:12px;margin-top:15px;}
-#error a { font-weight:bold;color:#666;}
-#error .bar { color:#a0a0a0;}
 
-/* For print */
-@media print{
-	body{margin:0;}
-	header, footer{display:none !important}
-}
 
 @import 'pages/main';
 @import 'pages/profile';
 @import 'pages/book';
 @import 'pages/remix';
 @import 'pages/world';
+
+@import 'pages/error';
+
+/* For print */
+@media print{
+	body{margin:0;}
+	header, footer{display:none !important}
+}

@@ -1278,6 +1278,88 @@ body
 /* --------------------------------------------------
  * footer
  * -------------------------------------------------- */
+.share .container
+{
+    padding: 0 0 50px;
+
+    text-align: center;
+
+    background: #fff;
+}
+
+.share a
+{
+    font-size: 18px;
+
+    color: #666;
+}
+
+.footer
+{
+    clear: both;
+}
+
+.footer .container
+{
+    padding: 20px 0 10px;
+
+    border-top: 1px solid #f3f3f3;
+}
+
+.footer .info
+{
+    font-size: 11px;
+}
+
+.footer .info span
+{
+    font-size: 7px;
+}
+
+.footer .info .copyright
+{
+    font-size: 10px;
+
+    padding-top: 5px;
+
+    text-transform: uppercase;
+}
+
+.footer .sns
+{
+    text-align: right;
+}
+
+@media all and (max-width: 320px)
+{
+    .footer .container
+    {
+        padding: 10px 0 0;
+    }
+    .footer .info,
+    .footer .sns
+    {
+        font-size: .75em; 
+
+        text-align: center;
+    }
+}
+
+@media all and (max-width: 960px)
+{
+    .footer .container
+    {
+        padding: 10px 0 0;
+    }
+    .footer .info,
+    .footer .sns
+    {
+        font-size: .75em; 
+
+        text-align: center;
+    }
+}
+
 /* --------------------------------------------------
  * common modules
  * -------------------------------------------------- */
@@ -1609,33 +1691,6 @@ body
     background: #f3f3f3;
 }
 
-/* Basic link */
-a
-{
-    cursor: pointer; 
-    text-decoration: none;
-}
-
-a:link
-{
-    text-decoration: none;
-}
-
-a:visited
-{
-    text-decoration: none;
-}
-
-a:hover
-{
-    text-decoration: none;
-}
-
-a.underline
-{
-    text-decoration: underline;
-}
-
 img
 {
     max-width: 100%;
@@ -1752,58 +1807,6 @@ body
     background: #fff;
 }
 
-.share .container
-{
-    padding: 0 0 50px; 
-
-    text-align: center;
-
-    background: #fff;
-}
-
-.share a
-{
-    font-size: 18px;
-
-    color: #666;
-}
-
-.footer
-{
-    clear: both;
-}
-
-.footer .container
-{
-    padding: 20px 0 10px;
-
-    border-top: 1px solid #f3f3f3;
-}
-
-.footer .info
-{
-    font-size: 11px;
-}
-
-.footer .info span
-{
-    font-size: 7px;
-}
-
-.footer .info .copyright
-{
-    font-size: 10px;
-
-    padding-top: 5px;
-
-    text-transform: uppercase;
-}
-
-.footer .sns
-{
-    text-align: right;
-}
-
 h2
 {
     font-size: 24px;
@@ -1856,17 +1859,6 @@ h4 span
     {
         padding: 0 2% 30px;
     }
-    .footer .container
-    {
-        padding: 10px 0 0;
-    }
-    .footer .info,
-    .footer .sns
-    {
-        font-size: .75em;
-
-        text-align: center;
-    }
 }
 
 @media all and (max-width: 960px)
@@ -1878,17 +1870,6 @@ h4 span
     #content
     {
         padding: 0 2% 30px;
-    }
-    .footer .container
-    {
-        padding: 10px 0 0;
-    }
-    .footer .info,
-    .footer .sns
-    {
-        font-size: .75em;
-
-        text-align: center;
     }
 }
 
@@ -1929,59 +1910,6 @@ h4 span
 .version .col li
 {
     list-style: inside;
-}
-
-/* error */
-#error
-{
-    padding: 20px;
-
-    text-align: center; 
-
-    color: #666;
-}
-
-#error h2
-{
-    font-family: verdana, tahoma, sans-serif;
-    font-size: 50px;
-    font-weight: bold;
-    line-height: 100%; 
-
-    color: black;
-}
-
-#error p
-{
-    font-size: 12px;
-
-    margin-top: 15px;
-}
-
-#error a
-{
-    font-weight: bold;
-
-    color: #666;
-}
-
-#error .bar
-{
-    color: #a0a0a0;
-}
-
-/* For print */
-@media print
-{
-    body
-    {
-        margin: 0;
-    }
-    header,
-    footer
-    {
-        display: none !important;
-    }
 }
 
 .home h2
@@ -2588,4 +2516,56 @@ table thead tr .headerSortUp
     color: #000;
     border-radius: 0; 
     background: none;
+}
+
+#error
+{
+    padding: 20px;
+
+    text-align: center;
+
+    color: #666;
+}
+
+#error h2
+{
+    font-family: verdana, tahoma, sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 100%;
+
+    color: black;
+}
+
+#error p
+{
+    font-size: 12px; 
+
+    margin-top: 15px;
+}
+
+#error a
+{
+    font-weight: bold;
+
+    color: #666;
+}
+
+#error .bar
+{
+    color: #a0a0a0;
+}
+
+/* For print */
+@media print
+{
+    body
+    {
+        margin: 0;
+    }
+    header,
+    footer
+    {
+        display: none !important;
+    }
 }

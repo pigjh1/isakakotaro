@@ -2,6 +2,7 @@
 
 var $    = require('jquery');
 require('bootstrap.min');
+require('jquery.tablesorter');
 
 // common
 (function() {
@@ -13,7 +14,6 @@ require('bootstrap.min');
 
     	$(el).attr('href', tmpUrl);
     });
-
 })();
 
 // initQna
@@ -52,11 +52,10 @@ require('bootstrap.min');
 (function() {
 	if ($('.book-index').length === 0) return;
 
-	var tablesorter    = require('jquery.tablesorter');
 
-	$("table").tablesorter({
+	$(".book-index table").tablesorter({
 		headers: {
-			0: { sorter: false },	// 0부터 시작함
+			0: { sorter: false },
 			1: { sorter: false },
 			2: { sorter: false },
 			7: { sorter: false }

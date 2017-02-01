@@ -3,5 +3,56 @@
 /* --------------------------------------------------
  * footer
  * -------------------------------------------------- */
+.share .container {
+	padding: 0 0 50px;
+	text-align: center;
+	background: #fff;
+}
+.share a {
+	font-size: 18px;
+	color: $gray;
+}
 .footer {
+	clear: both;
+}
+.footer .container {
+	padding: 20px 0 10px;
+	border-top: 1px solid #f3f3f3;
+}
+.footer .info {
+	font-size: 11px;
+}
+.footer .info span {
+	font-size: 7px;
+}
+.footer .info .copyright {
+	padding-top: 5px;
+	font-size: 10px;
+	text-transform: uppercase;
+}
+.footer .sns {
+	text-align: right;
+}
+
+
+@media all and (max-width:320px) {
+	.footer .container {
+		padding: 10px 0 0;
+	}
+	.footer .info,
+	.footer .sns {
+		text-align: center;
+		font-size: .75em;
+	}
+}
+
+@media all and (max-width:960px) {
+	.footer .container {
+		padding: 10px 0 0;
+	}
+	.footer .info,
+	.footer .sns {
+		text-align: center;
+		font-size: .75em;
+	}
 }
