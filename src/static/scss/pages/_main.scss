@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+
+.home h2 {
+  padding: 25px 0;
+  font-weight: bold;
+  font-size: 18px;
+}
+.home .notice {
+  padding: 50px 0 0;
+  text-align: center;
+  font-size: 13px;
+}
+.home .notice p {
+  padding-bottom: 20px;
+}
+.home-event {
+  padding-top: 20px;
+}
+.home-event p {
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.bookcase {
+  width: 858px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.bookcase h2 {
+  padding: 0;
+}
+.bookcase ul {
+  width: 100%;
+  float: left;
+  padding: 0 5%;
+  background: url(/static/images/main/bookcase_bg.gif);
+}
+.bookcase li {
+  position: relative;
+  width: 10%;
+  height: 117px;
+  float: left;
+  margin-top: 33px;
+  text-align: center;
+}
+.bookcase li img {
+  width: 65px;
+}
+.bookcase li .new {
+  position: absolute;
+  top: 68px;
+  right: -1px;
+  width: 62px;
+  height: 29px;
+  background: url(/static/images/main/icon-new.png);
+  font-size: 0;
+  line-height: 0;
+}
+
+@media all and (max-width:858px) {
+  .bookcase {
+    width: 100%;
+  }
+  .bookcase ul {
+    background-size: 100% 100%;
+  }
+}

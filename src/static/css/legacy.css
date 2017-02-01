@@ -1,0 +1,365 @@
+.l-wrap,
+.row
+{
+    zoom: 1;
+}
+.l-wrap:before,
+.row:before
+{
+    display: block; 
+
+    content: '';
+}
+.l-wrap:after,
+.row:after
+{
+    display: table;
+    clear: both; 
+
+    content: '';
+}
+
+/* --------------------------------------------------
+ * layout grid
+ * -------------------------------------------------- */
+html,
+body
+{
+    min-height: 100%;
+}
+
+body
+{
+    background-color: #fff;
+
+    -webkit-overflow-scrolling: touch;
+}
+
+#wrap
+{
+    -webkit-user-drag: none;
+    touch-action: pan-y;
+}
+#wrap:after
+{
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    content: '';
+    -webkit-transition: all .2s;
+         -o-transition: all .2s;
+            transition: all .2s; 
+
+    opacity: 0;
+    background-color: #ccc;
+}
+
+/* layout (.l-*)
+-------------------------------------------------- */
+.l-wrap
+{
+    position: relative;
+
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box; 
+    max-width: 960px;
+    margin: 0 auto;
+
+        -ms-box-sizing: border-box;
+}
+
+/* column ( 12 grid )
+-------------------------------------------------- */
+.col-xs-1,
+.col-s-1,
+.col-m-1,
+.col-l-1
+{
+    position: relative;
+
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    min-height: 1px;
+    padding-right: 10px; 
+    padding-left: 10px;
+
+        -ms-box-sizing: border-box;
+}
+
+.col-xs-2,
+.col-s-2,
+.col-m-2,
+.col-l-2
+{
+    position: relative;
+
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    min-height: 1px;
+    padding-right: 10px; 
+    padding-left: 10px;
+
+        -ms-box-sizing: border-box;
+}
+
+.col-xs-3,
+.col-s-3,
+.col-m-3,
+.col-l-3
+{
+    position: relative;
+
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    min-height: 1px;
+    padding-right: 10px; 
+    padding-left: 10px;
+
+        -ms-box-sizing: border-box;
+}
+
+.col-xs-4,
+.col-s-4,
+.col-m-4,
+.col-l-4
+{
+    position: relative;
+
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    min-height: 1px;
+    padding-right: 10px; 
+    padding-left: 10px;
+
+        -ms-box-sizing: border-box;
+}
+
+.col-xs-5,
+.col-s-5,
+.col-m-5,
+.col-l-5
+{
+    position: relative;
+
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    min-height: 1px;
+    padding-right: 10px; 
+    padding-left: 10px;
+
+        -ms-box-sizing: border-box;
+}
+
+.col-xs-6,
+.col-s-6,
+.col-m-6,
+.col-l-6
+{
+    position: relative;
+
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    min-height: 1px;
+    padding-right: 10px; 
+    padding-left: 10px;
+
+        -ms-box-sizing: border-box;
+}
+
+.col-xs-7,
+.col-s-7,
+.col-m-7,
+.col-l-7
+{
+    position: relative;
+
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    min-height: 1px;
+    padding-right: 10px; 
+    padding-left: 10px;
+
+        -ms-box-sizing: border-box;
+}
+
+.col-xs-8,
+.col-s-8,
+.col-m-8,
+.col-l-8
+{
+    position: relative;
+
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    min-height: 1px;
+    padding-right: 10px; 
+    padding-left: 10px;
+
+        -ms-box-sizing: border-box;
+}
+
+.col-xs-9,
+.col-s-9,
+.col-m-9,
+.col-l-9
+{
+    position: relative;
+
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    min-height: 1px;
+    padding-right: 10px; 
+    padding-left: 10px;
+
+        -ms-box-sizing: border-box;
+}
+
+.col-xs-10,
+.col-s-10,
+.col-m-10,
+.col-l-10
+{
+    position: relative;
+
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    min-height: 1px;
+    padding-right: 10px; 
+    padding-left: 10px;
+
+        -ms-box-sizing: border-box;
+}
+
+.col-xs-11,
+.col-s-11,
+.col-m-11,
+.col-l-11
+{
+    position: relative;
+
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    min-height: 1px;
+    padding-right: 10px; 
+    padding-left: 10px;
+
+        -ms-box-sizing: border-box;
+}
+
+.col-xs-12,
+.col-s-12,
+.col-m-12,
+.col-l-12
+{
+    position: relative;
+
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    min-height: 1px;
+    padding-right: 10px; 
+    padding-left: 10px;
+
+        -ms-box-sizing: border-box;
+}
+
+/* --------------------------------------------------
+ * header
+ * -------------------------------------------------- */
+/* --------------------------------------------------
+ * footer
+ * -------------------------------------------------- */
+/* --------------------------------------------------
+ * common modules
+ * -------------------------------------------------- */
+.func
+{
+    text-align: center;
+}
+.func.__left
+{
+    text-align: left;
+}
+.func.__right
+{
+    text-align: right;
+}
+
+.loading
+{
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    text-align: center;
+}
+
+/* Legacy browser message 
+-------------------------------------------------- */
+#legacy-browser
+{
+    font-size: 14px; 
+
+    position: fixed;
+    z-index: 1001;
+    top: 120px;
+    left: 50%;
+
+    overflow: hidden;
+
+    width: 840px;
+    margin-left: -580px;
+    padding-right: 100px;
+    padding-left: 220px;
+
+    color: #fff;
+    background-color: #37ab94;
+}
+#legacy-browser p
+{
+    margin: 0 0 10px;
+}
+#legacy-browser a
+{
+    text-decoration: underline; 
+
+    color: #fff;
+}
+
+.legacy-pad
+{
+    padding: 20px;
+}
+
+#close-browser-guide
+{
+    position: absolute;
+    top: 50%;
+    right: 30px;
+
+    margin-top: -16px;
+
+    color: #fff; 
+    border: 1px solid #fff;
+}
+#close-browser-guide .icon:before
+{
+    margin-left: 5px; 
+
+    content: 'X';
+}

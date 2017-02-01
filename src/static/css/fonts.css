@@ -1,0 +1,26 @@
+/* --------------------------------------------------
+ * fonts.css - font family
+ * -------------------------------------------------- */
+/* Spoqa Han San */
+@font-face {
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Spoqa Han Sans";
+  src: local("SpoqaHanSans-Regular"), local("SpoqaHanSans-Regular"), url(/static/fonts/SpoqaHanSans-Regular.eot) format("eot"), url(/static/fonts/SpoqaHanSans-Regular.svg) format("svg"), url(/static/fonts/SpoqaHanSans-Regular.ttf) format("truetype"), url(/static/fonts/SpoqaHanSans-Regular.woff) format("woff");
+}
+
+@font-face {
+  font-weight: 700;
+  font-style: normal;
+  font-family: "Spoqa Han Sans";
+  src: local("SpoqaHanSans-Bold"), local("SpoqaHanSans-Bold"), url(/static/fonts/SpoqaHanSans-Bold.eot) format("eot"), url(/static/fonts/SpoqaHanSans-Bold.svg) format("svg"), url(/static/fonts/SpoqaHanSans-Bold.ttf) format("truetype"), url(/static/fonts/SpoqaHanSans-Bold.woff) format("woff");
+}
+
+/* Iropke Batang */
+@font-face {
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Iropke Batang";
+  src: url(/static/fonts/IropkeBatang.eot);
+  src: url(/static/fonts/IropkeBatang.eot?#iefix) format("embedded-opentype"), url(/static/fonts/IropkeBatang.woff) format("woff"), url(/static/fonts/IropkeBatang.ttf) format("truetype");
+}

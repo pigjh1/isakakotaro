@@ -1,0 +1,66 @@
+@charset 'UTF-8';
+
+/* --------------------------------------------------
+ * layout grid
+ * -------------------------------------------------- */
+html, body {
+	min-height: 100%;
+}
+
+body {
+	background-color: $white;
+	-webkit-overflow-scrolling: touch;
+}
+
+#wrap {
+	-webkit-user-drag: none;
+	touch-action: pan-y;
+
+	&:after {
+		content: '';
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		opacity: 0;
+		z-index: -1;
+		background-color: $silver;
+		@include transition(all 0.2s);
+	}
+}
+
+
+/* layout (.l-*)
+-------------------------------------------------- */
+.l-wrap {
+	@extend %clearfix;
+	position: relative;
+	margin: 0 auto;
+	max-width: $w-default;
+	@include box-sizing();
+}
+
+
+/* column ( 12 grid )
+-------------------------------------------------- */
+$grid-columns	: 12;
+$grid-gutter	: 10px;
+
+.row {
+	@extend %clearfix;
+}
+
+@for $i from 1 through 12 {
+	.col-xs-#{$i},
+	.col-s-#{$i},
+	.col-m-#{$i},
+	.col-l-#{$i} {
+		@include box-sizing;
+		position: relative;
+		min-height: 1px;
+		padding-left: $grid-gutter;
+		padding-right: $grid-gutter;
+	}
+}
+

@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+
+.profile dt {
+  display: block;
+  width: 15%;
+  float: left;
+}
+.profile dd {
+  display: block;
+  width: 75%;
+  float: left;
+}
+.profile .txt {
+  line-height: 1.8;
+}
+.profile .txt p {
+  padding-bottom: 10px;
+}
+.profile .pic li {
+  float: left;
+}
+.profile .pic img {
+  width: 100px;
+  height: 100px;
+}
+
+/* qna-list */
+.qna p {
+  margin-bottom: 10px;
+}
+.qna-list {
+  border-bottom: 1px solid #ddd;
+  font-size: 12px;
+}
+.qna-list .hgroup {
+  text-align: right;
+}
+.qna-list .hgroup .trigger {
+  border: 0;
+  padding: 0;
+  background: none;
+  font-size: 12px;
+  cursor: pointer;
+  ;
+}
+.qna-list ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.qna-list .tit {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  border-top: 1px solid #ddd;
+}
+.qna-list .tit .rag-date {
+  position: absolute;
+  top: 8px;
+  right: 15px;
+}
+.qna-list .tit a.trigger {
+  display: block;
+  padding: 10px 15px;
+  background: #fafafa;
+  color: #333;
+  text-align: left;
+  text-decoration: none !important;
+  font-weight: bold;
+}
+.qna-list .hide .tit a.trigger {
+  background: none;
+  font-weight: normal;
+}
+.qna-list .tit a.trigger:hover,.qna-list .tit a.trigger:active,.qna-list .tit a.trigger:focus {
+  background: #f8f8f8;
+  color: #000;
+}
+.qna-list .cont {
+  margin: 0;
+  padding: 10px 15px;
+  line-height: 1.8;
+}
+
+@media all and (max-width:768px) {
+  .qna-list .tit .rag-date {
+    display: none;
+  }
+}

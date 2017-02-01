@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+.movie-list {
+  height: 230px;
+  float: left;
+  border-bottom: 1px solid #ddd;
+  padding: 9px 0 24px;
+}
+.movie-img {
+  float: left;
+}
+.movie-img img {
+  width: 95px;
+}
+.movie-info {
+  float: left;
+}
+
+.comic-list {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+  padding: 9px 0 24px;
+}
+.comic-img {
+  float: left;
+}
+.comic-img img {
+  width: 80px;
+}
+.comic-info {
+  float: left;
+}
+
+@media all and (max-width:768px) {
+  .movie-list {
+    height: auto;
+  }
+}
