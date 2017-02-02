@@ -4,51 +4,49 @@
  * buttons
  * -------------------------------------------------- */
 %btn {
-	@include box-sizing;
 	position: relative;
 	display: inline-block;
-	font-weight: normal;
 	text-align: center;
-	white-space: nowrap;
 	vertical-align: middle;
+	font-weight: normal;
+	white-space: nowrap;
 	text-transform: capitalize;
-	@include transition(all 0.2s ease-out);
+
+	@include box-sizing;
+	@include transition(all .2s ease-out);
 }
 
 .btn {
-	@extend %btn;
+	padding: 9px 24px;
 	font-size: 14px;
 	line-height: 20px;
-	letter-spacing: 0.02em;
-	padding: 9px 24px;
+	letter-spacing: .02em;
 	border: 1px solid $silver-dark;
-	border-color: rgba($silver-dark, 0.5);
-	@include radius(50px);
+	border-color: rgba($silver-dark, .5);
 
+	@extend %btn;
+	@include radius(50px);
 	&:hover,
 	&:focus {
+		text-decoration: none;
 		color: $white;
 		border-color: $dark;
 		background: $dark;
-		text-decoration: none;
 	}
-
 	// button widh icon
 	.icon {
 		display: inline-block;
-		font-size: 12px;
 		margin-right: -10px;
 		margin-left: 5px;
 		vertical-align: 1px;
+		font-size: 12px;
 		line-height: 0;
 	}
-
 	// button color variation
 	&-light {
 		color: $white;
 		border: 1px solid $silver;
-		border-color: rgba($silver, 0.5);
-
+		border-color: rgba($silver, .5);
 		&:hover,
 		&:focus {
 			color: $dark;
@@ -56,28 +54,66 @@
 			background: $white;
 		}
 	}
-	
 	// button size variation
-	&-wide { // wide
+	&-wide {
+		// wide
 		display: block;
 		width: 100%;
 	}
-	&-m { // middle
-		font-size: 16px;
-		line-height: 24px;
+	&-m {
 		padding: 12px 40px;
-
-		.btn-solid {
-			line-height: 28px;
-		}
-	}
-	&-l { // large
+		// middle
 		font-size: 16px;
 		line-height: 24px;
-		padding: 18px 58px;
-
 		.btn-solid {
 			line-height: 28px;
 		}
 	}
+	&-l {
+		padding: 18px 58px;
+		// large
+		font-size: 16px;
+		line-height: 24px;
+		.btn-solid {
+			line-height: 28px;
+		}
+	}
+}
+
+
+// temp 
+
+.btn {
+	clear: both;
+	width: 100%;
+	margin-top: 10px;
+}
+.btn img {
+	vertical-align: middle;
+}
+.btn-r {
+	float: right;
+	width: 45%;
+	margin-top: 10px;
+	text-align: right;
+}
+.btn-l {
+	float: left;
+	width: 45%;
+	margin-top: 10px;
+}
+
+.btn-black {
+	display: inline-block;
+	height: 26px;
+	padding: 4px 8px;
+	vertical-align: middle;
+	font-weight: normal;
+	color: #fff;
+	border-radius: 3px;
+	background: #484848;
+}
+.btn-black:hover,
+.btn-black:focus {
+	color: #fff;
 }

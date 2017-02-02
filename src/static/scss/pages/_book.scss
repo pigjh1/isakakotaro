@@ -1,178 +1,213 @@
-@charset "UTF-8";
+@charset 'UTF-8';
 
-.book th,.book td {
-  text-align: center;
-}
-.book table img {
-  width: 40px;
-}
-.book .title {
-  text-align: left;
-}
-.book .date-jp,.book .date-ko,.book .isbn {
-  font-size: 11px;
-}
-.book .btn-black {
-  margin-top: 5px;
-}
-
-.book p {
-  margin-bottom: 10px;
-}
-.book table {
-  width: 100%;
-  border-top: solid #424242 2px;
-  border-bottom: solid #646464 1px;
-}
-.book table thead tr .header {
-  background-image: url(/static/images/bg.gif);
-  background-position: center right;
-  background-repeat: no-repeat;
-  cursor: pointer;
-}
-.book table thead tr .headerSortUp {
-  background-image: url(/static/images/asc.gif);
-}
-.book table thead tr .headerSortDown {
-  background-image: url(/static/images/desc.gif);
-}
-.book table thead tr .headerSortDown,table thead tr .headerSortUp {
-  background-color: #eee;
-}
-
-
-
-@media all and (max-width:768px) {
-  .book-index th:nth-child(1),.book-index td:nth-child(1),.book-index th:nth-child(2),.book-index td:nth-child(2),.book-index th:nth-child(8),.book-index td:nth-child(8) {
-    display: none;
-  }
+.book {
+	th, td {
+		text-align: center;
+	}
+	table img {
+		width: 40px;
+	}
+	.title {
+		text-align: left;
+	}
+	.date-jp, .date-ko, .isbn {
+		font-size: 11px;
+	}
+	.btn-black {
+		margin-top: 5px;
+	}
+	p {
+		margin-bottom: 10px;
+	}
+	table {
+		width: 100%;
+		border-top: solid #424242 2px;
+		border-bottom: solid #646464 1px;
+		thead tr {
+			.header {
+				background-image: url($img + 'bg.gif');
+				background-position: center right;
+				background-repeat: no-repeat;
+				cursor: pointer;
+			}
+			.headerSortUp {
+				background-image: url($img + 'asc.gif');
+			}
+			.headerSortDown {
+				background-image: url($img + 'desc.gif');
+				background-color: #eee;
+			}
+		}
+	}
 }
 
-.book-special h2 {
-  margin-top: 50px;
-  padding: 0;
-  text-align: center;
-}
-.book-special h3 {
-  margin: 0;
-  padding: 50px 0 20px;
-  background: none;
-  color: #222;
-  text-align: left;
-  font-weight: bold;
-  font-style: normal;
-  font-size: 24px;
-}
-.book-special .container {
-  margin-top: 0 !important;
-}
-.book-special .col p {
-  padding-bottom: 15px;
-}
-.book-special .col img {
-  width: 19%;
-}
-.book-special .footer .container {
-  background: #fff;
+table thead tr .headerSortUp {
+	background-color: #eee;
 }
 
-@media all and (max-width:768px) {
-  .book-special .mov iframe {
-    width: 100%;
-  }
+@include mq(medium) {
+	.book-index {
+		th:nth-child(1), td:nth-child(1), th:nth-child(2), td:nth-child(2), th:nth-child(8), td:nth-child(8) {
+			display: none;
+		}
+	}
+}
+
+.book-special {
+	h2 {
+		margin-top: 50px;
+		padding: 0;
+		text-align: center;
+	}
+	h3 {
+		margin: 0;
+		padding: 50px 0 20px;
+		background: none;
+		color: #222;
+		text-align: left;
+		font-weight: bold;
+		font-style: normal;
+		font-size: 24px;
+	}
+	.container {
+		margin-top: 0 !important;
+	}
+	.col {
+		p {
+			padding-bottom: 15px;
+		}
+		img {
+			width: 19%;
+		}
+	}
+	.footer .container {
+		background: #fff;
+	}
+}
+
+@include mq(medium) {
+	.book-special .mov iframe {
+		width: 100%;
+	}
 }
 
 .prayer {
-  background: url(/static/images/book/special/prayer-bg.jpg) center 0;
+	background: url($img-book + 'special/prayer-bg.jpg') center 0;
 }
+
 .lush {
-  background: url(/static/images/book/special/lush-bg.jpg) center 0 #fff no-repeat;
+	background: url($img-book + 'special/lush-bg.jpg') center 0 #fff no-repeat;
 }
+
 .gturns {
-  background: url(/static/images/book/special/gturns-bg.jpg) center 0;
+	background: url($img-book + 'special/gturns-bg.jpg') center 0;
 }
+
 .pierrot {
-  background: url(/static/images/book/special/pierrot-bg.jpg) center 0;
+	background: url($img-book + 'special/pierrot-bg.jpg') center 0;
 }
+
 .coin {
-  background: url(/static/images/book/special/coin-bg.jpg) center 0;
+	background: url($img-book + 'special/coin-bg.jpg') center 0;
 }
+
 .children {
-  background: url(/static/images/book/special/children-bg.jpg) center 0;
+	background: url($img-book + 'special/children-bg.jpg') center 0;
 }
+
 .grasshopper {
-  background: url(/static/images/book/special/grasshopper-bg.jpg) center 0;
+	background: url($img-book + 'special/grasshopper-bg.jpg') center 0;
 }
+
 .death {
-  background: url(/static/images/book/special/death-bg.jpg) center 0;
+	background: url($img-book + 'special/death-bg.jpg') center 0;
 }
+
 .devil {
-  background: url(/static/images/book/special/devil-bg.jpg) center 0;
+	background: url($img-book + 'special/devil-bg.jpg') center 0;
 }
+
 .campus {
-  background: url(/static/images/book/special/campus-bg.jpg) center 0;
+	background: url($img-book + 'special/campus-bg.jpg') center 0;
 }
+
 .fool {
-  background: url(/static/images/book/special/fool-bg.jpg) center 0;
+	background: url($img-book + 'special/fool-bg.jpg') center 0;
 }
+
 .gday {
-  background: url(/static/images/book/special/gday-bg.jpg) center 0;
+	background: url($img-book + 'special/gday-bg.jpg') center 0;
 }
+
 .fish {
-  background: url(/static/images/book/special/fish-bg.jpg) center 0;
+	background: url($img-book + 'special/fish-bg.jpg') center 0;
 }
+
 .golden {
-  background: url(/static/images/book/special/golden-bg.jpg) center 0;
+	background: url($img-book + 'special/golden-bg.jpg') center 0;
 }
+
 .modern {
-  background: url(/static/images/book/special/modern-bg.jpg) center 0;
+	background: url($img-book + 'special/modern-bg.jpg') center 0;
 }
+
 .king {
-  background: url(/static/images/book/special/king-bg.jpg) center 0;
+	background: url($img-book + 'special/king-bg.jpg') center 0;
 }
+
 .sos {
-  background: url(/static/images/book/special/sos-bg2.jpg);
+	background: url($img-book + 'special/sos-bg2.jpg');
+	.bg {
+		background: url($img-book + 'special/sos-bg.jpg') center 0 no-repeat;
+	}
 }
-.sos .bg {
-  background: url(/static/images/book/special/sos-bg.jpg) center 0 no-repeat;
-}
+
 .father {
-  background: url(/static/images/book/special/father-bg2.jpg);
+	background: url($img-book + 'special/father-bg2.jpg');
+	.bg {
+		background: url($img-book + 'special/father-bg.jpg') center 0 no-repeat;
+	}
 }
-.father .bg {
-  background: url(/static/images/book/special/father-bg.jpg) center 0 no-repeat;
-}
+
 .bye {
-  background: url(/static/images/book/special/bye-bg.jpg) center 0;
+	background: url($img-book + 'special/bye-bg.jpg') center 0;
 }
+
 .maria {
-  background: url(/static/images/book/special/maria-bg.jpg) center 0 #fff no-repeat;
+	background: url($img-book + 'special/maria-bg.jpg') center 0 #fff no-repeat;
 }
+
 .yoruno {
-  background: url(/static/images/book/special/yoruno-bg.jpg) center 0;
+	background: url($img-book + 'special/yoruno-bg.jpg') center 0;
 }
+
 .vacation {
-  background: url(/static/images/book/special/vacation-bg.jpg) center 0 #4ebfdd;
+	background: url($img-book + 'special/vacation-bg.jpg') center 0 #4ebfdd;
 }
+
 .gasoline {
-  background: url(/static/images/book/special/gasoline-bg.jpg) center 0;
+	background: url($img-book + 'special/gasoline-bg.jpg') center 0;
 }
+
 .furyoku {
-  background: url(/static/images/book/special/furyoku-bg.jpg) center 0;
+	background: url($img-book + 'special/furyoku-bg.jpg') center 0;
 }
+
 .kubiori {
-  background: url(/static/images/book/special/kubiori-bg2.jpg);
+	background: url($img-book + 'special/kubiori-bg2.jpg');
+	.bg {
+		background: url($img-book + 'special/kubiori-bg.jpg') center 0 no-repeat;
+	}
 }
-.kubiori .bg {
-  background: url(/static/images/book/special/kubiori-bg.jpg) center 0 no-repeat;
-}
+
 .ctb {
-  background: url(/static/images/book/special/ctb-bg.jpg) center 0;
+	background: url($img-book + 'special/ctb-bg.jpg') center 0;
 }
+
 .e3652 {
-  background: url(/static/images/book/special/e3652-bg.jpg) center 0;
+	background: url($img-book + 'special/e3652-bg.jpg') center 0;
 }
 
 .aine {
-  background:url(/static/images/book/special/aine-bg.jpg) center 0;
+	background: url($img-book + 'special/aine-bg.jpg') center 0;
 }

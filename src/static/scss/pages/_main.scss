@@ -1,74 +1,76 @@
 @charset 'UTF-8';
 
+.home {
+	h2 {
+		padding: 25px 0;
+		font-size: 18px;
+		font-weight: bold;
+	}
+	.notice {
+		padding: 50px 0 0;
+		text-align: center;
+		font-size: 13px;
+		p {
+			padding-bottom: 20px;
+		}
+	}
+}
 
-.home h2 {
-  padding: 25px 0;
-  font-size: 18px;
-  font-weight: bold;
-}
-.home .notice {
-  padding: 50px 0 0;
-  text-align: center;
-  font-size: 13px;
-}
-.home .notice p {
-  padding-bottom: 20px;
-}
 .home-event {
-  padding-top: 20px;
-}
-.home-event p {
-  padding-bottom: 10px;
-  text-align: center;
+	padding-top: 20px;
+	p {
+		padding-bottom: 10px;
+		text-align: center;
+	}
 }
 
 .bookcase {
-  width: 858px;
-  margin: 0 auto;
-  margin-top: 50px;
-}
-.bookcase h2 {
-  padding: 0;
-}
-.bookcase ul {
-  float: left;
-  width: 100%;
-  padding: 0 5%;
-  background: url(/static/images/main/bookcase_bg_large.gif);
-}
-.bookcase li {
-  position: relative;
-  float: left;
-  width: 10%;
-  height: 117px;
-  margin-top: 33px;
-  text-align: center;
-}
-.bookcase li img {
-  width: 65px;
-}
-.bookcase li .new {
-  position: absolute;
-  top: 68px;
-  right: -1px;
-  width: 62px;
-  height: 29px;
-  font-size: 0;
-  line-height: 0;
-  background: url(/static/images/main/icon-new.png);
+	width: 858px;
+	margin: 0 auto;
+	margin-top: 50px;
+	h2 {
+		padding: 0;
+	}
+	ul {
+		float: left;
+		width: 100%;
+		padding: 0 5%;
+		background: url($img + 'main/bookcase_bg_large.gif');
+	}
+	li {
+		position: relative;
+		float: left;
+		width: 10%;
+		height: 117px;
+		margin-top: 33px;
+		text-align: center;
+		img {
+			width: 65px;
+		}
+		.new {
+			position: absolute;
+			top: 68px;
+			right: -1px;
+			width: 62px;
+			height: 29px;
+			font-size: 0;
+			line-height: 0;
+			background: url($img + 'main/icon-new.png');
+		}
+	}
 }
 
-@media all and (max-width:858px) {
-  .bookcase {
-    width: 100%;
-  }
-  .bookcase ul {
-    padding: 30px 5%;
-    background-image: url(/static/images/main/bookcase_bg.gif);
-    background-size: 100%;
-  }
-  .bookcase li {
-    width: 33%;
-    height: auto;
-  }
+@media all and (max-width: 858px) {
+	.bookcase {
+		width: 100%;
+		ul {
+			padding: 30px 5%;
+			background-image: url($img + 'main/bookcase_bg.gif');
+			background-size: 100%;
+		}
+		li {
+			width: 33%;
+			height: auto;
+		}
+	}
 }
