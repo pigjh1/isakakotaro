@@ -557,7 +557,7 @@ body
 .nav-list
 {
     position: relative;
-    top: 12px;
+    top: 18px;
     right: auto;
     left: auto;
 
@@ -599,6 +599,8 @@ body
 .share a
 {
     font-size: 18px;
+
+    margin: 0 .3em; 
 
     color: #666;
 }

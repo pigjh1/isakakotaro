@@ -1705,7 +1705,7 @@ body
     .nav-list
     {
         position: relative;
-        top: 12px;
+        top: 18px;
         right: auto;
         left: auto;
 
@@ -1748,6 +1748,8 @@ body
 .share a
 {
     font-size: 18px;
+
+    margin: 0 .3em; 
 
     color: #666;
 }
@@ -2058,51 +2060,56 @@ body
 .main h5
 {
     font-family: 'Iropke Batang', serif;
-    font-size: 1.313em;
     line-height: 1.14242em;
 
-    margin-top: 0;
-    margin-bottom: 1.14242em;
+    margin-top: 1.14242em;
+    margin-bottom: 2.28484em;
 }
 .main h4
 {
     font-family: 'Iropke Batang', serif;
-    font-size: 1.72397em;
     line-height: 1.74017em;
 
-    margin-top: 0;
-    margin-bottom: .87009em;
+    margin-top: .87009em;
+    margin-bottom: 1.74017em;
 }
 .main h3
 {
     font-family: 'Iropke Batang', serif;
-    font-size: 2.26357em;
     line-height: 1.32534em;
 
-    margin-top: 0;
-    margin-bottom: .66267em;
+    margin-top: .66267em;
+    margin-bottom: 1.32534em;
 }
 .main h2
 {
     font-family: 'Iropke Batang', serif;
-    font-size: 2.97207em;
     line-height: 1.0094em;
 
-    margin-top: 0;
-    margin-bottom: .5047em;
+    margin-top: .5047em;
+    margin-bottom: 1.0094em;
 }
 .main h1
 {
     font-family: 'Iropke Batang', serif;
-    font-size: 3.90233em;
     line-height: 1.15316em;
 
-    margin-top: 0;
-    margin-bottom: .38439em;
+    margin-top: .38439em;
+    margin-bottom: .76877em;
+}
+.main h1
+{
+    font-size: 4em;
+
+    text-align: center;
 }
 .main h2
 {
-    text-align: center;
+    font-size: 2em;
+}
+.main h3
+{
+    font-size: 1.5em;
 }
 .main p
 {
@@ -2340,14 +2347,6 @@ img
     max-width: 100%;
 }
 
-/* sns*/
-.twitter-warp
-{
-    width: 100%;
-    margin: 0 auto;
-    margin-top: 30px;
-}
-
 .home h2
 {
     font-size: 18px;
@@ -2499,8 +2498,6 @@ img
 
 .qna-list
 {
-    font-size: 12px; 
-
     border-bottom: 1px solid #ddd;
 }
 .qna-list .hgroup
@@ -2659,32 +2656,9 @@ table thead tr .headerSortUp
     }
 }
 
-.book-special h2
+.book-special .main
 {
-    margin-top: 50px;
-    padding: 0;
-
-    text-align: center;
-}
-
-.book-special h3
-{
-    font-size: 24px; 
-    font-weight: bold;
-    font-style: normal;
-
-    margin: 0;
-    padding: 50px 0 20px;
-
-    text-align: left;
-
-    color: #222;
-    background: none;
-}
-
-.book-special .l-wrap
-{
-    margin-top: 0 !important;
+    margin-top: 45px;
 }
 
 .book-special .col p
