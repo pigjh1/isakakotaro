@@ -712,10 +712,10 @@ textarea
 
 /* '' */
 /*!
- * Bootstrap v3.3.5 (http://getbootstrap.com)
- * Copyright 2011-2015 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
+* Bootstrap v3.3.5 (http://getbootstrap.com)
+* Copyright 2011-2015 Twitter, Inc.
+* Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+*/
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html
 {
@@ -10950,7 +10950,7 @@ textarea,
 select,
 button
 {
-    font-family: 'Nanum Gothic', 'Malgun Gothic', '맑은 고딕', 'Nanum Gothic', '나눔 고딕', '돋움', dotum, sans-serif;
+    font-family: 'Spoqa Han Sans', 'Nanum Gothic', 'Malgun Gothic', '맑은 고딕', 'Nanum Gothic', '나눔 고딕', '돋움', dotum, sans-serif;
 }
 
 html
@@ -11064,6 +11064,30 @@ em
     min-height: 300px;
 
     outline: none;
+}
+
+/* --------------------------------------------------
+ * fonts.css - font family
+ * -------------------------------------------------- */
+/* Spoqa Han San */
+@font-face
+{
+    font-family: 'Spoqa Han Sans';
+    font-weight: 400;
+    font-style: normal;
+
+    src: local('SpoqaHanSans-Regular'), local('SpoqaHanSans-Regular'), url(/static/fonts/SpoqaHanSans-Regular.eot) format('eot'), url(/static/fonts/SpoqaHanSans-Regular.svg) format('svg'), url(/static/fonts/SpoqaHanSans-Regular.ttf) format('truetype'), url(/static/fonts/SpoqaHanSans-Regular.woff) format('woff');
+}
+
+/* Iropke Batang */
+@font-face
+{
+    font-family: 'Iropke Batang';
+    font-weight: 400;
+    font-style: normal;
+
+    src: url(/static/fonts/IropkeBatang.eot);
+    src: url(/static/fonts/IropkeBatang.eot?#iefix) format('embedded-opentype'), url(/static/fonts/IropkeBatang.woff) format('woff'), url(/static/fonts/IropkeBatang.ttf) format('truetype');
 }
 
 /* --------------------------------------------------
@@ -11789,7 +11813,7 @@ body
  * -------------------------------------------------- */
 .table-caption
 {
-    font-family: 'Buri', serif;
+    font-family: 'Iropke Batang', serif;
     font-size: 2.6em;
 
     margin-bottom: 15px;
