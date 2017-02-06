@@ -24,9 +24,13 @@ npm i(install) : 설치
 ## TODO
 ### 소스 코드
 - [ ] 소스에 있는 [TODO] 처리하기!
+- [ ] 메뉴 만들기 심플한 1단으로
+- [ ] 폰트 변경 추가
 - [ ] 그리드 시스템 개선
-- [ ] 엑셀아이콘 추가
+- [ ] 엑셀 아이콘 추가
+- [ ] FTP 자동 빌드 확인
 - [ ] disqus 댓글 추가 : https://isakakotaro-co-kr.disqus.com/admin/install/settings/
+- [ ] PageSpeed Insights 검사 : https://developers.google.com/speed/pagespeed/insights/
 
 ### 콘텐츠 정리
 - [ ] 작품내 센다이 지역정보
