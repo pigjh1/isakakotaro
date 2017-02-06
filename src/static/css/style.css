@@ -11146,13 +11146,14 @@ body
 
 /* column ( 12 grid )
 -------------------------------------------------- */
-.col-xs-1,
 .col-s-1,
 .col-m-1,
 .col-l-1
 {
     position: relative;
 
+    float: left;
+
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
             box-sizing: border-box;
@@ -11163,13 +11164,14 @@ body
         -ms-box-sizing: border-box;
 }
 
-.col-xs-2,
 .col-s-2,
 .col-m-2,
 .col-l-2
 {
     position: relative;
 
+    float: left;
+
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
             box-sizing: border-box;
@@ -11180,13 +11182,14 @@ body
         -ms-box-sizing: border-box;
 }
 
-.col-xs-3,
 .col-s-3,
 .col-m-3,
 .col-l-3
 {
     position: relative;
 
+    float: left;
+
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
             box-sizing: border-box;
@@ -11197,13 +11200,14 @@ body
         -ms-box-sizing: border-box;
 }
 
-.col-xs-4,
 .col-s-4,
 .col-m-4,
 .col-l-4
 {
     position: relative;
 
+    float: left;
+
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
             box-sizing: border-box;
@@ -11214,13 +11218,14 @@ body
         -ms-box-sizing: border-box;
 }
 
-.col-xs-5,
 .col-s-5,
 .col-m-5,
 .col-l-5
 {
     position: relative;
 
+    float: left;
+
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
             box-sizing: border-box;
@@ -11231,13 +11236,14 @@ body
         -ms-box-sizing: border-box;
 }
 
-.col-xs-6,
 .col-s-6,
 .col-m-6,
 .col-l-6
 {
     position: relative;
 
+    float: left;
+
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
             box-sizing: border-box;
@@ -11248,13 +11254,14 @@ body
         -ms-box-sizing: border-box;
 }
 
-.col-xs-7,
 .col-s-7,
 .col-m-7,
 .col-l-7
 {
     position: relative;
 
+    float: left;
+
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
             box-sizing: border-box;
@@ -11265,13 +11272,14 @@ body
         -ms-box-sizing: border-box;
 }
 
-.col-xs-8,
 .col-s-8,
 .col-m-8,
 .col-l-8
 {
     position: relative;
 
+    float: left;
+
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
             box-sizing: border-box;
@@ -11282,13 +11290,14 @@ body
         -ms-box-sizing: border-box;
 }
 
-.col-xs-9,
 .col-s-9,
 .col-m-9,
 .col-l-9
 {
     position: relative;
 
+    float: left;
+
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
             box-sizing: border-box;
@@ -11299,13 +11308,14 @@ body
         -ms-box-sizing: border-box;
 }
 
-.col-xs-10,
 .col-s-10,
 .col-m-10,
 .col-l-10
 {
     position: relative;
 
+    float: left;
+
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
             box-sizing: border-box;
@@ -11316,13 +11326,14 @@ body
         -ms-box-sizing: border-box;
 }
 
-.col-xs-11,
 .col-s-11,
 .col-m-11,
 .col-l-11
 {
     position: relative;
 
+    float: left;
+
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
             box-sizing: border-box;
@@ -11333,12 +11344,13 @@ body
         -ms-box-sizing: border-box;
 }
 
-.col-xs-12,
 .col-s-12,
 .col-m-12,
 .col-l-12
 {
     position: relative;
+
+    float: left;
 
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
@@ -11348,6 +11360,325 @@ body
     padding-left: 10px;
 
         -ms-box-sizing: border-box;
+}
+
+@media (max-width: 37.49em)
+{
+    .col-s-1
+    {
+        float: none;
+    }
+    .col-s-2
+    {
+        float: none;
+    }
+    .col-s-3
+    {
+        float: none;
+    }
+    .col-s-4
+    {
+        float: none;
+    }
+    .col-s-5
+    {
+        float: none;
+    }
+    .col-s-6
+    {
+        float: none;
+    }
+    .col-s-7
+    {
+        float: none;
+    }
+    .col-s-8
+    {
+        float: none;
+    }
+    .col-s-9
+    {
+        float: none;
+    }
+    .col-s-10
+    {
+        float: none;
+    }
+    .col-s-11
+    {
+        float: none;
+    }
+    .col-s-12
+    {
+        float: none;
+    }
+}
+
+@media (min-width: 37.5em)
+{
+    .col-s-1
+    {
+        width: 8.33333%;
+    }
+    .col-s-2
+    {
+        width: 16.66667%;
+    }
+    .col-s-3
+    {
+        width: 25%;
+    }
+    .col-s-4
+    {
+        width: 33.33333%;
+    }
+    .col-s-5
+    {
+        width: 41.66667%;
+    }
+    .col-s-6
+    {
+        width: 50%;
+    }
+    .col-s-7
+    {
+        width: 58.33333%;
+    }
+    .col-s-8
+    {
+        width: 66.66667%;
+    }
+    .col-s-9
+    {
+        width: 75%;
+    }
+    .col-s-10
+    {
+        width: 83.33333%;
+    }
+    .col-s-11
+    {
+        width: 91.66667%;
+    }
+    .col-s-12
+    {
+        width: 100%;
+    }
+}
+
+@media (max-width: 47.99em)
+{
+    .col-m-1
+    {
+        float: none;
+    }
+    .col-m-2
+    {
+        float: none;
+    }
+    .col-m-3
+    {
+        float: none;
+    }
+    .col-m-4
+    {
+        float: none;
+    }
+    .col-m-5
+    {
+        float: none;
+    }
+    .col-m-6
+    {
+        float: none;
+    }
+    .col-m-7
+    {
+        float: none;
+    }
+    .col-m-8
+    {
+        float: none;
+    }
+    .col-m-9
+    {
+        float: none;
+    }
+    .col-m-10
+    {
+        float: none;
+    }
+    .col-m-11
+    {
+        float: none;
+    }
+    .col-m-12
+    {
+        float: none;
+    }
+}
+
+@media (min-width: 48em)
+{
+    .col-m-1
+    {
+        width: 8.33333%;
+    }
+    .col-m-2
+    {
+        width: 16.66667%;
+    }
+    .col-m-3
+    {
+        width: 25%;
+    }
+    .col-m-4
+    {
+        width: 33.33333%;
+    }
+    .col-m-5
+    {
+        width: 41.66667%;
+    }
+    .col-m-6
+    {
+        width: 50%;
+    }
+    .col-m-7
+    {
+        width: 58.33333%;
+    }
+    .col-m-8
+    {
+        width: 66.66667%;
+    }
+    .col-m-9
+    {
+        width: 75%;
+    }
+    .col-m-10
+    {
+        width: 83.33333%;
+    }
+    .col-m-11
+    {
+        width: 91.66667%;
+    }
+    .col-m-12
+    {
+        width: 100%;
+    }
+}
+
+@media (max-width: 63.99em)
+{
+    .col-l-1
+    {
+        float: none;
+    }
+    .col-l-2
+    {
+        float: none;
+    }
+    .col-l-3
+    {
+        float: none;
+    }
+    .col-l-4
+    {
+        float: none;
+    }
+    .col-l-5
+    {
+        float: none;
+    }
+    .col-l-6
+    {
+        float: none;
+    }
+    .col-l-7
+    {
+        float: none;
+    }
+    .col-l-8
+    {
+        float: none;
+    }
+    .col-l-9
+    {
+        float: none;
+    }
+    .col-l-10
+    {
+        float: none;
+    }
+    .col-l-11
+    {
+        float: none;
+    }
+    .col-l-12
+    {
+        float: none;
+    }
+}
+
+@media (min-width: 64em)
+{
+    .col-l-1
+    {
+        width: 8.33333%;
+    }
+    .col-l-2
+    {
+        width: 16.66667%;
+    }
+    .col-l-3
+    {
+        width: 25%;
+    }
+    .col-l-4
+    {
+        width: 33.33333%;
+    }
+    .col-l-5
+    {
+        width: 41.66667%;
+    }
+    .col-l-6
+    {
+        width: 50%;
+    }
+    .col-l-7
+    {
+        width: 58.33333%;
+    }
+    .col-l-8
+    {
+        width: 66.66667%;
+    }
+    .col-l-9
+    {
+        width: 75%;
+    }
+    .col-l-10
+    {
+        width: 83.33333%;
+    }
+    .col-l-11
+    {
+        width: 91.66667%;
+    }
+    .col-l-12
+    {
+        width: 100%;
+    }
+}
+
+.col-s-12,
+.col-m-12,
+.col-l-12
+{
+    float: none;
 }
 
 /* --------------------------------------------------
@@ -11631,6 +11962,7 @@ body
 }
 .main h5
 {
+    font-family: 'Iropke Batang', serif;
     font-size: 1.313em;
     line-height: 1.14242em;
 
@@ -11639,6 +11971,7 @@ body
 }
 .main h4
 {
+    font-family: 'Iropke Batang', serif;
     font-size: 1.72397em;
     line-height: 1.74017em;
 
@@ -11647,6 +11980,7 @@ body
 }
 .main h3
 {
+    font-family: 'Iropke Batang', serif;
     font-size: 2.26357em;
     line-height: 1.32534em;
 
@@ -11655,6 +11989,7 @@ body
 }
 .main h2
 {
+    font-family: 'Iropke Batang', serif;
     font-size: 2.97207em;
     line-height: 1.0094em;
 
@@ -11663,49 +11998,12 @@ body
 }
 .main h1
 {
+    font-family: 'Iropke Batang', serif;
     font-size: 3.90233em;
     line-height: 1.15316em;
 
     margin-top: 0;
     margin-bottom: .38439em;
-}
-.main h2
-{
-    font-size: 24px;
-    font-weight: bold; 
-
-    padding: 25px 0;
-}
-.main h3
-{
-    font-size: 18px;
-    font-weight: bold;
-    font-style: italic;
-
-    clear: both;
-
-    margin: 25px 0;
-    padding: 10px 20px;
-
-    text-align: center;
-
-    color: #666;
-    border-radius: 10px;
-    background: #eee;
-}
-.main h4
-{
-    font-size: 16px;
-    font-weight: bold;
-
-    padding: 25px 0 15px;
-
-    color: #666;
-}
-.main h4 span
-{
-    font-size: 13px;
-    font-weight: normal;
 }
 .main p
 {
