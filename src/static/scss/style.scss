@@ -8,7 +8,6 @@
 @import 'vendors/mq';
 @import 'vendors/normalize';
 @import 'vendors/fontello';
-@import 'vendors/bootstrap'; // [TODO] _bootstrap 걷어내기!
 
 @import 'base/reset';
 @import 'base/fonts';
@@ -27,23 +26,6 @@ img{max-width:100%;}
 
 
 
-/* Site Layout */
-body{background:#f3f3f3;}
-.container {width:960px;font-size:12px;}
-#content{background:#FFF;margin-top:70px;padding:0 30px 70px;}
-
-
-@media all and (max-width:320px){
-	.container {width:100%;}
-	#content{padding:0 2% 30px;}
-}
-
-@media all and (max-width:960px){
-	.container {width:100%;}
-	#content{padding:0 2% 30px;}
-}
-
-
 
 /* sns*/
 .twitter-warp {width:100%; margin:0 auto; margin-top:30px;}
@@ -56,9 +38,3 @@ body{background:#f3f3f3;}
 @import 'pages/world';
 
 @import 'pages/error';
-
-/* For print */
-@media print{
-	body{margin:0;}
-	header, footer{display:none !important}
-}

@@ -1,7 +1,6 @@
 'use strict';
 
 var $    = require('jquery');
-require('bootstrap.min');
 require('jquery.tablesorter');
 
 // common
@@ -53,12 +52,12 @@ require('jquery.tablesorter');
     if ($('.book-index').length === 0) return;
 
     // [TODO] 스크립트 오류 발생
-    $(".book-index table").tablesorter({
-        headers: {
-            0: { sorter: false },
-            1: { sorter: false },
-            2: { sorter: false },
-            7: { sorter: false }
-        }
-    });
+    // $(".book-index table").tablesorter({
+    //     headers: {
+    //         0: { sorter: false },
+    //         1: { sorter: false },
+    //         2: { sorter: false },
+    //         7: { sorter: false }
+    //     }
+    // });
 })();

@@ -3,7 +3,7 @@
 /* --------------------------------------------------
  * footer
  * -------------------------------------------------- */
-.share .container {
+.share .l-wrap {
 	padding: 0 0 50px;
 	text-align: center;
 	background: #fff;
@@ -15,7 +15,7 @@
 .footer {
 	clear: both;
 }
-.footer .container {
+.footer .l-wrap {
 	padding: 20px 0 10px;
 	border-top: 1px solid #f3f3f3;
 }
@@ -36,7 +36,7 @@
 
 
 @media all and (max-width:320px) {
-	.footer .container {
+	.footer .l-wrap {
 		padding: 10px 0 0;
 	}
 	.footer .info,
@@ -47,7 +47,7 @@
 }
 
 @media all and (max-width:960px) {
-	.footer .container {
+	.footer .l-wrap {
 		padding: 10px 0 0;
 	}
 	.footer .info,

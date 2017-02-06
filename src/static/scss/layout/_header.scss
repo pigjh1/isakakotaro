@@ -4,5 +4,77 @@
  * header
  * -------------------------------------------------- */
 .header {
-	
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: $header-height;
+	background: $ink;
+	text-align: center;
+	z-index: 101;
+}
+
+.logo {
+	position: absolute;
+	top: 10px;
+	left: .5em;
+}
+.nav {
+	text-align: right;
+	font-size: 1.5em;
+
+	&-toggle {
+		font-size: 25px;
+		width: 36px;
+		height: 36px;
+		padding: 5px;
+	}
+
+	&-list {
+		display: none;
+		position: absolute;
+		top: $header-height;
+		left: 0;
+		right: 0;
+		background: $ink;
+		padding: 0 1em;
+		text-align: left;
+		font-size: 12px;
+		@include shadow(0 5px 5px rgba(125,125,125,.1), -1px 1px 1px rgba(0,0,0,.1));
+		z-index: 10;
+
+		a {
+			color: $white;
+		}
+		&.is-open {
+			display: block;
+		}
+	}
+}
+
+@include mq(medium) {
+	.nav {
+		text-align: right;
+		&-list {
+			display: inline-block;
+			position: relative;
+			top: 12px;
+			left: auto;
+			right: auto;
+
+			max-heeight: auto;
+			overflow: visible;
+			@include shadow(none);
+		}
+		&-d1 {
+			position: relative;
+			display: inline-block;
+			margin: 0 1em;
+		}
+
+		&-toggle,
+		&-close {
+			display: none;
+		}
+	}
 }

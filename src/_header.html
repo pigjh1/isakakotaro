@@ -5,34 +5,26 @@
 	</div>
 
 	<header id="header" class="header">
-		<nav class="navbar navbar-inverse navbar-fixed-top">
-			<div class="container">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<h1><a href="./"><img src="/static/images/isakakotaro.png" alt="Isaka Kotaro"></a></h1>
-				</div>
-				<div id="navbar" class="navbar-collapse collapse">
-					<ul class="nav navbar-nav navbar-right">
-						<li class="d1"><a href="./profile.html">Profile</a></li>
-						<li class="d1"><a href="./book.html">Book</a></li>
-						<li class="d1"><a href="./remix.html">Remix</a></li>
-						<li class="d1"><a href="./world.html">Isaka World</a></li>
-						<li class="d1 dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">SNS <span class="caret"></span></a>
-							<ul class="dropdown-menu" role="menu">
-								<li><a href="./twitter.html">Twitter</a></li>
-								<li><a href="./youtube.html">관련영상</a></li>
-							</ul>
-						</li>
-						<li class="d1"><a href="./event.html">Event</a></li>
-						<li class="d1"><a href="./link.html">Link</a></li>
-					</ul>
-				</div><!--/.navbar-collapse -->
-			</div>
-		</nav>
+		<div class="l-wrap">
+			<h1 class="logo"><a href="/"><img src="/static/images/isakakotaro.png" alt="Isaka Kotaro"></a></h1>
+			<nav id="nav" class="nav">
+				<button type="button" class="nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="readable-hidden">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				
+				<ul class="nav-list">
+					<li class="nav-d1"><a href="/profile.html">Profile</a></li>
+					<li class="nav-d1"><a href="/book.html">Book</a></li>
+					<li class="nav-d1"><a href="/remix.html">Remix</a></li>
+					<li class="nav-d1"><a href="/world.html">Isaka World</a></li>
+					<li class="nav-d1"><a href="/twitter.html">Twitter</a></li>
+					<li class="nav-d1"><a href="/youtube.html">Youtube</a></li>
+					<li class="nav-d1"><a href="/event.html">Event</a></li>
+					<li class="nav-d1"><a href="/link.html">Link</a></li>
+				</ul>
+			</nav>
+		</div>
 	</header>
