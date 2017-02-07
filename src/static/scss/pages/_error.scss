@@ -1,11 +1,10 @@
 @charset 'UTF-8';
 
-#error {
+.error {
 	padding: 20px;
 	text-align: center;
 	color: #666;
 	h2 {
-		font-family: verdana, tahoma, sans-serif;
 		font-size: 50px;
 		font-weight: bold;
 		line-height: 100%;

@@ -6,7 +6,6 @@
 .func {
 	// margin-top: 4em;
 	text-align: center;
-
 	&.__left {
 		text-align: left;
 	}
@@ -30,24 +29,35 @@
 
 // main (content section)
 .main {
-	outline: none; // for skipnav
-	min-height: 300px;
 	position: relative;
+	min-height: 300px;
 	margin-top: 80px;
+	outline: none; // for skipnav
 }
 .clearfix {
 	@extend %clearfix;
 }
 
 
-#wrap{background:#f3f3f3;}
-#content{background:#FFF;padding:30px 30px;}
+.event {
+	text-align: center;
+}
 
-
-
+#wrap {
+	background: #f3f3f3;
+}
+#content {
+	padding: 30px 30px;
+	background: #fff;
+}
 
 /* For print */
-@media print{
-	body{margin:0;}
-	header, footer{display:none !important}
+@media print {
+	body {
+		margin: 0;
+	}
+	header,
+	footer {
+		display: none !important;
+	}
 }
