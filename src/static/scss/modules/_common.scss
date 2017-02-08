@@ -33,11 +33,19 @@
 	min-height: 300px;
 	margin-top: 80px;
 	outline: none; // for skipnav
+
+	.l-wrap {
+		padding: 10px 30px 30px;
+		background: #FFF;
+	}
+
+	a {
+		color: #337ab7;
+	}
 }
 .clearfix {
 	@extend %clearfix;
 }
-
 
 .event {
 	text-align: center;
@@ -45,10 +53,6 @@
 
 #wrap {
 	background: #f3f3f3;
-}
-#content {
-	padding: 30px 30px;
-	background: #fff;
 }
 
 /* For print */

@@ -1,60 +1,39 @@
 @charset 'UTF-8';
 
 .book {
-	th, td {
-		text-align: center;
-	}
 	table img {
 		width: 40px;
 	}
-	.title {
-		text-align: left;
-	}
-	.date-jp, .date-ko, .isbn {
-		font-size: 11px;
-	}
-	.btn-black {
-		margin-top: 5px;
-	}
-	p {
-		margin-bottom: 10px;
-	}
-	table {
-		width: 100%;
-		border-top: solid #424242 2px;
-		border-bottom: solid #646464 1px;
-		thead tr {
-			.header {
-				background-image: url($img + 'bg.gif');
-				background-position: center right;
-				background-repeat: no-repeat;
-				cursor: pointer;
-			}
-			.headerSortUp {
-				background-image: url($img + 'asc.gif');
-			}
-			.headerSortDown {
-				background-image: url($img + 'desc.gif');
-				background-color: #eee;
-			}
+	&-header {
+		background-image: url($img + 'bg.gif');
+		background-position: center right;
+		background-repeat: no-repeat;
+		cursor: pointer;
+		&-sortup {
+			background-image: url($img + 'asc.gif');
+		}
+		&-sortdown {
+			background-image: url($img + 'desc.gif');
+			background-color: #eee;
 		}
 	}
 }
 
-table thead tr .headerSortUp {
-	background-color: #eee;
-}
 
 @include mq(medium) {
 	.book-index {
-		th:nth-child(1), td:nth-child(1), th:nth-child(2), td:nth-child(2), th:nth-child(8), td:nth-child(8) {
+		th:nth-child(1), 
+		td:nth-child(1), 
+		th:nth-child(2), 
+		td:nth-child(2), 
+		th:nth-child(8), 
+		td:nth-child(8) {
 			display: none;
 		}
 	}
 }
 
 .book-special {
-
 	.main {
 		margin-top: 45px;
 	}
@@ -66,7 +45,7 @@ table thead tr .headerSortUp {
 			width: 19%;
 		}
 	}
-	.footer .l-wrap {
+	#wrap {
 		background: #fff;
 	}
 }

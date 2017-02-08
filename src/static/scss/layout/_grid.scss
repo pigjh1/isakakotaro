@@ -37,10 +37,10 @@ body {
 	@extend %clearfix;
 	position: relative;
 	margin: 0 auto;
+	padding: 0 10px;
 	max-width: $w-default;
 	@include box-sizing();
 }
-
 
 /* column ( 12 grid )
 -------------------------------------------------- */

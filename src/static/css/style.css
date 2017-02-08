@@ -1086,6 +1086,7 @@ body
             box-sizing: border-box; 
     max-width: 960px;
     margin: 0 auto;
+    padding: 0 10px;
 
         -ms-box-sizing: border-box;
 }
@@ -1644,6 +1645,10 @@ body
 
     background: #222;
 }
+.header i
+{
+    color: #fff;
+}
 
 .logo
 {
@@ -1747,7 +1752,7 @@ body
 
 .share a
 {
-    font-size: 18px;
+    font-size: 20px;
 
     margin: 0 .3em; 
 
@@ -1756,67 +1761,52 @@ body
 
 .footer
 {
-    clear: both;
-}
+    font-size: 1.1em;
+    line-height: 1.8;
 
-.footer .l-wrap
-{
     padding: 20px 0 10px;
 
-    border-top: 1px solid #f3f3f3;
+    text-align: center;
 }
-
-.footer .info
+.footer-info a
 {
-    font-size: 11px;
+    color: #337ab7;
 }
-
-.footer .info span
+.footer .copyright
 {
-    font-size: 7px;
-}
-
-.footer .info .copyright
-{
-    font-size: 10px;
-
-    padding-top: 5px;
-
     text-transform: uppercase;
 }
-
-.footer .sns
+.footer-sns
 {
-    text-align: right;
+    margin-bottom: .5em;
 }
-
-@media all and (max-width: 320px)
+.footer-sns a:before
 {
-    .footer .l-wrap
-    {
-        padding: 10px 0 0;
-    }
-    .footer .info,
-    .footer .sns
-    {
-        font-size: .75em; 
+    padding: 0 .5em; 
 
-        text-align: center;
-    }
+    content: '·';
 }
-
-@media all and (max-width: 960px)
+.footer-sns a:first-child:before
 {
-    .footer .l-wrap
+    display: none;
+}
+@media (min-width: 48em)
+{
+    .footer
     {
-        padding: 10px 0 0;
-    }
-    .footer .info,
-    .footer .sns
-    {
-        font-size: .75em; 
+        position: relative; 
 
-        text-align: center;
+        text-align: left;
+    }
+    .footer-link
+    {
+        position: absolute;
+        top: .5em;
+        right: 10px;
+    }
+    .footer-sns
+    {
+        text-align: right;
     }
 }
 
@@ -1859,21 +1849,29 @@ body
     position: relative;
 
     min-height: 300px;
-    margin-top: 80px; 
+    margin-top: 80px;
 
     outline: none;
+}
+.main .l-wrap
+{
+    padding: 10px 30px 30px;
+
+    background: #fff;
+}
+.main a
+{
+    color: #337ab7;
+}
+
+.event
+{
+    text-align: center;
 }
 
 #wrap
 {
     background: #f3f3f3;
-}
-
-#content
-{
-    padding: 30px 30px; 
-
-    background: #fff;
 }
 
 /* For print */
@@ -2062,44 +2060,46 @@ body
     font-family: 'Iropke Batang', serif;
     line-height: 1.14242em;
 
-    margin-top: 1.14242em;
-    margin-bottom: 2.28484em;
+    margin-top: 2.28484em;
+    margin-bottom: 1.14242em;
 }
 .main h4
 {
     font-family: 'Iropke Batang', serif;
     line-height: 1.74017em;
 
-    margin-top: .87009em;
-    margin-bottom: 1.74017em;
+    margin-top: 1.74017em;
+    margin-bottom: .87009em;
 }
 .main h3
 {
     font-family: 'Iropke Batang', serif;
     line-height: 1.32534em;
 
-    margin-top: .66267em;
-    margin-bottom: 1.32534em;
+    margin-top: 1.32534em;
+    margin-bottom: .66267em;
 }
 .main h2
 {
     font-family: 'Iropke Batang', serif;
     line-height: 1.0094em;
 
-    margin-top: .5047em;
-    margin-bottom: 1.0094em;
+    margin-top: 1.0094em;
+    margin-bottom: .5047em;
 }
 .main h1
 {
     font-family: 'Iropke Batang', serif;
     line-height: 1.15316em;
 
-    margin-top: .38439em;
-    margin-bottom: .76877em;
+    margin-top: .76877em;
+    margin-bottom: .38439em;
 }
 .main h1
 {
     font-size: 4em;
+
+    margin-bottom: 1em; 
 
     text-align: center;
 }
@@ -2110,6 +2110,15 @@ body
 .main h3
 {
     font-size: 1.5em;
+}
+.main h3:before
+{
+    margin-right: .5em;
+
+    content: '.';
+
+    color: #37ab94;
+    background: #37ab94;
 }
 .main p
 {
@@ -2318,7 +2327,8 @@ body
 {
     border-collapse: collapse;
 
-    border: 1px solid #ccc;
+    border-top: solid #424242 2px;
+    border-bottom: solid #646464 1px;
 }
 .base-table th,
 .base-table td
@@ -2339,33 +2349,12 @@ body
 
     text-align: center;
 
-    background: #f3f3f3;
+    background-color: #f3f3f3;
 }
 
-img
+.home
 {
-    max-width: 100%;
-}
-
-.home h2
-{
-    font-size: 18px;
-    font-weight: bold; 
-
-    padding: 25px 0;
-}
-
-.home .notice
-{
-    font-size: 13px; 
-
-    padding: 50px 0 0;
-
     text-align: center;
-}
-.home .notice p
-{
-    padding-bottom: 20px;
 }
 
 .home-event
@@ -2381,13 +2370,28 @@ img
 
 .bookcase
 {
+    zoom: 1; 
+
     width: 858px;
     margin: 0 auto;
     margin-top: 50px;
 }
-.bookcase h2
+.bookcase:before
 {
-    padding: 0;
+    display: block; 
+
+    content: '';
+}
+.bookcase:after
+{
+    display: table;
+    clear: both; 
+
+    content: '';
+}
+.bookcase h1
+{
+    margin: 0;
 }
 .bookcase ul
 {
@@ -2580,47 +2584,12 @@ img
     }
 }
 
-.book th,
-.book td
-{
-    text-align: center;
-}
-
 .book table img
 {
     width: 40px;
 }
 
-.book .title
-{
-    text-align: left;
-}
-
-.book .date-jp,
-.book .date-ko,
-.book .isbn
-{
-    font-size: 11px;
-}
-
-.book .btn-black
-{
-    margin-top: 5px;
-}
-
-.book p
-{
-    margin-bottom: 10px;
-}
-
-.book table
-{
-    width: 100%;
-
-    border-top: solid #424242 2px;
-    border-bottom: solid #646464 1px;
-}
-.book table thead tr .header
+.book-header
 {
     cursor: pointer; 
 
@@ -2628,19 +2597,14 @@ img
     background-repeat: no-repeat;
     background-position: center right;
 }
-.book table thead tr .headerSortUp
+.book-header-sortup
 {
     background-image: url('/static/images/asc.gif');
 }
-.book table thead tr .headerSortDown
+.book-header-sortdown
 {
     background-color: #eee; 
     background-image: url('/static/images/desc.gif');
-}
-
-table thead tr .headerSortUp
-{
-    background-color: #eee;
 }
 
 @media (min-width: 48em)
@@ -2671,7 +2635,7 @@ table thead tr .headerSortUp
     width: 19%;
 }
 
-.book-special .footer .l-wrap
+.book-special #wrap
 {
     background: #fff;
 }
@@ -2906,7 +2870,7 @@ table thead tr .headerSortUp
     padding: 10px 0;
 }
 
-#error
+.error
 {
     padding: 20px;
 
@@ -2914,28 +2878,27 @@ table thead tr .headerSortUp
 
     color: #666;
 }
-#error h2
+.error h2
 {
-    font-family: verdana, tahoma, sans-serif;
     font-size: 50px;
     font-weight: bold;
     line-height: 100%;
 
     color: black;
 }
-#error p
+.error p
 {
     font-size: 12px; 
 
     margin-top: 15px;
 }
-#error a
+.error a
 {
     font-weight: bold;
 
     color: #666;
 }
-#error .bar
+.error .bar
 {
     color: #a0a0a0;
 }

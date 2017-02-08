@@ -25,14 +25,15 @@
 	 		font-family: $serif;
 			// font-size: $font-size + em;
 			line-height: $line-height + em;
-			margin-top: $margin-bottom + em;
-			margin-bottom: $margin-bottom * 2 + em;
+			margin-top: $margin-bottom * 2 + em;
+			margin-bottom: $margin-bottom  + em;
 		}
 	}
 
 	h1 {
 		font-size: 4em;
 		text-align: center;
+		margin-bottom: 1em;
 	}
 
 	h2 {
@@ -40,6 +41,12 @@
 	}
 	h3 {
 		font-size: 1.5em;
+		&:before {
+			content: ".";
+			margin-right: .5em;
+			color: $brand;
+			background: $brand;
+		}
 	}
 
 	p {

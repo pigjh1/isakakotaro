@@ -1,14 +1,7 @@
 @charset 'UTF-8';
 
 .home {
-	h2 {
-		padding: 25px 0;
-		font-size: 18px;
-		font-weight: bold;
-	}
-	p {
-		padding-bottom: 20px;
-	}
+	text-align: center;
 }
 
 .home-event {
@@ -23,8 +16,9 @@
 	width: 858px;
 	margin: 0 auto;
 	margin-top: 50px;
-	h2 {
-		padding: 0;
+	@include clearfix;
+	h1 {
+		margin: 0;
 	}
 	ul {
 		float: left;

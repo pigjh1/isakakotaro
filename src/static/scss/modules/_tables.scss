@@ -41,7 +41,9 @@
 
 .base-table {
 	border-collapse: collapse;
-	border: 1px solid $silver;
+	border-top: solid #424242 2px;
+	border-bottom: solid #646464 1px;
+
 	th,
 	td {
 		padding: 6px 10px;
@@ -54,6 +56,6 @@
 	th {
 		text-align: center;
 		font-weight: normal;
-		background: $fog;
+		background-color: $fog;
 	}
 }

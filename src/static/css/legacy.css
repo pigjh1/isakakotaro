@@ -1,3 +1,4 @@
+@charset 'UTF-8';
 .l-wrap,
 .row,
 .clearfix
@@ -72,6 +73,7 @@ body
             box-sizing: border-box; 
     max-width: 960px;
     margin: 0 auto;
+    padding: 0 10px;
 
         -ms-box-sizing: border-box;
 }
@@ -498,6 +500,10 @@ body
 
     background: #222;
 }
+.header i
+{
+    color: #fff;
+}
 
 .logo
 {
@@ -598,7 +604,7 @@ body
 
 .share a
 {
-    font-size: 18px;
+    font-size: 20px;
 
     margin: 0 .3em; 
 
@@ -607,68 +613,47 @@ body
 
 .footer
 {
-    clear: both;
-}
+    font-size: 1.1em;
+    line-height: 1.8;
 
-.footer .l-wrap
-{
+    position: relative; 
+
     padding: 20px 0 10px;
 
-    border-top: 1px solid #f3f3f3;
+    text-align: center;
+    text-align: left;
 }
-
-.footer .info
+.footer-info a
 {
-    font-size: 11px;
+    color: #337ab7;
 }
-
-.footer .info span
+.footer .copyright
 {
-    font-size: 7px;
-}
-
-.footer .info .copyright
-{
-    font-size: 10px;
-
-    padding-top: 5px;
-
     text-transform: uppercase;
 }
+.footer-sns
+{
+    margin-bottom: .5em;
+}
+.footer-sns a:before
+{
+    padding: 0 .5em; 
 
-.footer .sns
+    content: '·';
+}
+.footer-sns a:first-child:before
+{
+    display: none;
+}
+.footer-link
+{
+    position: absolute;
+    top: .5em;
+    right: 10px;
+}
+.footer-sns
 {
     text-align: right;
-}
-
-@media all and (max-width: 320px)
-{
-    .footer .l-wrap
-    {
-        padding: 10px 0 0;
-    }
-    .footer .info,
-    .footer .sns
-    {
-        font-size: .75em; 
-
-        text-align: center;
-    }
-}
-
-@media all and (max-width: 960px)
-{
-    .footer .l-wrap
-    {
-        padding: 10px 0 0;
-    }
-    .footer .info,
-    .footer .sns
-    {
-        font-size: .75em; 
-
-        text-align: center;
-    }
 }
 
 /* --------------------------------------------------
@@ -710,21 +695,29 @@ body
     position: relative;
 
     min-height: 300px;
-    margin-top: 80px; 
+    margin-top: 80px;
 
     outline: none;
+}
+.main .l-wrap
+{
+    padding: 10px 30px 30px;
+
+    background: #fff;
+}
+.main a
+{
+    color: #337ab7;
+}
+
+.event
+{
+    text-align: center;
 }
 
 #wrap
 {
     background: #f3f3f3;
-}
-
-#content
-{
-    padding: 30px 30px; 
-
-    background: #fff;
 }
 
 /* For print */

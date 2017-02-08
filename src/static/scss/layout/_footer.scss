@@ -10,51 +10,52 @@
 }
 
 .share a {
-	font-size: 18px;
+	font-size: 20px;
 	color: $gray;
 	margin: 0 .3em;
 }
 .footer {
-	clear: both;
-}
-.footer .l-wrap {
 	padding: 20px 0 10px;
-	border-top: 1px solid #f3f3f3;
-}
-.footer .info {
-	font-size: 11px;
-}
-.footer .info span {
-	font-size: 7px;
-}
-.footer .info .copyright {
-	padding-top: 5px;
-	font-size: 10px;
-	text-transform: uppercase;
-}
-.footer .sns {
-	text-align: right;
-}
+	font-size: 1.1em;
+	line-height: 1.8;
+	text-align: center;
+	// border-top: 1px solid $ash;
 
+	&-info {
+		a {
+			color: #337ab7;
+		}
+	}
+	
+	.copyright {
+		text-transform: uppercase;
+	}
 
-@media all and (max-width:320px) {
-	.footer .l-wrap {
-		padding: 10px 0 0;
+	&-sns {
+		margin-bottom: .5em;;
+		a {
+			&:before {
+				content: "·";
+				padding: 0 .5em;
+			}
+			&:first-child {
+				&:before {
+					display: none;
+				}
+			}
+		}
 	}
-	.footer .info,
-	.footer .sns {
-		text-align: center;
-		font-size: .75em;
-	}
-}
 
-@media all and (max-width:960px) {
-	.footer .l-wrap {
-		padding: 10px 0 0;
-	}
-	.footer .info,
-	.footer .sns {
-		text-align: center;
-		font-size: .75em;
+	@include mq(medium) {
+		text-align: left;
+		position: relative;
+		&-link {
+			position: absolute;
+			top: .5em;
+			right: 10px;
+		}
+		&-sns {
+			text-align: right;
+		}
 	}
 }

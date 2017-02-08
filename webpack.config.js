@@ -35,8 +35,8 @@ module.exports = {
     resolve: {
         modulesDirectories: [_dir,'node_modules'],
         alias: {
-            'jquery': 'jquery-1.11.2.min',
-            'd3': 'd3.v3.min'
+            'jquery': 'lib/jquery-1.11.2.min',
+            'd3': 'lib/d3.v3.min'
         },
         extension: ['', '.js', '.json']
     },
@@ -46,6 +46,6 @@ module.exports = {
             jQuery: 'jquery'
         })
     ],
-    devtool: 'eval',
+    // devtool: 'eval',
     watch: true
 }
