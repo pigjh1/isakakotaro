@@ -36,9 +36,3 @@
 .comic-info {
 	float: left;
 }
-
-@include mq(medium) {
-	.movie-list {
-		height: auto;
-	}
-}

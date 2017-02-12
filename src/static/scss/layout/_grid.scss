@@ -42,6 +42,10 @@ body {
 	@include box-sizing();
 }
 
+.l-full {
+	padding: 0 5%;
+}
+
 /* column ( 12 grid )
 -------------------------------------------------- */
 $grid-columns	: 12;

@@ -52,6 +52,22 @@ var $    = require('jquery');
     });
 })();
 
+
+// Masonry
+(function() {
+    if ($('.main-book').length === 0) return;
+    require('./lib/jquery.masonry.min');
+    require('./lib/imagesloaded.pkgd');
+
+    var $grid = $('.main-book').imagesLoaded( function() {
+        $grid.masonry({
+             itemSelector: '.item'
+
+        });
+    });
+
+})();
+
 // Book Index
 (function() {
     if ($('.book-index').length === 0) return;

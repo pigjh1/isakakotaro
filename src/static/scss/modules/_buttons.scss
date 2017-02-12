@@ -17,21 +17,22 @@
 }
 
 .btn {
-	padding: 9px 24px;
+	padding: 5px 15px;
 	font-size: 14px;
 	line-height: 20px;
 	letter-spacing: .02em;
+	color: $white;
+	border-color: $dark;
+	background: $dark;
 	border: 1px solid $silver-dark;
 	border-color: rgba($silver-dark, .5);
 
 	@extend %btn;
-	@include radius(50px);
+	@include radius(10px);
 	&:hover,
 	&:focus {
 		text-decoration: none;
-		color: $white;
-		border-color: $dark;
-		background: $dark;
+
 	}
 	// button widh icon
 	.icon {
@@ -78,42 +79,4 @@
 			line-height: 28px;
 		}
 	}
-}
-
-
-// temp 
-
-.btn {
-	clear: both;
-	width: 100%;
-	margin-top: 10px;
-}
-.btn img {
-	vertical-align: middle;
-}
-.btn-r {
-	float: right;
-	width: 45%;
-	margin-top: 10px;
-	text-align: right;
-}
-.btn-l {
-	float: left;
-	width: 45%;
-	margin-top: 10px;
-}
-
-.btn-black {
-	display: inline-block;
-	height: 26px;
-	padding: 4px 8px;
-	vertical-align: middle;
-	font-weight: normal;
-	color: #fff;
-	border-radius: 3px;
-	background: #484848;
-}
-.btn-black:hover,
-.btn-black:focus {
-	color: #fff;
 }

@@ -36,13 +36,11 @@
 .book-special {
 	.main {
 		margin-top: 45px;
+		margin-bottom: 0;
 	}
 	.col {
-		p {
-			padding-bottom: 15px;
-		}
 		img {
-			width: 19%;
+			width: 150px;
 		}
 	}
 	#wrap {
@@ -56,123 +54,131 @@
 	}
 }
 
-.prayer {
-	background: url($img-book + 'special/prayer-bg.jpg') center 0;
-}
-
-.lush {
-	background: url($img-book + 'special/lush-bg.jpg') center 0 #fff no-repeat;
-}
-
-.gturns {
-	background: url($img-book + 'special/gturns-bg.jpg') center 0;
-}
-
-.pierrot {
-	background: url($img-book + 'special/pierrot-bg.jpg') center 0;
-}
-
-.coin {
-	background: url($img-book + 'special/coin-bg.jpg') center 0;
-}
-
-.children {
-	background: url($img-book + 'special/children-bg.jpg') center 0;
-}
-
-.grasshopper {
-	background: url($img-book + 'special/grasshopper-bg.jpg') center 0;
-}
-
-.death {
-	background: url($img-book + 'special/death-bg.jpg') center 0;
-}
-
-.devil {
-	background: url($img-book + 'special/devil-bg.jpg') center 0;
-}
-
-.campus {
-	background: url($img-book + 'special/campus-bg.jpg') center 0;
-}
-
-.fool {
-	background: url($img-book + 'special/fool-bg.jpg') center 0;
-}
-
-.gday {
-	background: url($img-book + 'special/gday-bg.jpg') center 0;
-}
-
-.fish {
-	background: url($img-book + 'special/fish-bg.jpg') center 0;
-}
-
-.golden {
-	background: url($img-book + 'special/golden-bg.jpg') center 0;
-}
-
-.modern {
-	background: url($img-book + 'special/modern-bg.jpg') center 0;
-}
-
-.king {
-	background: url($img-book + 'special/king-bg.jpg') center 0;
-}
-
-.sos {
-	background: url($img-book + 'special/sos-bg2.jpg');
-	.bg {
-		background: url($img-book + 'special/sos-bg.jpg') center 0 no-repeat;
+@include mq(large) {
+	.prayer {
+		background: url($img-book + 'special/prayer-bg.jpg') center 0;
 	}
-}
 
-.father {
-	background: url($img-book + 'special/father-bg2.jpg');
-	.bg {
-		background: url($img-book + 'special/father-bg.jpg') center 0 no-repeat;
+	.lush {
+		background: url($img-book + 'special/lush-bg.jpg') center 0 #fff no-repeat;
 	}
-}
 
-.bye {
-	background: url($img-book + 'special/bye-bg.jpg') center 0;
-}
-
-.maria {
-	background: url($img-book + 'special/maria-bg.jpg') center 0 #fff no-repeat;
-}
-
-.yoruno {
-	background: url($img-book + 'special/yoruno-bg.jpg') center 0;
-}
-
-.vacation {
-	background: url($img-book + 'special/vacation-bg.jpg') center 0 #4ebfdd;
-}
-
-.gasoline {
-	background: url($img-book + 'special/gasoline-bg.jpg') center 0;
-}
-
-.furyoku {
-	background: url($img-book + 'special/furyoku-bg.jpg') center 0;
-}
-
-.kubiori {
-	background: url($img-book + 'special/kubiori-bg2.jpg');
-	.bg {
-		background: url($img-book + 'special/kubiori-bg.jpg') center 0 no-repeat;
+	.gturns {
+		background: url($img-book + 'special/gturns-bg.jpg') center 0;
 	}
-}
 
-.ctb {
-	background: url($img-book + 'special/ctb-bg.jpg') center 0;
-}
+	.pierrot {
+		background: url($img-book + 'special/pierrot-bg.jpg') center 0;
+	}
 
-.e3652 {
-	background: url($img-book + 'special/e3652-bg.jpg') center 0;
-}
+	.coin {
+		background: url($img-book + 'special/coin-bg.jpg') center 0;
+	}
 
-.aine {
-	background: url($img-book + 'special/aine-bg.jpg') center 0;
-}
+	.children {
+		background: url($img-book + 'special/children-bg.jpg') center 0;
+	}
+
+	.grasshopper {
+		background: url($img-book + 'special/grasshopper-bg.jpg') center 0;
+	}
+
+	.death {
+		background: url($img-book + 'special/death-bg.jpg') center 0;
+	}
+
+	.devil {
+		background: url($img-book + 'special/devil-bg.jpg') center 0;
+	}
+
+	.campus {
+		background: url($img-book + 'special/campus-bg.jpg') center 0;
+	}
+
+	.fool {
+		background: url($img-book + 'special/fool-bg.jpg') center 0;
+	}
+
+	.gday {
+		background: url($img-book + 'special/gday-bg.jpg') center 0;
+	}
+
+	.fish {
+		background: url($img-book + 'special/fish-bg.jpg') center 0;
+	}
+
+	.golden {
+		background: url($img-book + 'special/golden-bg.jpg') center 0;
+	}
+
+	.modern {
+		background: url($img-book + 'special/modern-bg.jpg') center 0;
+	}
+
+	.king {
+		background: url($img-book + 'special/king-bg.jpg') center 0;
+	}
+
+	.sos {
+		background: url($img-book + 'special/sos-bg2.jpg');
+		.bg {
+			background: url($img-book + 'special/sos-bg.jpg') center 0 no-repeat;
+		}
+	}
+
+	.father {
+		background: url($img-book + 'special/father-bg2.jpg');
+		.bg {
+			background: url($img-book + 'special/father-bg.jpg') center 0 no-repeat;
+		}
+	}
+
+	.bye {
+		background: url($img-book + 'special/bye-bg.jpg') center 0;
+	}
+
+	.maria {
+		background: url($img-book + 'special/maria-bg.jpg') center 0 #fff no-repeat;
+	}
+
+	.yoruno {
+		background: url($img-book + 'special/yoruno-bg.jpg') center 0;
+	}
+
+	.vacation {
+		background: url($img-book + 'special/vacation-bg.jpg') center 0 #4ebfdd;
+	}
+
+	.gasoline {
+		background: url($img-book + 'special/gasoline-bg.jpg') center 0;
+	}
+
+	.furyoku {
+		background: url($img-book + 'special/furyoku-bg.jpg') center 0;
+	}
+	.yoruno {
+		background: url($img-book + 'special/yoruno-bg.jpg') center 0;
+	}
+
+	.kubiori {
+		background: url($img-book + 'special/kubiori-bg2.jpg');
+		.bg {
+			background: url($img-book + 'special/kubiori-bg.jpg') center 0 no-repeat;
+		}
+	}
+
+	.ctb {
+		background: url($img-book + 'special/ctb-bg.jpg') center 0;
+	}
+
+	.e3652 {
+		background: url($img-book + 'special/e3652-bg.jpg') center 0;
+	}
+
+	.aine {
+		background: url($img-book + 'special/aine-bg.jpg') center 0;
+	}
+	.aine {
+		background: url($img-book + 'special/aine-bg.jpg') center 0;
+	}
+}		
