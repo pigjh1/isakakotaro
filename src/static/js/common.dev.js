@@ -68,6 +68,7 @@ var $    = require('jquery');
 
 })();
 
+
 // Book Index
 (function() {
     if ($('.book-index').length === 0) return;

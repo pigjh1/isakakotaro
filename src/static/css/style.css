@@ -1085,10 +1085,18 @@ body
        -moz-box-sizing: border-box;
             box-sizing: border-box; 
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 20px;
     padding: 0 10px;
 
         -ms-box-sizing: border-box;
+}
+@media (min-width: 48em)
+{
+    .l-wrap
+    {
+        margin: 0 auto;
+        padding: 10px 20px;
+    }
 }
 
 .l-full
@@ -1674,7 +1682,7 @@ body
 
     width: 36px;
     height: 36px;
-    padding: 5px;
+    padding: 10px;
 }
 .nav-list
 {
@@ -1705,6 +1713,12 @@ body
 {
     display: block;
 }
+.nav-d1
+{
+    display: inline-block; 
+
+    margin: 1em;
+}
 
 @media (min-width: 48em)
 {
@@ -1715,7 +1729,7 @@ body
     .nav-list
     {
         position: relative;
-        top: 18px;
+        top: 0;
         right: auto;
         left: auto;
 
@@ -1727,14 +1741,6 @@ body
                 box-shadow: none; 
 
         max-heeight: auto;
-    }
-    .nav-d1
-    {
-        position: relative;
-
-        display: inline-block;
-
-        margin: 0 1em;
     }
     .nav-toggle,
     .nav-close
@@ -1846,8 +1852,6 @@ body
 }
 .main .l-wrap
 {
-    padding: 10px 30px 30px;
-
     background: #fff;
 }
 
@@ -1871,7 +1875,7 @@ body
     text-align: center;
 }
 
-.link li a
+a
 {
     color: #337ab7;
 }
@@ -2134,7 +2138,7 @@ body
 .dot-list li:before
 {
     position: absolute;
-    top: 50%;
+    top: 1em;
     left: 0;
 
     width: 3px;
@@ -2153,7 +2157,7 @@ body
 .dash-list li:before
 {
     position: absolute;
-    top: 50%;
+    top: 1em;
     left: 0;
 
     width: 5px;
@@ -2736,7 +2740,11 @@ body
 }
 .main-book .item img
 {
-    width: 100px;
+    width: 80px;
+}
+.main-book .item-cont
+{
+    padding: 0 30px 30px;
 }
 
 .profile dt
@@ -3063,9 +3071,6 @@ body
 
 .movie-list
 {
-    float: left;
-
-    height: 230px;
     padding: 9px 0 24px; 
 
     border-bottom: 1px solid #ddd;
@@ -3077,7 +3082,7 @@ body
 }
 .movie-img img
 {
-    width: 95px;
+    width: 200px;
 }
 
 .movie-info
@@ -3088,8 +3093,6 @@ body
 .comic-list
 {
     position: relative;
-
-    overflow: hidden;
 
     width: 100%;
     padding: 9px 0 24px; 

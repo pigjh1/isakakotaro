@@ -36,10 +36,8 @@
 	outline: none; // for skipnav
 
 	.l-wrap {
-		padding: 10px 30px 30px;
 		background: #FFF;
 	}
-
 }
 
 .clearfix {
@@ -61,12 +59,9 @@
 	text-align: center;
 }
 
-.link {
-	li {
-		a {
-			color: #337ab7;
-		}
-	}	
+a {
+	color: #337ab7;
+
 }
 #wrap {
 	background: #f3f3f3;

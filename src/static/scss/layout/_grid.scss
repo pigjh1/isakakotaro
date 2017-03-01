@@ -36,10 +36,15 @@ body {
 .l-wrap {
 	@extend %clearfix;
 	position: relative;
-	margin: 0 auto;
+	margin: 0 20px;
 	padding: 0 10px;
 	max-width: $w-default;
 	@include box-sizing();
+
+	@include mq(medium) {
+		margin: 0 auto;
+		padding: 10px 20px;
+	}
 }
 
 .l-full {

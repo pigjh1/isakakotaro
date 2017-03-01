@@ -1,8 +1,6 @@
 @charset 'UTF-8';
 
 .movie-list {
-	height: 230px;
-	float: left;
 	border-bottom: 1px solid #ddd;
 	padding: 9px 0 24px;
 }
@@ -10,7 +8,7 @@
 .movie-img {
 	float: left;
 	img {
-		width: 95px;
+		width: 200px;
 	}
 }
 
@@ -19,10 +17,9 @@
 }
 
 .comic-list {
-	overflow: hidden;
+	border-bottom: 1px solid #ddd;
 	position: relative;
 	width: 100%;
-	border-bottom: 1px solid #ddd;
 	padding: 9px 0 24px;
 }
 
