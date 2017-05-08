@@ -37,13 +37,13 @@ body {
 	@extend %clearfix;
 	position: relative;
 	margin: 0 20px;
-	padding: 0 10px;
+	padding: 10px 20px;
 	max-width: $w-default;
 	@include box-sizing();
 
-	@include mq(medium) {
+	@include mq(x-large) {
 		margin: 0 auto;
-		padding: 10px 20px;
+		padding: 10px 40px;
 	}
 }
 

@@ -55,19 +55,25 @@
 		width: 100%;
 		margin: 0;
 		border-top: 1px solid #ddd;
-		.rag-date {
-			position: absolute;
-			top: 8px;
-			right: 15px;
-		}
+		background: #fafafa;
+		@include clearfix();
 		a.trigger {
-			display: block;
+			float: left;
+			width: 70%;
+			@include box-sizing();
 			padding: 10px 15px;
-			background: #fafafa;
 			color: #333;
 			text-align: left;
 			text-decoration: none !important;
 			font-weight: bold;
+		}
+		.rag-date {
+			float: right;
+			text-align: right;
+			width: 25%;
+			margin-top: 10px;
+			margin-right: 10px;
+			@include box-sizing();
 		}
 	}
 	.hide .tit a.trigger {
@@ -84,11 +90,5 @@
 		margin: 0;
 		padding: 10px 15px;
 		line-height: 1.8;
-	}
-}
-
-@include mq(medium) {
-	.qna-list .tit .rag-date {
-		display: none;
 	}
 }

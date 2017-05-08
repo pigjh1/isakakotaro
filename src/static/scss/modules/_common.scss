@@ -44,21 +44,6 @@
 	@extend %clearfix;
 }
 
-.share {
-	padding: 50px 0;
-	text-align: center;
-
-	a {
-		font-size: 20px;
-		color: $gray;
-		margin: 0 .3em;
-	}
-}
-
-.event {
-	text-align: center;
-}
-
 a {
 	color: #337ab7;
 

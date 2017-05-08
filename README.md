@@ -23,13 +23,12 @@ npm i(install) : 설치
 
 ## TODO
 ### 소스 코드
-- [ ] 소스에 있는 [TODO] 처리하기!
-- [ ] 메뉴 만들기 심플한 1단으로
-- [ ] 폰트 변경 추가
-- [ ] 그리드 시스템 개선
 - [ ] 엑셀 아이콘 추가
 - [ ] FTP 자동 빌드 확인
 - [ ] disqus 댓글 추가 : https://isakakotaro-co-kr.disqus.com/admin/install/settings/
+
+- [ ] 책 목록에 아이네 정보 업데이트
+- [ ] 업로드 후에 공유 기능 확인
 - [ ] PageSpeed Insights 검사 : https://developers.google.com/speed/pagespeed/insights/
 
 ### 콘텐츠 정리
@@ -39,3 +38,4 @@ npm i(install) : 설치
 ### 페이지 신설
 - [ ] Poll(설문) : best 작품선택 1위 하나랑 다중선택 / worst 작품선택 1위 하나랑 다중선택 / 인기 캐릭터
 - [ ] Quiz - 이사카 검정 시험 100문 / 초급편 / 중급, 상급편 / 해답지
+

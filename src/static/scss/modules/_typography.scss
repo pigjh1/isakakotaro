@@ -68,11 +68,30 @@
 		line-height: 90%;
 	}
 
-	// blockquote
-	blockquote.quote {
-		margin-left: 10px; 
-		padding-left: 10px;
-		opacity: .6;
-		border-left: 1px solid hsl(0, 0%, 53%);
+
+	blockquote {
+		margin: 20px 0;
+		padding: 40px 60px;
+		position: relative;
+		color: #383838;
+		background:#ececec;
+
+		&:before,
+		&:after {
+	 		font-family: $serif;
+			top: -10px;
+			color: #7a7a7a;
+			font-size: 80px;
+			position: absolute;
+		}
+		&:before {
+			content: "\201C";
+			left: 10px;
+		}
+
+		&:after {
+		    content: "\201D";
+			right: 10px;
+		}
 	}
 }

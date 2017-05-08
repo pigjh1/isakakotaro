@@ -1,6 +1,7 @@
 'use strict';
 
 var $    = require('jquery');
+
 // common
 (function() {
     var curUrl = location.href;
@@ -16,11 +17,11 @@ var $    = require('jquery');
     $('.nav-toggle').on('click', function(e) {
         e.preventDefault();
 
-        $('.nav-list').show();
+        $('.nav-list').toggleClass('is-open');
     });
 })();
 
-// initQna
+// init Qna
 (function() {
     var article = $('.qna-list .article');
 
@@ -51,23 +52,6 @@ var $    = require('jquery');
         }
     });
 })();
-
-
-// Masonry
-(function() {
-    if ($('.main-book').length === 0) return;
-    require('./lib/jquery.masonry.min');
-    require('./lib/imagesloaded.pkgd');
-
-    var $grid = $('.main-book').imagesLoaded( function() {
-        $grid.masonry({
-             itemSelector: '.item'
-
-        });
-    });
-
-})();
-
 
 // Book Index
 (function() {

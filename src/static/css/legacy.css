@@ -70,12 +70,10 @@ body
 
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
-            box-sizing: border-box;
+            box-sizing: border-box; 
     max-width: 1200px;
     margin: 0 20px;
-    margin: 0 auto;
-    padding: 0 10px;
-    padding: 10px 20px; 
+    padding: 10px 20px;
 
         -ms-box-sizing: border-box;
 }
@@ -511,6 +509,10 @@ body
 {
     color: #fff;
 }
+.header .l-wrap
+{
+    padding: 0;
+}
 
 .logo
 {
@@ -540,8 +542,8 @@ body
     position: absolute;
     z-index: 10; 
     top: 60px;
-    right: 0;
-    left: 0;
+    right: -20px;
+    left: -20px;
 
     display: none;
 
@@ -557,6 +559,11 @@ body
 .nav-list a
 {
     color: #fff;
+}
+.nav-list a:hover,
+.nav-list a:focus
+{
+    text-decoration: none;
 }
 .nav-list.is-open
 {
@@ -576,18 +583,18 @@ body
 .nav-list
 {
     position: relative;
-    top: 0;
+    top: 8px;
     right: auto;
     left: auto;
 
     display: inline-block;
     overflow: visible;
 
+    max-height: auto;
+
     -webkit-box-shadow: none;
        -moz-box-shadow: none;
-            box-shadow: none; 
-
-    max-heeight: auto;
+            box-shadow: none;
 }
 .nav-toggle,
 .nav-close
@@ -693,26 +700,6 @@ body
 .main .l-wrap
 {
     background: #fff;
-}
-
-.share
-{
-    padding: 50px 0;
-
-    text-align: center;
-}
-.share a
-{
-    font-size: 20px;
-
-    margin: 0 .3em; 
-
-    color: #666;
-}
-
-.event
-{
-    text-align: center;
 }
 
 a
