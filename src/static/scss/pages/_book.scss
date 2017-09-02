@@ -19,24 +19,13 @@
 	}
 }
 
-
-@include mq(medium) {
-	.book-index {
-		th:nth-child(1), 
-		td:nth-child(1), 
-		th:nth-child(2), 
-		td:nth-child(2), 
-		th:nth-child(8), 
-		td:nth-child(8) {
-			display: none;
-		}
-	}
-}
-
 .book-special {
 	 main {
 		margin-top: 45px;
 		margin-bottom: 0;
+		h1 {
+			margin-bottom: 0;
+		}
 	}
 	.col {
 		img {
@@ -120,14 +109,14 @@
 	}
 
 	.sos {
-		background: url($img-book + 'special/sos-bg2.jpg');
+		background: url($img-book + 'special/sos-bg2.jpg') center top;
 		.bg {
 			background: url($img-book + 'special/sos-bg.jpg') center 0 no-repeat;
 		}
 	}
 
 	.father {
-		background: url($img-book + 'special/father-bg2.jpg');
+		background: url($img-book + 'special/father-bg2.jpg') center top;
 		.bg {
 			background: url($img-book + 'special/father-bg.jpg') center 0 no-repeat;
 		}
@@ -181,4 +170,4 @@
 	.aine {
 		background: url($img-book + 'special/aine-bg.jpg') center 0;
 	}
-}		
+}

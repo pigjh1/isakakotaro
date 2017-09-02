@@ -2518,22 +2518,13 @@ a
     background-image: url('/static/images/desc.gif');
 }
 
-@media (min-width: 48em)
-{
-    .book-index th:nth-child(1),
-    .book-index td:nth-child(1),
-    .book-index th:nth-child(2),
-    .book-index td:nth-child(2),
-    .book-index th:nth-child(8),
-    .book-index td:nth-child(8)
-    {
-        display: none;
-    }
-}
-
 .book-special main
 {
     margin-top: 45px;
+    margin-bottom: 0;
+}
+.book-special main h1
+{
     margin-bottom: 0;
 }
 
@@ -2623,7 +2614,7 @@ a
     }
     .sos
     {
-        background: url('/static/images/book/special/sos-bg2.jpg');
+        background: url('/static/images/book/special/sos-bg2.jpg') center top;
     }
     .sos .bg
     {
@@ -2631,7 +2622,7 @@ a
     }
     .father
     {
-        background: url('/static/images/book/special/father-bg2.jpg');
+        background: url('/static/images/book/special/father-bg2.jpg') center top;
     }
     .father .bg
     {
