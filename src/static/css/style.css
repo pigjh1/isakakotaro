@@ -2680,6 +2680,10 @@ a
     {
         background: url('/static/images/book/special/aine-bg.jpg') center 0;
     }
+    .mars
+    {
+        background: url('/static/images/book/special/mars-bg.jpg') center 0 #833b3c no-repeat;
+    }
 }
 
 .movie-list
