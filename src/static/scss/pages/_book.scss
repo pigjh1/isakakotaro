@@ -155,11 +155,9 @@
 			background: url($img-book + 'special/kubiori-bg.jpg') center 0 no-repeat;
 		}
 	}
-
 	.ctb {
 		background: url($img-book + 'special/ctb-bg.jpg') center 0;
 	}
-
 	.e3652 {
 		background: url($img-book + 'special/e3652-bg.jpg') center 0;
 	}
@@ -172,5 +170,8 @@
 	}
 	.mars {
 		background: url($img-book + 'special/mars-bg.jpg') center 0 #833B3C no-repeat;
+	}
+	.rabbit {
+		background: url($img-book + 'special/rabbit-bg.jpg') center 0 #f9f9f9 no-repeat;
 	}
 }

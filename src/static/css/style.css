@@ -896,7 +896,7 @@ textarea,
 select,
 button
 {
-    font-family: 'Spoqa Han Sans', 'Nanum Gothic', 'Malgun Gothic', '맑은 고딕', 'Nanum Gothic', '나눔 고딕', '돋움', dotum, sans-serif;
+    font-family: 'Noto Sans', 'Nanum Gothic', 'Malgun Gothic', '맑은 고딕', 'Nanum Gothic', '나눔 고딕', '돋움', dotum, sans-serif;
 }
 
 html
@@ -2004,7 +2004,6 @@ a
 }
 .main h5
 {
-    font-family: 'Iropke Batang', serif;
     line-height: 1.14242em;
 
     margin-top: 2.28484em;
@@ -2012,7 +2011,6 @@ a
 }
 .main h4
 {
-    font-family: 'Iropke Batang', serif;
     line-height: 1.74017em;
 
     margin-top: 1.74017em;
@@ -2020,7 +2018,6 @@ a
 }
 .main h3
 {
-    font-family: 'Iropke Batang', serif;
     line-height: 1.32534em;
 
     margin-top: 1.32534em;
@@ -2028,7 +2025,6 @@ a
 }
 .main h2
 {
-    font-family: 'Iropke Batang', serif;
     line-height: 1.0094em;
 
     margin-top: 1.0094em;
@@ -2036,7 +2032,6 @@ a
 }
 .main h1
 {
-    font-family: 'Iropke Batang', serif;
     line-height: 1.15316em;
 
     margin-top: .76877em;
@@ -2044,6 +2039,7 @@ a
 }
 .main h1
 {
+    font-family: 'Noto Serif', serif;
     font-size: 4em;
 
     margin-bottom: 1em; 
@@ -2056,7 +2052,8 @@ a
 }
 .main h3
 {
-    font-size: 1.5em;
+    font-size: 1.6em;
+    font-weight: bold;
 }
 .main h3:before
 {
@@ -2102,7 +2099,7 @@ a
 .main blockquote:before,
 .main blockquote:after
 {
-    font-family: 'Iropke Batang', serif;
+    font-family: 'Noto Serif', serif;
     font-size: 80px;
 
     position: absolute; 
@@ -2198,7 +2195,7 @@ a
  * -------------------------------------------------- */
 .table-caption
 {
-    font-family: 'Iropke Batang', serif;
+    font-family: 'Noto Serif', serif;
     font-size: 2.6em;
 
     margin-bottom: 15px;
@@ -2300,7 +2297,6 @@ a
     border-collapse: collapse;
 
     border-top: solid #424242 2px;
-    border-right: solid #ccc 1px; 
     border-bottom: solid #646464 1px;
 }
 .base-table th,
@@ -2683,6 +2679,10 @@ a
     .mars
     {
         background: url('/static/images/book/special/mars-bg.jpg') center 0 #833b3c no-repeat;
+    }
+    .rabbit
+    {
+        background: url('/static/images/book/special/rabbit-bg.jpg') center 0 #f9f9f9 no-repeat;
     }
 }
 
