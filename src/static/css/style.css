@@ -2684,6 +2684,10 @@ a
     {
         background: url('/static/images/book/special/rabbit-bg.jpg') center 0 #f9f9f9 no-repeat;
     }
+    .ax
+    {
+        background: url('/static/images/book/special/ax-bg.jpg') center 0 #e1e1e1 no-repeat;
+    }
 }
 
 .movie-list
