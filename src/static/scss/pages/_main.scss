@@ -10,8 +10,5 @@
 		border-width: 6px;
 		@include shadow(1px 1px 5px #333);
 		img {width: 80px;}
-		&-cont {
-			padding: 0 30px 30px;
-		}
 	}
 }

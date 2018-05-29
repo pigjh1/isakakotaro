@@ -2338,10 +2338,6 @@ a
 {
     width: 80px;
 }
-.main-book .item-cont
-{
-    padding: 0 30px 30px;
-}
 
 .profile dt
 {
@@ -2546,147 +2542,147 @@ a
 {
     .prayer
     {
-        background: url('/static/images/book/special/prayer-bg.jpg') center 0;
+        background: url('/static/images/special/prayer-bg.jpg') center 0;
     }
     .lush
     {
-        background: url('/static/images/book/special/lush-bg.jpg') center 0 #fff no-repeat;
+        background: url('/static/images/special/lush-bg.jpg') center 0 #fff no-repeat;
     }
     .gturns
     {
-        background: url('/static/images/book/special/gturns-bg.jpg') center 0;
+        background: url('/static/images/special/gturns-bg.jpg') center 0;
     }
     .pierrot
     {
-        background: url('/static/images/book/special/pierrot-bg.jpg') center 0;
+        background: url('/static/images/special/pierrot-bg.jpg') center 0;
     }
     .coin
     {
-        background: url('/static/images/book/special/coin-bg.jpg') center 0;
+        background: url('/static/images/special/coin-bg.jpg') center 0;
     }
     .children
     {
-        background: url('/static/images/book/special/children-bg.jpg') center 0;
+        background: url('/static/images/special/children-bg.jpg') center 0;
     }
     .grasshopper
     {
-        background: url('/static/images/book/special/grasshopper-bg.jpg') center 0;
+        background: url('/static/images/special/grasshopper-bg.jpg') center 0;
     }
     .death
     {
-        background: url('/static/images/book/special/death-bg.jpg') center 0;
+        background: url('/static/images/special/death-bg.jpg') center 0;
     }
     .devil
     {
-        background: url('/static/images/book/special/devil-bg.jpg') center 0;
+        background: url('/static/images/special/devil-bg.jpg') center 0;
     }
     .campus
     {
-        background: url('/static/images/book/special/campus-bg.jpg') center 0;
+        background: url('/static/images/special/campus-bg.jpg') center 0;
     }
     .fool
     {
-        background: url('/static/images/book/special/fool-bg.jpg') center 0;
+        background: url('/static/images/special/fool-bg.jpg') center 0;
     }
     .gday
     {
-        background: url('/static/images/book/special/gday-bg.jpg') center 0;
+        background: url('/static/images/special/gday-bg.jpg') center 0;
     }
     .fish
     {
-        background: url('/static/images/book/special/fish-bg.jpg') center 0;
+        background: url('/static/images/special/fish-bg.jpg') center 0;
     }
     .golden
     {
-        background: url('/static/images/book/special/golden-bg.jpg') center 0;
+        background: url('/static/images/special/golden-bg.jpg') center 0;
     }
     .modern
     {
-        background: url('/static/images/book/special/modern-bg.jpg') center 0;
+        background: url('/static/images/special/modern-bg.jpg') center 0;
     }
     .king
     {
-        background: url('/static/images/book/special/king-bg.jpg') center 0;
+        background: url('/static/images/special/king-bg.jpg') center 0;
     }
     .sos
     {
-        background: url('/static/images/book/special/sos-bg2.jpg') center top;
+        background: url('/static/images/special/sos-bg2.jpg') center top;
     }
     .sos .bg
     {
-        background: url('/static/images/book/special/sos-bg.jpg') center 0 no-repeat;
+        background: url('/static/images/special/sos-bg.jpg') center 0 no-repeat;
     }
     .father
     {
-        background: url('/static/images/book/special/father-bg2.jpg') center top;
+        background: url('/static/images/special/father-bg2.jpg') center top;
     }
     .father .bg
     {
-        background: url('/static/images/book/special/father-bg.jpg') center 0 no-repeat;
+        background: url('/static/images/special/father-bg.jpg') center 0 no-repeat;
     }
     .bye
     {
-        background: url('/static/images/book/special/bye-bg.jpg') center 0;
+        background: url('/static/images/special/bye-bg.jpg') center 0;
     }
     .maria
     {
-        background: url('/static/images/book/special/maria-bg.jpg') center 0 #fff no-repeat;
+        background: url('/static/images/special/maria-bg.jpg') center 0 #fff no-repeat;
     }
     .yoruno
     {
-        background: url('/static/images/book/special/yoruno-bg.jpg') center 0;
+        background: url('/static/images/special/yoruno-bg.jpg') center 0;
     }
     .vacation
     {
-        background: url('/static/images/book/special/vacation-bg.jpg') center 0 #4ebfdd;
+        background: url('/static/images/special/vacation-bg.jpg') center 0 #4ebfdd;
     }
     .gasoline
     {
-        background: url('/static/images/book/special/gasoline-bg.jpg') center 0;
+        background: url('/static/images/special/gasoline-bg.jpg') center 0;
     }
     .furyoku
     {
-        background: url('/static/images/book/special/furyoku-bg.jpg') center 0;
+        background: url('/static/images/special/furyoku-bg.jpg') center 0;
     }
     .yoruno
     {
-        background: url('/static/images/book/special/yoruno-bg.jpg') center 0;
+        background: url('/static/images/special/yoruno-bg.jpg') center 0;
     }
     .kubiori
     {
-        background: url('/static/images/book/special/kubiori-bg2.jpg');
+        background: url('/static/images/special/kubiori-bg2.jpg');
     }
     .kubiori .bg
     {
-        background: url('/static/images/book/special/kubiori-bg.jpg') center 0 no-repeat;
+        background: url('/static/images/special/kubiori-bg.jpg') center 0 no-repeat;
     }
     .ctb
     {
-        background: url('/static/images/book/special/ctb-bg.jpg') center 0;
+        background: url('/static/images/special/ctb-bg.jpg') center 0;
     }
     .e3652
     {
-        background: url('/static/images/book/special/e3652-bg.jpg') center 0;
+        background: url('/static/images/special/e3652-bg.jpg') center 0;
     }
     .aine
     {
-        background: url('/static/images/book/special/aine-bg.jpg') center 0;
+        background: url('/static/images/special/aine-bg.jpg') center 0;
     }
     .aine
     {
-        background: url('/static/images/book/special/aine-bg.jpg') center 0;
+        background: url('/static/images/special/aine-bg.jpg') center 0;
     }
     .mars
     {
-        background: url('/static/images/book/special/mars-bg.jpg') center 0 #833b3c no-repeat;
+        background: url('/static/images/special/mars-bg.jpg') center 0 #833b3c no-repeat;
     }
     .rabbit
     {
-        background: url('/static/images/book/special/rabbit-bg.jpg') center 0 #f9f9f9 no-repeat;
+        background: url('/static/images/special/rabbit-bg.jpg') center 0 #f9f9f9 no-repeat;
     }
     .ax
     {
-        background: url('/static/images/book/special/ax-bg.jpg') center 0 #e1e1e1 no-repeat;
+        background: url('/static/images/special/ax-bg.jpg') center 0 #e1e1e1 no-repeat;
     }
 }
 

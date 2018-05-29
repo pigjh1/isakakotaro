@@ -53,21 +53,56 @@ var $    = require('jquery');
     });
 })();
 
-// Book Index
 (function() {
-    if ($('.book-index').length === 0) return;
+    new Vue({
+        el: '#home',
+        mounted() {
+            fetch('/static/js/book.json')
+                .then(response => response.json())
+                .then(books => {
+                    this.books = books;
+                });
+        },
+        data() {
+            return {
+                books: []
+            }
+        },
+        computed: {
+            book() {
+                const MAX = 47;
 
-    require('./lib/jquery.tablesorter.js');
+                return this.books.slice(0, MAX).sort((a, b) => a.publicationko > b.publicationko ? -1 : 1);
+            }
 
-    $(".book-index table").tablesorter({
-        cssHeader: "book-header",
-        cssAsc: "book-header-sortup",
-        cssDesc: "book-header-sortdown",
-        headers: {
-            0: { sorter: false },
-            1: { sorter: false },
-            2: { sorter: false },
-            7: { sorter: false }
+        },
+        methods: {
+            getPic(imgsrc) {
+                return imgsrc !== '-' ? '/static/images/book/' + imgsrc : '/static/images/book/blank.jpg';
+            }
+        }
+    });
+})();
+
+(function() {
+    new Vue({
+        el: '#book',
+        mounted() {
+            fetch('/static/js/book.json')
+            .then(response => response.json())
+            .then(books => {
+                this.books = books;
+            });
+        },
+        data() {
+            return {
+                books: []
+            }
+        },
+        methods: {
+            getPic(imgsrc) {
+                return imgsrc !== '-' ? '/static/images/book/' + imgsrc : '/static/images/book/blank.jpg';
+            }
         }
     });
 })();
