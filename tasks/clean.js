@@ -1,10 +1,15 @@
-'use strict';
+/**
+ * Cleaner
+ */
+const gulp = require('gulp');
+const del = require('del');
 
-const config    = require('../config')(),
-    gulp        = require('gulp'),
-    $           = require('gulp-load-plugins')();
+const config = require('./config');
 
 gulp.task('clean', () => {
-    gulp.src(config.distDir, { read: false })
-        .pipe($.clean({ force: true }))
+  const folderDelete = [config.root.dist];
+  if (config.root.dist === './') {
+    folderDelete.push('./assets', '*.html');
+  }
+  del.sync(folderDelete);
 });

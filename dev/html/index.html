@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ko">
+<head>
+  @@include('header_share.html')
+  <meta name="description" content="일본 작가 이사카코타로 팬사이트">
+  <title>이사카코타로</title>
+</head>
+<body>
+  @@include('legacy.html')
+  <div id="wrap">
+    @@include('header.html')
+    <main id="main" class="main home">
+      <div class="l-full">
+        <div class="func">
+          <p><a href="hhttp://www.jpf.or.kr/index/s6/s6_1.php?wr_id=826" target="_blank"><img src="/assets/img/event/banner-180607.jpg" alt=""></a></p>
+          <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSc_nUvWlIh-PGveWaLg60goShGAp5uv-WvxT27dM5cd0A6gSQ/viewform" target="_blank"><img src="/assets/img/event/banner-180526.jpg" alt=""></a></p>
+        </div>
+
+        <section class="main-book" id="home">
+          <h1 class="a11y">도서 목록</h1>
+          <span v-for="item in book">
+            <a class="item" :href="'/book/' + item.link + '.html'">
+              <img :src="getPic(item.img)" :aalt="item.title">
+            </a>
+          </span>
+        </section>
+
+        @@include('share.html')
+      </div>
+    </main>
+    @@include('footer.html')
+  </div>
+  <script src="/assets/js/bundle.js"></script>
+</body>
+</html>

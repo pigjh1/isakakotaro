@@ -1,13 +1,26 @@
-'use strict';
+/**
+* WATCHER
+*/
+const gulp = require('gulp');
+const watch = require('gulp-watch');
+const path = require('path');
 
-const config    = require('../config')(),
-    sync        = require('browser-sync'),
-    gulp        = require('gulp'),
-    $           = require('gulp-load-plugins')();
+const config = require('./config');
 
-gulp.task('watch', () => {
-    gulp.watch(config.html).on('change', sync.reload);
-    gulp.watch(config.sass, ['sass']);
-    gulp.watch(config.js).on('change', sync.reload);
-    gulp.watch(config.img).on('change', sync.reload);
+gulp.task('watch', ['liveReload'], () => {
+  const folders = ['css', 'img', 'svg', 'static', 'fonts', 'js'];
+
+  if (config.html.run) {
+    folders.push('html');
+  }
+
+  if (config.htmlbook.run) {
+    folders.push('htmlbook');
+  }
+
+  folders.forEach((task) => {
+    watch(path.resolve(config.root.dev, config[task].dev), () => {
+      gulp.start(task);
+    });
+  });
 });

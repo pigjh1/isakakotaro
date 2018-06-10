@@ -1,0 +1,16 @@
+$w: 52px;
+
+.icon {
+  background: url("../img/svg/sprite.svg") no-repeat;
+  display: inline-block;
+  width: $w;
+  height: $w;
+  background-position-x: 0;
+  vertical-align: middle;
+}
+
+.icon-evernote { background-position-y: 0; }
+.icon-excel { background-position-y: -$w * 1; }
+.icon-facebook { background-position-y: -$w * 2; }
+.icon-googleplus { background-position-y: -$w * 3; }
+.icon-twitter { background-position-y: -$w * 4; }

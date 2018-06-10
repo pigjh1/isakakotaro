@@ -1,0 +1,19 @@
+@charset 'UTF-8';
+
+.main-book {
+  text-align: center;
+max-width: $screen-lg-min;
+margin: 0 auto;
+
+	.item  {
+		display: inline-block;
+		margin: 10px;
+		border: solid #fff;
+		background: $white;
+		border-width: 6px;
+		@include shadow(1px 1px 5px #333);
+		img {
+      width: 80px;
+    }
+	}
+}

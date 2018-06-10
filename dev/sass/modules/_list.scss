@@ -1,0 +1,63 @@
+//==============================================
+// Module/list
+//==============================================
+
+%list {
+	li {
+		padding-left: 20px;
+    margin-bottom: 10px;
+    line-height: 1.6;
+    @include break-word;
+
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+}
+
+.dot-list {
+	@extend %list;
+
+	li {
+		position: relative;
+
+		&:before {
+			content: '';
+			position: absolute;
+			top: 1em;
+			left: 0;
+			width: 3px;
+			height: 3px;
+			margin-top: -3px;
+			background: $gray;
+		}
+	}
+}
+
+.dash-list {
+	@extend %list;
+
+	li {
+		position: relative;
+
+		&:before {
+			content: '';
+			position: absolute;
+			top: 1em;
+			left: 0;
+			width: 5px;
+			height: 1px;
+			background: $gray;
+		}
+	}
+}
+
+.ol-list {
+	@extend %list;
+	padding-left: 20px;
+
+	li {
+		padding-left: 7px;
+		list-style-type: decimal;
+	}
+}

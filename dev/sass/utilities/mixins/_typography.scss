@@ -1,0 +1,37 @@
+//==============================================
+// Mixins/Typography
+//==============================================
+
+// Generate Headlines with type-scale.com algorithm
+@mixin H($font-size, $scale) {
+  $value: 1;
+  @for $i from 4 through 1 {
+    .h#{$i}, h#{$i} {
+      $value: $scale * $value;
+      font-size: ($value) + em;
+      @content;
+    }
+  }
+}
+
+@mixin break-word {
+  word-break: keep-all;
+  word-wrap: break-word;
+}
+
+@mixin ellipsis($lines: false) {
+  @if ($lines) {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: $lines;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    word-wrap: normal;
+  } @else {
+    overflow: hidden;
+    display: block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+  }
+}

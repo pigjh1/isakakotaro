@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ko">
+<head>
+  @@include('header_share.html')
+  <meta name="description" content="일본 작가 이사카코타로 출판도서 목록">
+  <title>Book | 이사카코타로</title>
+</head>
+<body data-nav="2.1">
+  @@include('legacy.html')
+  <div id="wrap">
+    @@include('header.html')
+    <main id="main" class="main book book-index">
+      <div class="l-wrap">
+        <header class="page-header">
+          <h1>Book</h1>
+        </header>
+
+        <!-- <p>제목, 일본출간일, 국내출간일, 출판사를 클릭하시면 순서대로 정렬하여 보실 수 있습니다.<br>자세히보기 버튼을 클릭하면 특설페이지로 이동합니다.</p> -->
+
+        <table class="base-table" id="book">
+          <thead>
+            <tr>
+              <th>NO</th>
+              <th>구분</th>
+              <th>표지</th>
+              <th>제목</th>
+              <th>일본출간일</th>
+              <th>국내출간일</th>
+              <th>출판사</th>
+              <th>ISBN</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr v-for="item in books">
+              <td>{{ item.no }}</td>
+              <td>{{ item.category }}</td>
+              <td>
+                <img :src="getPic(item.img)" alt="" v-if="item.img !== ''">
+                <span v-if="item.img === ''">-</span>
+              </td>
+              <td class='book-title'>
+                {{ item.title }}<br>원제: {{ item.titlejp }}<br>
+                <a :href="'/book/' + item.link + '.html'" class='btn' v-if="item.link !== ''">자세히보기</a>
+              </td>
+              <td class='date-jp'>{{ item.publicationjp }}</td>
+              <td class='date-ko'>{{ item.publicationko }}</td>
+              <td>{{ item.translator }}</td>
+              <td class='isbn'>{{ item.isbn }}</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div id="disqus_thread" class="disqus"></div>
+
+        @@include('share.html')
+      </div>
+    </main>
+    @@include('footer.html')
+  </div>
+  <script src="/assets/js/bundle.js"></script>
+</body>
+</html>

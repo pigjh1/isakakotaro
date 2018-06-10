@@ -1,0 +1,26 @@
+@charset 'UTF-8';
+
+.share {
+  padding: 50px 0;
+  text-align: center;
+
+  a {
+    font-size: 20px;
+    color: $gray;
+    margin: 0 .3em;
+  }
+}
+
+.event {
+  text-align: center;
+}
+
+.world {
+  p {
+    padding-bottom: 15px;
+  }
+  .txt {
+    padding: 10px 0;
+    line-height: 1.8;
+  }
+}

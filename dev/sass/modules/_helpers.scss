@@ -1,0 +1,104 @@
+//==============================================
+// Module/helpres
+//==============================================
+
+#skipnav {
+  position: absolute;
+  left: -100%;
+  background: $gray-dark;
+  color: $white;
+  font-size: 1.6em;
+}
+#skipnav:focus {
+  display: block;
+  position: fixed;
+  left: 0;
+  z-index: 29999;
+  width: 100%;
+  padding: 20px;
+  font-weight: bold;
+  line-height: 1.5;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#wrap {
+  background: #f3f3f3;
+  background:url(
+    data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAJ0lEQVQYV2N8/PjxfwEBAQYYYPz8+fN/OI+BgQEu8OHDBwaQSgwVAK5EEmWg78EhAAAAAElFTkSuQmCC
+  ) repeat;
+}
+
+.main {
+  position: relative;
+  min-height: 300px;
+  padding-top: 80px;
+  margin-bottom: 50px;
+  outline: none; // for skipnav
+
+  .l-wrap {
+    background: $white;
+  }
+  h1 {
+    font-family: $font-family-serif;
+    text-align: center;
+    font-weight: normal;
+    font-size: 3.6em;
+    margin: 0;
+  }
+
+  h2,
+  h3,
+  h4 {
+    font-weight: normal;
+  }
+}
+.page-header {
+padding: 2.5em 0 2em;
+}
+
+.a11y {
+  position: absolute !important;
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+.br {
+  margin-bottom: $margin;
+}
+
+.func {
+  text-align: center;
+}
+
+.disqus {
+  margin-top: 5em;
+}
+
+blockquote {
+	margin: 20px 0;
+	padding: 40px 60px;
+	position: relative;
+	color: #383838;
+	background:#ececec;
+
+	&:before,
+	&:after {
+    font-family: $font-family-serif;
+		top: -10px;
+		color: #7a7a7a;
+		font-size: 80px;
+		position: absolute;
+	}
+	&:before {
+		content: "\201C";
+		left: 10px;
+	}
+
+	&:after {
+	    content: "\201D";
+		right: 10px;
+	}
+}

@@ -1,0 +1,183 @@
+.book {
+ 	table img {
+		width: 40px;
+	}
+}
+
+.book-special {
+	 .main {
+    padding-top: 0;
+		margin-top: 60px;
+		margin-bottom: 0;
+		h1 {
+      line-height: 0;
+      font-size: 0;
+			margin-bottom: 0;
+		}
+	}
+	.col {
+		img {
+			width: 150px;
+		}
+	}
+	#wrap {
+		background: #fff;
+	}
+  h1.prepare {
+    font-family: $font-family-open;
+    font-size: 3em;
+    line-height: 1.5;
+    margin-top: 100px;
+  }
+  div.prepare {
+    text-align: center;
+    padding: 20px;
+    background: #eee;
+    border-radius: 10px;
+  }
+}
+
+@media (min-width: $screen-md-min) {
+	.book-special .mov iframe {
+		width: 100%;
+	}
+}
+
+@media (min-width: $screen-lg-min) {
+  $img-special: '/assets/img/special/';
+
+	.prayer {
+		background: url($img-special + 'prayer-bg.jpg') center 0;
+	}
+
+	.lush {
+		background: url($img-special + 'lush-bg.jpg') center 0 #fff no-repeat;
+	}
+
+	.gturns {
+		background: url($img-special + 'gturns-bg.jpg') center 0;
+	}
+
+	.pierrot {
+		background: url($img-special + 'pierrot-bg.jpg') center 0;
+	}
+
+	.coin {
+		background: url($img-special + 'coin-bg.jpg') center 0;
+	}
+
+	.children {
+		background: url($img-special + 'children-bg.jpg') center 0;
+	}
+
+	.grasshopper {
+		background: url($img-special + 'grasshopper-bg.jpg') center 0;
+	}
+
+	.death {
+		background: url($img-special + 'death-bg.jpg') center 0;
+	}
+
+	.devil {
+		background: url($img-special + 'devil-bg.jpg') center 0;
+	}
+
+	.campus {
+		background: url($img-special + 'campus-bg.jpg') center 0;
+	}
+
+	.fool {
+		background: url($img-special + 'fool-bg.jpg') center 0;
+	}
+
+	.gday {
+		background: url($img-special + 'gday-bg.jpg') center 0;
+	}
+
+	.fish {
+		background: url($img-special + 'fish-bg.jpg') center 0;
+	}
+
+	.golden {
+		background: url($img-special + 'golden-bg.jpg') center 0;
+	}
+
+	.modern {
+		background: url($img-special + 'modern-bg.jpg') center 0;
+	}
+
+	.king {
+		background: url($img-special + 'king-bg.jpg') center 0;
+	}
+
+	.sos {
+		background: url($img-special + 'sos-bg2.jpg') center top;
+		.bg {
+			background: url($img-special + 'sos-bg.jpg') center 0 no-repeat;
+		}
+	}
+
+	.father {
+		background: url($img-special + 'father-bg2.jpg') center top;
+		.bg {
+			background: url($img-special + 'father-bg.jpg') center 0 no-repeat;
+		}
+	}
+
+	.bye {
+		background: #D0E1E4;
+	}
+
+	.maria {
+		background: url($img-special + 'maria-bg.jpg') center 0 #fff no-repeat;
+	}
+
+	.yoruno {
+		background: url($img-special + 'yoruno-bg.jpg') center 0;
+	}
+
+	.vacation {
+		background: url($img-special + 'vacation-bg.jpg') center 0 #4ebfdd;
+	}
+
+	.gasoline {
+		background: url($img-special + 'gasoline-bg.jpg') center 0;
+	}
+
+	.furyoku {
+		background: url($img-special + 'furyoku-bg.jpg') center 0;
+	}
+	.yoruno {
+		background: url($img-special + 'yoruno-bg.jpg') center 0;
+	}
+	.kubiori {
+		background: url($img-special + 'kubiori-bg2.jpg');
+		.bg {
+			background: url($img-special + 'kubiori-bg.jpg') center 0 no-repeat;
+		}
+	}
+	.ctb {
+		background: url($img-special + 'ctb-bg.jpg') center 0;
+	}
+	.e3652 {
+		background: url($img-special + 'e3652-bg.jpg') center 0;
+	}
+	.aine {
+		background: url($img-special + 'aine-bg.jpg') center 0;
+	}
+	.mars {
+		background: url($img-special + 'mars-bg.jpg') center 0 #833B3C no-repeat;
+	}
+	.rabbit {
+		background: url($img-special + 'rabbit-bg.jpg') center 0 #f9f9f9 no-repeat;
+	}
+	.ax {
+		background: url($img-special + 'ax-bg.jpg') center 0 #E1E1E1 no-repeat;
+	}
+	.submarine {
+		background: url($img-special + 'submarine-bg.jpg') center 0;
+	}
+	.gthree {
+		background: url($img-special + 'gthree-bg.jpg') center 0;
+	}
+}
