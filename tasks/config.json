@@ -53,7 +53,7 @@
       "password": ""
    },
    "browserSync": {
-    "port": 3333,
+    "port": 3652,
     "proxy": {
       "target": "",
       "publicPath" : "",
