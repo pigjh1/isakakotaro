@@ -1,6 +1,5 @@
 require('./helpers');
 
-
 'use strict';
 
 var $    = require('jquery');
@@ -15,7 +14,6 @@ var $    = require('jquery');
 
     $(el).attr('href', tmpUrl);
   });
-
 
   $('.nav-toggle').on('click', function(e) {
     e.preventDefault();

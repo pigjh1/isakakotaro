@@ -3,47 +3,51 @@
 //==============================================
 
 .footer {
-  padding: 20px 0 10px;
-  text-align: center;
-  border-top: 1px solid $ash;
-  background: $white;
-  font-size: 15px;
+	padding: 20px 0 10px;
+	text-align: center;
+	border-top: 1px solid $ash;
+	background: $white;
+	font-size: 15px;
 
-  &-info {
-    a {
-      color: #337ab7;
-    }
-  }
+	a {
+		text-decoration: none;
+	}
 
-  .copyright {
-    text-transform: uppercase;
-  }
+	&-info {
+		a {
+			color: #337ab7;
+		}
+	}
 
-  &-sns {
-    margin-bottom: .5em;;
-    a {
-      &:before {
-        content: "·";
-        padding: 0 .5em;
-      }
-      &:first-child {
-        &:before {
-          display: none;
-        }
-      }
-    }
-  }
+	.copyright {
+		text-transform: uppercase;
+	}
 
-  @media (min-width: $screen-md-min) {
-    text-align: left;
-    position: relative;
-    &-link {
-      position: absolute;
-      top: .5em;
-      right: 10px;
-    }
-    &-sns {
-      text-align: right;
-    }
-  }
+	&-sns {
+		margin-bottom: .5em;;
+		a {
+			&:before {
+				content: "·";
+				padding: 0 .5em;
+			}
+			&:first-child {
+				&:before {
+					display: none;
+				}
+			}
+		}
+	}
+
+	@media (min-width: $screen-md-min) {
+		text-align: left;
+		position: relative;
+		&-link {
+			position: absolute;
+			top: .5em;
+			right: 10px;
+		}
+		&-sns {
+			text-align: right;
+		}
+	}
 }

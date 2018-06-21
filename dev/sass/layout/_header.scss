@@ -18,25 +18,28 @@
 
 .logo {
 	position: absolute;
-	top: 0;
+	top: .3em;
 	left: .5em;
-  margin: 0;
+	margin: 0;
 }
 .nav {
 	text-align: right;
+	a {
+		text-decoration: none;
+	}
 	&-toggle {
+		background: none;
 		color: $white;
-    font-size: 14px;
-		// width: 36px;
-		// height: 36px;
-		padding: 10px;
+		font-size: 14px;
+		padding: 10px 20px;
+		margin-top: 10px;
 	}
 	&-list {
 		display: none;
 		position: absolute;
 		top: 60px;
-		left: -20px;
-		right: -20px;
+		left: 0;
+		right: 0;
 		background: $ink;
 		padding: 0 0.5em;
 		text-align: left;
@@ -53,12 +56,12 @@
 		}
 	}
 	&-d1 {
-		margin: 1em;
-	   	display: inline-block;
+		margin: 1em .5em;
+		display: inline-block;
 	}
 }
 
-@media (min-width: $screen-md-min) {
+@media (min-width: $screen-xs-min) {
 	.nav {
 		text-align: right;
 		&-list {
@@ -74,5 +77,11 @@
 		&-close {
 			display: none;
 		}
+	}
+}
+
+@media (min-width: $screen-md-min) {
+	&-d1 {
+		margin: 1em;
 	}
 }

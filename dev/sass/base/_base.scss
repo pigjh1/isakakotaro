@@ -28,6 +28,7 @@ a {
   color: $color-link;
   text-decoration: $link-hover-decoration;
   transition: color .2s;
+	text-decoration: underline;
   @include hover {
     color: $color-link-hover;
   }
