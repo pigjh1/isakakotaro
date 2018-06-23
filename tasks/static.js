@@ -1,7 +1,6 @@
 /**
  * Build static assets: video, favicons ...
  */
-
 const gulp = require('gulp');
 const { reload } = require('browser-sync');
 const path = require('path');

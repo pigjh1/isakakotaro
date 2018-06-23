@@ -25,7 +25,7 @@
 #wrap {
   background: #f3f3f3;
   background:url(
-    data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAJ0lEQVQYV2N8/PjxfwEBAQYYYPz8+fN/OI+BgQEu8OHDBwaQSgwVAK5EEmWg78EhAAAAAElFTkSuQmCC
+  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAJ0lEQVQYV2N8/PjxfwEBAQYYYPz8+fN/OI+BgQEu8OHDBwaQSgwVAK5EEmWg78EhAAAAAElFTkSuQmCC
   ) repeat;
 }
 
@@ -72,27 +72,27 @@
 }
 
 blockquote {
-	margin: 20px 0;
-	padding: 40px 60px;
-	position: relative;
-	color: #383838;
-	background:#ececec;
+  margin: 20px 0;
+  padding: 40px 60px;
+  position: relative;
+  color: #383838;
+  background:#ececec;
 
-	&:before,
-	&:after {
+  &:before,
+  &:after {
     font-family: $font-family-serif;
-		top: -10px;
-		color: #7a7a7a;
-		font-size: 80px;
-		position: absolute;
-	}
-	&:before {
-		content: "\201C";
-		left: 10px;
-	}
+    top: -10px;
+    color: #7a7a7a;
+    font-size: 80px;
+    position: absolute;
+  }
+  &:before {
+    content: "\201C";
+    left: 10px;
+  }
 
-	&:after {
-	    content: "\201D";
-		right: 10px;
-	}
+  &:after {
+    content: "\201D";
+    right: 10px;
+  }
 }

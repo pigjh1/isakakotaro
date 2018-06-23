@@ -48,9 +48,9 @@ const svgConf = {
 };
 
 gulp.task('svg', () =>
-  gulp
-    .src(path.join(config.root.dev, config.svg.dev, '*.svg'))
-    .pipe(plumber({ errorHandler: notify.onError('Error: <%= error.message %>') }))
-    .pipe(svgSprite(svgConf))
-    .pipe(gulp.dest(path.join(config.root.dist, config.svg.dist)))
-    .pipe(reload({ stream: true })));
+gulp
+.src(path.join(config.root.dev, config.svg.dev, '*.svg'))
+.pipe(plumber({ errorHandler: notify.onError('Error: <%= error.message %>') }))
+.pipe(svgSprite(svgConf))
+.pipe(gulp.dest(path.join(config.root.dist, config.svg.dist)))
+.pipe(reload({ stream: true })));

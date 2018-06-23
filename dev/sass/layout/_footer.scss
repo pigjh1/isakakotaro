@@ -3,51 +3,53 @@
 //==============================================
 
 .footer {
-	padding: 20px 0 10px;
-	text-align: center;
-	border-top: 1px solid $ash;
-	background: $white;
-	font-size: 15px;
+  padding: 20px 0 10px;
+  text-align: center;
+  border-top: 1px solid $ash;
+  background: $white;
+  font-size: 15px;
 
-	a {
-		text-decoration: none;
-	}
+  a {
+    text-decoration: none;
+  }
 
-	&-info {
-		a {
-			color: #337ab7;
-		}
-	}
+  &-info {
+    a {
+      color: #337ab7;
+    }
+  }
 
-	.copyright {
-		text-transform: uppercase;
-	}
+  .copyright {
+    text-transform: uppercase;
+  }
 
-	&-sns {
-		margin-bottom: .5em;;
-		a {
-			&:before {
-				content: "·";
-				padding: 0 .5em;
-			}
-			&:first-child {
-				&:before {
-					display: none;
-				}
-			}
-		}
-	}
+  &-sns {
+    margin-bottom: .5em;;
+    a {
+      &:before {
+        content: "·";
+        padding: 0 .5em;
+      }
+      &:first-child {
+        &:before {
+          display: none;
+        }
+      }
+    }
+  }
 
-	@media (min-width: $screen-md-min) {
-		text-align: left;
-		position: relative;
-		&-link {
-			position: absolute;
-			top: .5em;
-			right: 10px;
-		}
-		&-sns {
-			text-align: right;
-		}
-	}
+  @media (min-width: $screen-md-min) {
+    text-align: left;
+    position: relative;
+
+    &-link {
+      position: absolute;
+      top: .5em;
+      right: 10px;
+    }
+
+    &-sns {
+      text-align: right;
+    }
+  }
 }

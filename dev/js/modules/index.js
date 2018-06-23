@@ -2,7 +2,7 @@ require('./helpers');
 
 'use strict';
 
-var $    = require('jquery');
+var $ = require('jquery');
 
 // common
 (function() {
@@ -59,23 +59,21 @@ var $    = require('jquery');
     el: '#home',
     mounted() {
       fetch('/assets/js/book.json')
-      .then(response => response.json())
-      .then(books => {
-        this.books = books;
-      });
+        .then(response => response.json())
+        .then(books => {
+          this.books = books;
+        });
     },
     data() {
       return {
         books: []
-      }
+      };
     },
     computed: {
       book() {
         const MAX = 47;
-
         return this.books.slice(0, MAX).sort((a, b) => a.publicationko > b.publicationko ? -1 : 1);
       }
-
     },
     methods: {
       getPic(imgsrc) {
@@ -90,15 +88,15 @@ var $    = require('jquery');
     el: '#book',
     mounted() {
       fetch('/assets/js/book.json')
-      .then(response => response.json())
-      .then(books => {
-        this.books = books;
-      });
+        .then(response => response.json())
+        .then(books => {
+          this.books = books;
+        });
     },
     data() {
       return {
         books: []
-      }
+      };
     },
     methods: {
       getPic(imgsrc) {
