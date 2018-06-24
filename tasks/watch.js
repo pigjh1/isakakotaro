@@ -18,6 +18,10 @@ gulp.task('watch', ['liveReload'], () => {
     folders.push('htmlbook');
   }
 
+  if (config.htmlmeet.run) {
+    folders.push('htmlmeet');
+  }
+
   folders.forEach((task) => {
     watch(path.resolve(config.root.dev, config[task].dev), () => {
       gulp.start(task);

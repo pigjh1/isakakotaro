@@ -1,5 +1,3 @@
-require('./helpers');
-
 'use strict';
 
 var $ = require('jquery');
@@ -58,7 +56,7 @@ var $ = require('jquery');
   new Vue({
     el: '#home',
     mounted() {
-      fetch('/assets/js/book.json')
+      fetch('/assets/data/book.json')
         .then(response => response.json())
         .then(books => {
           this.books = books;
@@ -87,7 +85,7 @@ var $ = require('jquery');
   new Vue({
     el: '#book',
     mounted() {
-      fetch('/assets/js/book.json')
+      fetch('/assets/data/book.json')
         .then(response => response.json())
         .then(books => {
           this.books = books;
@@ -101,6 +99,30 @@ var $ = require('jquery');
     methods: {
       getPic(imgsrc) {
         return imgsrc !== '-' ? '/assets/img/book/' + imgsrc : '/assets/img/book/blank.jpg';
+      }
+    }
+  });
+})();
+
+
+(function() {
+  new Vue({
+    el: '#bookcase',
+    mounted() {
+      fetch('/assets/data/bookcase.json')
+        .then(response => response.json())
+        .then(photos => {
+          this.photos = photos;
+        });
+    },
+    data() {
+      return {
+        photos: []
+      };
+    },
+    methods: {
+      getPic(imgsrc) {
+        return '/assets/img/bookcase/' + imgsrc;
       }
     }
   });
