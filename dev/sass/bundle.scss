@@ -2,8 +2,27 @@
 
 @import 'utilities/index';
 @import 'vendor/index';
-@import 'base/index';
-@import 'layout/index';
-@import 'modules/index';
-@import 'states/index';
-@import 'pages/index';
+
+// base
+@import 'base/base';
+
+// layout
+@import 'layout/header';
+@import 'layout/footer';
+
+// modules
+@import 'modules/helpers';
+@import 'modules/buttons';
+@import 'modules/table';
+@import 'modules/table';
+
+// pages
+@import 'pages/main';
+@import 'pages/profile';
+@import 'pages/book';
+@import 'pages/bookcase';
+@import 'pages/remix';
+@import 'pages/etc';
+@import 'pages/relay';
+@import 'pages/error';
+@import 'pages/legacy';
