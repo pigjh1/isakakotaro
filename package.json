@@ -70,6 +70,12 @@
     "webpack-hot-middleware": "^2.16.1"
   },
   "dependencies": {
+    "@material/button": "^0.35.0",
+    "@material/drawer": "^0.35.0",
+    "@material/list": "^0.36.0",
+    "@material/rtl": "^0.35.0",
+    "@material/theme": "^0.35.0",
+    "@material/top-app-bar": "^0.35.0",
     "bootstrap-sass": "^3.3.7",
     "fancybox": "^3.0.0",
     "jquery": "^3.1.1",

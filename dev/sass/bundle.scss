@@ -11,10 +11,11 @@
 @import 'layout/footer';
 
 // modules
+@import 'modules/material';
 @import 'modules/helpers';
 @import 'modules/buttons';
 @import 'modules/table';
-@import 'modules/table';
+@import 'modules/list';
 
 // pages
 @import 'pages/main';
