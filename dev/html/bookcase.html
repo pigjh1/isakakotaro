@@ -1,41 +1,41 @@
 <!DOCTYPE html>
 <html class="no-js" lang="ko">
 <head>
-    @@include('header_share.html')
-    <meta name="description" content="일본 작가 이사카코타로. 이사카코타로 책장">
-    <title>이사카코타로 책장 | 이사카코타로</title>
+  @@include('header_share.html')
+  <meta name="description" content="일본 작가 이사카코타로. 이사카코타로 책장">
+  <title>이사카코타로 책장 | 이사카코타로</title>
 </head>
 <body data-nav="4.1">
-    @@include('legacy.html')
-    <div id="wrap">
-        @@include('header.html')
-        <main id="main" class="main bookcase">``
-            <div class="l-wrap">
-                <header class="page-header">
-                    <h1>Bookcase</h1>
-                </header>
+  @@include('legacy.html')
+  <div id="wrap">
+    @@include('header.html')
+    <main id="main" class="main bookcase">``
+      <div class="l-wrap">
+        <header class="page-header">
+          <h1>Bookcase</h1>
+        </header>
 
-                <p>SNS에 <b>#이사카코타로책장</b> 해시태그를 포함하여 사진을 올려주세요!</p>
+        <p>SNS에 <b>#이사카코타로책장</b> 해시태그를 포함하여 사진을 올려주세요!</p>
 
-                <div id="bookcase">
-                    <div class="item" v-for="item in photos">
-                        <div class="polaroid">
-                            <img :src="getPic(item.img)" alt="">
-                            <div class="caption">
-                                <b>Photo By {{ item.user }}</b>
-                                <span>({{ item.date }})</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="disqus_thread" class="disqus"></div>
-
-                @@include('share.html')
+        <div id="bookcase">
+          <div class="item" v-for="item in photos">
+            <div class="polaroid">
+              <img :src="getPic(item.img)" alt="">
+              <div class="caption">
+                <b>Photo By {{ item.user }}</b>
+                <span>({{ item.date }})</span>
+              </div>
             </div>
-        </main>
-        @@include('footer.html')
-    </div>
-    <script src="/assets/js/bundle.js"></script>
+          </div>
+        </div>
+
+        <div id="disqus_thread" class="disqus"></div>
+
+        @@include('share.html')
+      </div>
+    </main>
+    @@include('footer.html')
+  </div>
+  <script src="/assets/js/bundle.js"></script>
 </body>
 </html>
