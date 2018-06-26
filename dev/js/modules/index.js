@@ -57,10 +57,10 @@ var $ = require('jquery');
     el: '#home',
     mounted() {
       fetch('/assets/data/book.json')
-        .then(response => response.json())
-        .then(books => {
-          this.books = books;
-        });
+      .then(response => response.json())
+      .then(books => {
+        this.books = books;
+      });
     },
     data() {
       return {
@@ -86,15 +86,51 @@ var $ = require('jquery');
     el: '#book',
     mounted() {
       fetch('/assets/data/book.json')
-        .then(response => response.json())
-        .then(books => {
-          this.books = books;
-        });
+      .then(response => response.json())
+      .then(books => {
+        this.books = books;
+      });
     },
     data() {
       return {
-        books: []
+        type: 'text',
+        order: 'no',
+        books: [],
       };
+    },
+    computed: {
+      paagBoooks() {
+        let orderOpt = this.order;
+        let result = this.book;
+
+        switch(orderOpt) {
+          case 'no':
+          result = this.books.sort((a,b) => { return a.no > b.no ? 1 : -1; });
+          break;
+          case 'publicationjp':
+          result = this.books.sort((a,b) => { return a.publicationjp < b.publicationjp ? 1 : -1; });
+          break;
+          case 'publicationko':
+          result = this.books.sort((a,b) => { return a.publicationko < b.publicationko ? 1 : -1; });
+          break;
+          case 'title':
+          result = this.books.sort((a,b) => { return a.title > b.title ? 1 : -1; });
+          break;
+          case 'publisher':
+          result = this.books.sort((a,b) => { return a.publisher > b.publisher ? 1 : -1; });
+          break;
+          default:
+          result = this.books;
+        }
+
+        return result;
+      },
+      itemsLen() {
+        return this.books.length;
+      },
+      isImageType() {
+        return !!(this.type === 'image');
+      }
     },
     methods: {
       getPic(imgsrc) {
@@ -110,10 +146,10 @@ var $ = require('jquery');
     el: '#bookcase',
     mounted() {
       fetch('/assets/data/bookcase.json')
-        .then(response => response.json())
-        .then(photos => {
-          this.photos = photos;
-        });
+      .then(response => response.json())
+      .then(photos => {
+        this.photos = photos;
+      });
     },
     data() {
       return {

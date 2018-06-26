@@ -16,41 +16,81 @@
         </header>
 
         <p>자세히보기 버튼을 클릭하면 특설페이지로 이동합니다.</p>
-        <!-- <p>제목, 일본출간일, 국내출간일, 출판사를 클릭하시면 순서대로 정렬하여 보실 수 있습니다.<br>자세히보기 버튼을 클릭하면 특설페이지로 이동합니다.</p> -->
         <p>작품목록 엑셀시트 : <a href="https://goo.gl/BzdATx" target="_blank">https://goo.gl/BzdATx</a></p>
 
-        <table class="base-table" id="book">
-          <thead>
-            <tr>
-              <th>NO</th>
-              <th>구분</th>
-              <th>표지</th>
-              <th>제목</th>
-              <th>일본출간일</th>
-              <th>국내출간일</th>
-              <th>출판사</th>
-              <th>ISBN</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr v-for="item in books">
-              <td>{{ item.no }}</td>
-              <td>{{ item.category }}</td>
-              <td>
-                <img :src="getPic(item.img)" alt="" v-if="item.img !== ''">
-                <span v-if="item.img === ''">-</span>
-              </td>
-              <td class='book-title'>
-                {{ item.title }}<br>원제: {{ item.titlejp }}<br>
-                <a :href="'/book/' + item.link + '.html'" class='btn' v-if="item.link !== ''">자세히보기</a>
-              </td>
-              <td class='date-jp'>{{ item.publicationjp }}</td>
-              <td class='date-ko'>{{ item.publicationko }}</td>
-              <td>{{ item.translator }}</td>
-              <td class='isbn'>{{ item.isbn }}</td>
-            </tr>
-          </tbody>
-        </table>
+        <div id="book">
+          <div class="sort-type">
+            <span class="sort-image" :class="{ 'is-active': isImageType }">
+              <input type="radio" v-model="type" id="image" value="image">
+              <label for="image">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" class="icon">
+                  <title>image</title>
+                  <path d="M9 0H1a.9.9 0 0 0-1 1v8a.9.9 0 0 0 1 1h8a.9.9 0 0 0 1-1V1a.9.9 0 0 0-1-1zM8 8H2V2h6zm16-8h-8a.9.9 0 0 0-1 1v8a.9.9 0 0 0 1 1h8a.9.9 0 0 0 1-1V1a.9.9 0 0 0-1-1zm-1 8h-6V2h6zM9 15H1a.9.9 0 0 0-1 1v8a.9.9 0 0 0 1 1h8a.9.9 0 0 0 1-1v-8a.9.9 0 0 0-1-1zm-1 8H2v-6h6zm16-8h-8a.9.9 0 0 0-1 1v8a.9.9 0 0 0 1 1h8a.9.9 0 0 0 1-1v-8a.9.9 0 0 0-1-1zm-1 8h-6v-6h6z"/>
+                </svg>
+                IMAGE
+              </label>
+            </span>
+            <span class="sort-text" :class="{ 'is-active': !isImageType }">
+              <input type="radio" v-model="type" id="text" value="text">
+              <label for="text">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="25" viewBox="0 0 32 25" class="icon">
+                  <title>text</title>
+                  <path d="M5.7 1.5a1 1 0 0 1 1-1h23.9a1 1 0 0 1 0 2H6.7a1 1 0 0 1-1-1zm1 8.3h17.7a.9.9 0 0 0 1-1 1 1 0 0 0-1-1H6.7a1.1 1.1 0 0 0-1 1 1 1 0 0 0 1 1zm23.9 5.4H6.7a1 1 0 0 0-1 1 1.1 1.1 0 0 0 1 1h23.9a1.1 1.1 0 0 0 1-1 1 1 0 0 0-1-1zm-6.2 7.3H6.7a1 1 0 1 0 0 2h17.7a1 1 0 0 0 0-2zM.4 2.7h2.5V.3H.4zm0 7.4h2.5V7.6H.4zm0 7.3h2.5v-2.5H.4zm0 7.3h2.5v-2.4H.4z"/>
+                </svg>
+                TEXT
+              </label>
+            </span>
+            <select v-model="order">
+              <option value="no">정렬순서</option>
+              <option value="publicationko">국내출간일</option>
+              <option value="publicationjp">일본출간일</option>
+              <option value="title">제목</option>
+              <option value="publisher">출판사</option>
+            </select>
+          </div>
+
+          <ul v-if="isImageType">
+            <li v-for="item in paagBoooks" style="display: inline-block;">
+              <p><img :src="getPic(item.img)" :alt="item.title" v-if="item.img !== ''"></p>
+              <p>{{ item.title }}</p>
+            </li>
+          </ul>
+
+          <table class="base-table" v-if="!isImageType">
+            <thead>
+              <tr>
+                <th>NO</th>
+                <th>구분</th>
+                <th>표지</th>
+                <th>제목</th>
+                <th>일본출간일</th>
+                <th>국내출간일</th>
+                <th>출판사</th>
+                <th>번역</th>
+                <th>ISBN</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr v-for="item in paagBoooks">
+                <td>{{ item.no }}</td>
+                <td>{{ item.category }}</td>
+                <td>
+                  <img :src="getPic(item.img)" :alt="item.title" v-if="item.img !== ''">
+                  <span v-if="item.img === ''">-</span>
+                </td>
+                <td class='book-title'>
+                  {{ item.title }}<br>원제: {{ item.titlejp }}<br>
+                  <a :href="'/book/' + item.link + '.html'" class='btn' v-if="item.link !== ''">자세히보기</a>
+                </td>
+                <td class='date-jp'>{{ item.publicationjp }}</td>
+                <td class='date-ko'>{{ item.publicationko }}</td>
+                <td>{{ item.publisher }}</td>
+                <td>{{ item.translator }}</td>
+                <td class='isbn'>{{ item.isbn }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
 
         <div id="disqus_thread" class="disqus"></div>
 
