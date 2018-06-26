@@ -23,7 +23,7 @@
             <span class="sort-image" :class="{ 'is-active': isImageType }">
               <input type="radio" v-model="type" id="image" value="image">
               <label for="image">
-                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 25 25">
                   <title>image</title>
                   <path d="M9 0H1a.9.9 0 0 0-1 1v8a.9.9 0 0 0 1 1h8a.9.9 0 0 0 1-1V1a.9.9 0 0 0-1-1zM8 8H2V2h6zm16-8h-8a.9.9 0 0 0-1 1v8a.9.9 0 0 0 1 1h8a.9.9 0 0 0 1-1V1a.9.9 0 0 0-1-1zm-1 8h-6V2h6zM9 15H1a.9.9 0 0 0-1 1v8a.9.9 0 0 0 1 1h8a.9.9 0 0 0 1-1v-8a.9.9 0 0 0-1-1zm-1 8H2v-6h6zm16-8h-8a.9.9 0 0 0-1 1v8a.9.9 0 0 0 1 1h8a.9.9 0 0 0 1-1v-8a.9.9 0 0 0-1-1zm-1 8h-6v-6h6z"/>
                 </svg>
@@ -33,7 +33,7 @@
             <span class="sort-text" :class="{ 'is-active': !isImageType }">
               <input type="radio" v-model="type" id="text" value="text">
               <label for="text">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="25" viewBox="0 0 32 25" class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 32 25">
                   <title>text</title>
                   <path d="M5.7 1.5a1 1 0 0 1 1-1h23.9a1 1 0 0 1 0 2H6.7a1 1 0 0 1-1-1zm1 8.3h17.7a.9.9 0 0 0 1-1 1 1 0 0 0-1-1H6.7a1.1 1.1 0 0 0-1 1 1 1 0 0 0 1 1zm23.9 5.4H6.7a1 1 0 0 0-1 1 1.1 1.1 0 0 0 1 1h23.9a1.1 1.1 0 0 0 1-1 1 1 0 0 0-1-1zm-6.2 7.3H6.7a1 1 0 1 0 0 2h17.7a1 1 0 0 0 0-2zM.4 2.7h2.5V.3H.4zm0 7.4h2.5V7.6H.4zm0 7.3h2.5v-2.5H.4zm0 7.3h2.5v-2.4H.4z"/>
                 </svg>
@@ -50,9 +50,11 @@
           </div>
 
           <ul v-if="isImageType">
-            <li v-for="item in paagBoooks" style="display: inline-block;">
-              <p><img :src="getPic(item.img)" :alt="item.title" v-if="item.img !== ''"></p>
-              <p>{{ item.title }}</p>
+             <li v-for="item in paagBoooks">
+                <a :href="'/book/' + item.link + '.html'" v-if="item.link !== ''">
+                  <img :src="getPic(item.img)" :alt="item.title">
+                </a>
+              <!-- <p>{{ item.title }}</p> -->
             </li>
           </ul>
 
@@ -66,7 +68,6 @@
                 <th>일본출간일</th>
                 <th>국내출간일</th>
                 <th>출판사</th>
-                <th>번역</th>
                 <th>ISBN</th>
               </tr>
             </thead>
@@ -85,7 +86,6 @@
                 <td class='date-jp'>{{ item.publicationjp }}</td>
                 <td class='date-ko'>{{ item.publicationko }}</td>
                 <td>{{ item.publisher }}</td>
-                <td>{{ item.translator }}</td>
                 <td class='isbn'>{{ item.isbn }}</td>
               </tr>
             </tbody>

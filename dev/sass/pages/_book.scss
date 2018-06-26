@@ -1,6 +1,23 @@
 .book {
+  .sort-type {
+    text-align: right;
+  }
   table img {
     width: 40px;
+  }
+  li {
+    display: inline-block;
+    a {
+    display: inline-block;
+    margin: 10px;
+    background: $white;
+    padding: 0;
+    border: 5px solid $white;
+    @include shadow(1px 1px 5px #333);
+  }
+    img {
+      width: 100px;
+    }
   }
 }
 
