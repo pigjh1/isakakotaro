@@ -1,14 +1,9 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html class="no-js" lang="ko">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Material Web Components</title>
+  @@include('header_share.html')
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
-  <link rel="stylesheet" type="text/css" href="/assets/css/bundle.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.min.js"></script>
-  <script src="/assets/js/modernizr.custom.min.js"></script>
+  <title>Material Web Components</title>
 </head>
 <body class="shrine-login">
   <header class="mdc-top-app-bar">
@@ -20,11 +15,12 @@
       <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
         <a href="#" class="material-icons mdc-top-app-bar__action-item" aria-label="Download" alt="Download">file_download</a>
         <a href="#" class="material-icons mdc-top-app-bar__action-item" aria-label="Print this page" alt="Print this page">print</a>
-        <a href="#" class="material-icons mdc-top-app-bar__action-item" aria-label="Bookmark this page" alt="Bookmark this page">bookmark</a>
+        <a href="#" class="material-icons mdc-top-app-bar__action-item" aria-label="Bookmark this page" alt="Bookmark this page">book</a>
       </section>
     </div>
   </header>
 
+  <!-- <aside class="mdc-drawer mdc-drawer--temporary mdc-typography mdc-drawer--open"> -->
   <aside class="mdc-drawer mdc-drawer--temporary mdc-typography">
     <nav class="mdc-drawer__drawer">
       <header class="mdc-drawer__header">
@@ -34,31 +30,37 @@
       </header>
       <nav class="mdc-drawer__content mdc-list-group">
         <div id="icon-with-text-demo" class="mdc-list">
-          <a class="mdc-list-item mdc-list-item--selected demo-drawer-list-item" href="#">
-            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">inbox</i>Inbox
+          <a class="mdc-list-item mdc-list-item--selected demo-drawer-list-item" href="/profile.html">
+            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">face</i>작가 소개
           </a>
-          <a class="mdc-list-item demo-drawer-list-item" href="#">
-            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">star</i>Star
+          <a class="mdc-list-item demo-drawer-list-item" href="/book.html">
+            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">book</i>도서 정보
           </a>
-          <a class="mdc-list-item demo-drawer-list-item" href="#">
-            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">send</i>Sent Mail
+          <a class="mdc-list-item demo-drawer-list-item" href="/remix.html">
+            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">send</i>리믹스
           </a>
-          <a class="mdc-list-item demo-drawer-list-item" href="#">
-            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">drafts</i>Drafts
+          <a class="mdc-list-item demo-drawer-list-item" href="/world.html">
+            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">language</i>이사카 월드
           </a>
         </div>
 
         <hr class="mdc-list-divider">
 
         <div class="mdc-list">
-          <a class="mdc-list-item demo-drawer-list-item" href="#">
-            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">email</i>All Mail
+          <a class="mdc-list-item demo-drawer-list-item" href="/meet.html">
+            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">email</i>독자와의 만남
           </a>
-          <a class="mdc-list-item demo-drawer-list-item" href="#">
-            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">delete</i>Trash
+          <a class="mdc-list-item demo-drawer-list-item" href="/relay.html">
+            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">delete</i>독서 릴레이
           </a>
-          <a class="mdc-list-item demo-drawer-list-item" href="#">
-            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">report</i>Spam
+          <a class="mdc-list-item demo-drawer-list-item" href="/bookcase.html">
+            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">delete</i>책장소개
+          </a>
+          <a class="mdc-list-item demo-drawer-list-item" href="/event.html">
+            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">report</i>이벤트
+          </a>
+          <a class="mdc-list-item demo-drawer-list-item" href="/link.html">
+            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">report</i>링크
           </a>
         </div>
       </nav>
@@ -70,16 +72,80 @@
       <h1>SHRINE</h1>
     </section>
 
+    <div>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum fuga assumenda eius dolorem iste suscipit libero possimus. Nisi, nemo alias? Porro, minima voluptatibus repellat vero tempora, officiis at nisi omnis?
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum fuga assumenda eius dolorem iste suscipit libero possimus. Nisi, nemo alias? Porro, minima voluptatibus repellat vero tempora, officiis at nisi omnis?
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum fuga assumenda eius dolorem iste suscipit libero possimus. Nisi, nemo alias? Porro, minima voluptatibus repellat vero tempora, officiis at nisi omnis?
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum fuga assumenda eius dolorem iste suscipit libero possimus. Nisi, nemo alias? Porro, minima voluptatibus repellat vero tempora, officiis at nisi omnis?
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum fuga assumenda eius dolorem iste suscipit libero possimus. Nisi, nemo alias? Porro, minima voluptatibus repellat vero tempora, officiis at nisi omnis?
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum fuga assumenda eius dolorem iste suscipit libero possimus. Nisi, nemo alias? Porro, minima voluptatibus repellat vero tempora, officiis at nisi omnis?
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum fuga assumenda eius dolorem iste suscipit libero possimus. Nisi, nemo alias? Porro, minima voluptatibus repellat vero tempora, officiis at nisi omnis?
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum fuga assumenda eius dolorem iste suscipit libero possimus. Nisi, nemo alias? Porro, minima voluptatibus repellat vero tempora, officiis at nisi omnis?
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum fuga assumenda eius dolorem iste suscipit libero possimus. Nisi, nemo alias? Porro, minima voluptatibus repellat vero tempora, officiis at nisi omnis?
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum fuga assumenda eius dolorem iste suscipit libero possimus. Nisi, nemo alias? Porro, minima voluptatibus repellat vero tempora, officiis at nisi omnis?
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum fuga assumenda eius dolorem iste suscipit libero possimus. Nisi, nemo alias? Porro, minima voluptatibus repellat vero tempora, officiis at nisi omnis?
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum fuga assumenda eius dolorem iste suscipit libero possimus. Nisi, nemo alias? Porro, minima voluptatibus repellat vero tempora, officiis at nisi omnis?
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum fuga assumenda eius dolorem iste suscipit libero possimus. Nisi, nemo alias? Porro, minima voluptatibus repellat vero tempora, officiis at nisi omnis?
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum fuga assumenda eius dolorem iste suscipit libero possimus. Nisi, nemo alias? Porro, minima voluptatibus repellat vero tempora, officiis at nisi omnis?
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum fuga assumenda eius dolorem iste suscipit libero possimus. Nisi, nemo alias? Porro, minima voluptatibus repellat vero tempora, officiis at nisi omnis?
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum fuga assumenda eius dolorem iste suscipit libero possimus. Nisi, nemo alias? Porro, minima voluptatibus repellat vero tempora, officiis at nisi omnis?
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum fuga assumenda eius dolorem iste suscipit libero possimus. Nisi, nemo alias? Porro, minima voluptatibus repellat vero tempora, officiis at nisi omnis?
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum fuga assumenda eius dolorem iste suscipit libero possimus. Nisi, nemo alias? Porro, minima voluptatibus repellat vero tempora, officiis at nisi omnis?
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum fuga assumenda eius dolorem iste suscipit libero possimus. Nisi, nemo alias? Porro, minima voluptatibus repellat vero tempora, officiis at nisi omnis?
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum fuga assumenda eius dolorem iste suscipit libero possimus. Nisi, nemo alias? Porro, minima voluptatibus repellat vero tempora, officiis at nisi omnis?
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum fuga assumenda eius dolorem iste suscipit libero possimus. Nisi, nemo alias? Porro, minima voluptatibus repellat vero tempora, officiis at nisi omnis?
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum fuga assumenda eius dolorem iste suscipit libero possimus. Nisi, nemo alias? Porro, minima voluptatibus repellat vero tempora, officiis at nisi omnis?
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum fuga assumenda eius dolorem iste suscipit libero possimus. Nisi, nemo alias? Porro, minima voluptatibus repellat vero tempora, officiis at nisi omnis?
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum fuga assumenda eius dolorem iste suscipit libero possimus. Nisi, nemo alias? Porro, minima voluptatibus repellat vero tempora, officiis at nisi omnis?
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum fuga assumenda eius dolorem iste suscipit libero possimus. Nisi, nemo alias? Porro, minima voluptatibus repellat vero tempora, officiis at nisi omnis?
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum fuga assumenda eius dolorem iste suscipit libero possimus. Nisi, nemo alias? Porro, minima voluptatibus repellat vero tempora, officiis at nisi omnis?
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum fuga assumenda eius dolorem iste suscipit libero possimus. Nisi, nemo alias? Porro, minima voluptatibus repellat vero tempora, officiis at nisi omnis?
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum fuga assumenda eius dolorem iste suscipit libero possimus. Nisi, nemo alias? Porro, minima voluptatibus repellat vero tempora, officiis at nisi omnis?
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum fuga assumenda eius dolorem iste suscipit libero possimus. Nisi, nemo alias? Porro, minima voluptatibus repellat vero tempora, officiis at nisi omnis?
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum fuga assumenda eius dolorem iste suscipit libero possimus. Nisi, nemo alias? Porro, minima voluptatibus repellat vero tempora, officiis at nisi omnis?
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum fuga assumenda eius dolorem iste suscipit libero possimus. Nisi, nemo alias? Porro, minima voluptatibus repellat vero tempora, officiis at nisi omnis?
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum fuga assumenda eius dolorem iste suscipit libero possimus. Nisi, nemo alias? Porro, minima voluptatibus repellat vero tempora, officiis at nisi omnis?
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum fuga assumenda eius dolorem iste suscipit libero possimus. Nisi, nemo alias? Porro, minima voluptatibus repellat vero tempora, officiis at nisi omnis?
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum fuga assumenda eius dolorem iste suscipit libero possimus. Nisi, nemo alias? Porro, minima voluptatibus repellat vero tempora, officiis at nisi omnis?
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum fuga assumenda eius dolorem iste suscipit libero possimus. Nisi, nemo alias? Porro, minima voluptatibus repellat vero tempora, officiis at nisi omnis?
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum fuga assumenda eius dolorem iste suscipit libero possimus. Nisi, nemo alias? Porro, minima voluptatibus repellat vero tempora, officiis at nisi omnis?
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum fuga assumenda eius dolorem iste suscipit libero possimus. Nisi, nemo alias? Porro, minima voluptatibus repellat vero tempora, officiis at nisi omnis?
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum fuga assumenda eius dolorem iste suscipit libero possimus. Nisi, nemo alias? Porro, minima voluptatibus repellat vero tempora, officiis at nisi omnis?
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum fuga assumenda eius dolorem iste suscipit libero possimus. Nisi, nemo alias? Porro, minima voluptatibus repellat vero tempora, officiis at nisi omnis?
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum fuga assumenda eius dolorem iste suscipit libero possimus. Nisi, nemo alias? Porro, minima voluptatibus repellat vero tempora, officiis at nisi omnis?
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum fuga assumenda eius dolorem iste suscipit libero possimus. Nisi, nemo alias? Porro, minima voluptatibus repellat vero tempora, officiis at nisi omnis?
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum fuga assumenda eius dolorem iste suscipit libero possimus. Nisi, nemo alias? Porro, minima voluptatibus repellat vero tempora, officiis at nisi omnis?
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum fuga assumenda eius dolorem iste suscipit libero possimus. Nisi, nemo alias? Porro, minima voluptatibus repellat vero tempora, officiis at nisi omnis?
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum fuga assumenda eius dolorem iste suscipit libero possimus. Nisi, nemo alias? Porro, minima voluptatibus repellat vero tempora, officiis at nisi omnis?
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum fuga assumenda eius dolorem iste suscipit libero possimus. Nisi, nemo alias? Porro, minima voluptatibus repellat vero tempora, officiis at nisi omnis?
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum fuga assumenda eius dolorem iste suscipit libero possimus. Nisi, nemo alias? Porro, minima voluptatibus repellat vero tempora, officiis at nisi omnis?
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum fuga assumenda eius dolorem iste suscipit libero possimus. Nisi, nemo alias? Porro, minima voluptatibus repellat vero tempora, officiis at nisi omnis?
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum fuga assumenda eius dolorem iste suscipit libero possimus. Nisi, nemo alias? Porro, minima voluptatibus repellat vero tempora, officiis at nisi omnis?
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum fuga assumenda eius dolorem iste suscipit libero possimus. Nisi, nemo alias? Porro, minima voluptatibus repellat vero tempora, officiis at nisi omnis?
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum fuga assumenda eius dolorem iste suscipit libero possimus. Nisi, nemo alias? Porro, minima voluptatibus repellat vero tempora, officiis at nisi omnis?
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum fuga assumenda eius dolorem iste suscipit libero possimus. Nisi, nemo alias? Porro, minima voluptatibus repellat vero tempora, officiis at nisi omnis?
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum fuga assumenda eius dolorem iste suscipit libero possimus. Nisi, nemo alias? Porro, minima voluptatibus repellat vero tempora, officiis at nisi omnis?
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum fuga assumenda eius dolorem iste suscipit libero possimus. Nisi, nemo alias? Porro, minima voluptatibus repellat vero tempora, officiis at nisi omnis?
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum fuga assumenda eius dolorem iste suscipit libero possimus. Nisi, nemo alias? Porro, minima voluptatibus repellat vero tempora, officiis at nisi omnis?
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum fuga assumenda eius dolorem iste suscipit libero possimus. Nisi, nemo alias? Porro, minima voluptatibus repellat vero tempora, officiis at nisi omnis?
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum fuga assumenda eius dolorem iste suscipit libero possimus. Nisi, nemo alias? Porro, minima voluptatibus repellat vero tempora, officiis at nisi omnis?
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum fuga assumenda eius dolorem iste suscipit libero possimus. Nisi, nemo alias? Porro, minima voluptatibus repellat vero tempora, officiis at nisi omnis?
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum fuga assumenda eius dolorem iste suscipit libero possimus. Nisi, nemo alias? Porro, minima voluptatibus repellat vero tempora, officiis at nisi omnis?
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum fuga assumenda eius dolorem iste suscipit libero possimus. Nisi, nemo alias? Porro, minima voluptatibus repellat vero tempora, officiis at nisi omnis?
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum fuga assumenda eius dolorem iste suscipit libero possimus. Nisi, nemo alias? Porro, minima voluptatibus repellat vero tempora, officiis at nisi omnis?
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum fuga assumenda eius dolorem iste suscipit libero possimus. Nisi, nemo alias? Porro, minima voluptatibus repellat vero tempora, officiis at nisi omnis?
+    </div>
+
     <div class="button-container">
-      <button type="button" class="mdc-button cancel">
+      <button type="button" class="mdc-button">
         Cancel
       </button>
-      <button class="mdc-button mdc-button--raised next">
-        Next
+      <button class="mdc-button mdc-button--raised">
+        자세히보기
       </button>
     </div>
   </main>
 
-  <script src="/assets/js/bundle.js"></script>
+  <!-- <script src="/assets/js/bundle.js"></script> -->
 </body>
 </html>

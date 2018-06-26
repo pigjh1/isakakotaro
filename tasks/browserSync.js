@@ -14,7 +14,7 @@ const webpackConfig = require('./webpack.config');
 const webpackCompiler = webpack(webpackConfig);
 
 const browserSyncConfig = {
-  logPrefix: 'gulp-webpack-starter',
+  logPrefix: 'gulp-webpack',
   port: config.browserSync.port,
   ui: {
     port: config.browserSync.port + 1,
