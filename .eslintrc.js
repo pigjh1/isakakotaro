@@ -9,13 +9,9 @@ module.exports = {
   env: {
     browser: true,
   },
-  // required to lint *.vue files
-  plugins: [
-    'html'
-  ],
   // add your custom rules here
   'rules': {
-    'indent': ['warn', 4],
+    'indent': ['warn', 2],
     'no-console': 0,
     'no-unused-vars': [
       'warn'
@@ -24,10 +20,10 @@ module.exports = {
       'error',
       'single'
     ],
-    // 'semi': [
-    //   'error',
-    //   'always'
-    // ],
+    'semi': [
+      'error',
+      'always'
+    ],
     // allow debugger during development
     'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0
   }
