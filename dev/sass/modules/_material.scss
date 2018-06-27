@@ -37,6 +37,8 @@ $mdc-theme-primary: #222222;
   }
 }
 
-.mdc-drawer--temporary .mdc-drawer__drawer {
-  max-width: 200px;
+.mdc-drawer--temporary {
+  .mdc-drawer__drawer {
+    max-width: 200px;
+  }
 }

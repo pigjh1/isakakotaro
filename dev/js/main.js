@@ -2,6 +2,10 @@
 
 let $ = require('jquery');
 
+import { MDCTemporaryDrawer } from '@material/drawer';
+const drawer = new MDCTemporaryDrawer(document.querySelector('.mdc-drawer'));
+document.querySelector('.menu').addEventListener('click', () => drawer.open = true);
+
 // common
 (function() {
   let curUrl = location.href;
@@ -53,6 +57,8 @@ let $ = require('jquery');
 })();
 
 (function() {
+  if ($('#home').length) return;
+
   new Vue({
     el: '#home',
     mounted() {
@@ -82,6 +88,8 @@ let $ = require('jquery');
 })();
 
 (function() {
+  if ($('#book').length) return;
+
   new Vue({
     el: '#book',
     mounted() {
@@ -142,6 +150,8 @@ let $ = require('jquery');
 
 
 (function() {
+  if ($('#bookcase').length) return;
+
   new Vue({
     el: '#bookcase',
     mounted() {

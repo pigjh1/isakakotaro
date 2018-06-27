@@ -1,54 +1,54 @@
 @charset 'UTF-8';
 
 /* --------------------------------------------------
- * layout grid
- * -------------------------------------------------- */
+* layout grid
+* -------------------------------------------------- */
 html, body {
-	min-height: 100%;
+  min-height: 100%;
 }
 
 body {
-	background-color: $white;
-	-webkit-overflow-scrolling: touch;
+  background-color: $white;
+  -webkit-overflow-scrolling: touch;
 }
 
 #wrap {
-	-webkit-user-drag: none;
-	touch-action: pan-y;
+  -webkit-user-drag: none;
+  touch-action: pan-y;
 
-	&:after {
-		content: '';
-		position: fixed;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		opacity: 0;
-		z-index: -1;
-		background-color: $silver;
-		@include transition(all 0.2s);
-	}
+  &:after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    z-index: -1;
+    background-color: $silver;
+    @include transition(all 0.2s);
+  }
 }
 
 
 /* layout (.l-*)
 -------------------------------------------------- */
 .l-wrap {
-	position: relative;
-	margin: 0 20px;
-	padding: 10px 20px;
-	max-width: $w-default;
-	@include box-sizing();
-	@include clearfix();
+  position: relative;
+  margin: 0 20px;
+  padding: 10px 20px;
+  max-width: $w-default;
+  @include box-sizing();
+  @include clearfix();
 
-	@include mq(x-large) {
-		margin: 0 auto;
-		padding: 10px 40px;
-	}
+  @include mq(x-large) {
+    margin: 0 auto;
+    padding: 10px 40px;
+  }
 }
 
 .l-full {
-	padding: 0 5%;
+  padding: 0 5%;
 }
 
 /* column ( 12 grid )
@@ -61,71 +61,71 @@ $grid-gutter	: 10px;
 }
 
 @for $i from 1 through 12 {
-	.col-s-#{$i},
-	.col-m-#{$i},
-	.col-l-#{$i} {
-		@include box-sizing;
-		float: left;
-		position: relative;
-		min-height: 1px;
-		padding-left: $grid-gutter;
-		padding-right: $grid-gutter;
-	}
+  .col-s-#{$i},
+  .col-m-#{$i},
+  .col-l-#{$i} {
+    @include box-sizing;
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-left: $grid-gutter;
+    padding-right: $grid-gutter;
+  }
 }
 
 // small
 @include mq($until: small) {
-	@for $i from 1 through 12 {
-		.col-s-#{$i} {
-			float: none;
-		}
-	}
+  @for $i from 1 through 12 {
+    .col-s-#{$i} {
+      float: none;
+    }
+  }
 }
 
 @include mq(small) {
-	@for $i from 1 through 12 {
-		.col-s-#{$i} {
-			width: 100% / $grid-columns * $i;
-		}
-	}
+  @for $i from 1 through 12 {
+    .col-s-#{$i} {
+      width: 100% / $grid-columns * $i;
+    }
+  }
 }
 
 // medium
 @include mq($until: medium) {
-	@for $i from 1 through 12 {
-		.col-m-#{$i} {
-			float: none;
-		}
-	}
+  @for $i from 1 through 12 {
+    .col-m-#{$i} {
+      float: none;
+    }
+  }
 }
 
 @include mq(medium) {
-	@for $i from 1 through 12 {
-		.col-m-#{$i} {
-			width: 100% / $grid-columns * $i;
-		}
-	}
+  @for $i from 1 through 12 {
+    .col-m-#{$i} {
+      width: 100% / $grid-columns * $i;
+    }
+  }
 }
 
 // large
 @include mq($until: large) {
-	@for $i from 1 through 12 {
-		.col-l-#{$i} {
-			float: none;
-		}
-	}
+  @for $i from 1 through 12 {
+    .col-l-#{$i} {
+      float: none;
+    }
+  }
 }
 
 @include mq(large) {
-	@for $i from 1 through 12 {
-		.col-l-#{$i} {
-			width: 100% / $grid-columns * $i;
-		}
-	}
+  @for $i from 1 through 12 {
+    .col-l-#{$i} {
+      width: 100% / $grid-columns * $i;
+    }
+  }
 }
 
 .col-s-12,
 .col-m-12,
 .col-l-12 {
-	float: none;
+  float: none;
 }

@@ -1,110 +1,110 @@
 /* --------------------------------------------------
- * base styles
- * -------------------------------------------------- */
+* base styles
+* -------------------------------------------------- */
 
 body {
-	padding: 0;
-	font-size: 1em;
-	line-height: $base-leading-ratio;
-	color: $dark;
+  padding: 0;
+  font-size: 1em;
+  line-height: $base-leading-ratio;
+  color: $dark;
 }
 a {
-	color: $dark;
-	text-decoration: none;
+  color: $dark;
+  text-decoration: none;
 }
 a:hover,
 a:active {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 blockquote {
-	margin: 1em 40px;
+  margin: 1em 40px;
 }
 pre {
-	white-space: pre;
-	white-space: pre-wrap;
-	word-wrap: break-word;
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
 }
 q {
-	quotes: none;
+  quotes: none;
 }
 ul, ol,
 dl, dt, dd {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 ul, ol, li {
-	list-style: none;
+  list-style: none;
 }
 i, em, address {
-	font-style: normal;
+  font-style: normal;
 }
 figure, form {
-	margin: 0;
+  margin: 0;
 }
 fieldset {
-	margin: 0;
-	padding: 0;
-	border: 0 none;
-	vertical-align: top;
+  margin: 0;
+  padding: 0;
+  border: 0 none;
+  vertical-align: top;
 }
 label {
-	cursor: pointer;
+  cursor: pointer;
 }
 button,
 input,
 select,
 textarea {
-	font-size: 100%;
-	margin: 0;
-	vertical-align: baseline;
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
 }
 button, html [type="button"], [type="reset"], [type="submit"] {
-	-webkit-appearance: none;
+  -webkit-appearance: none;
 }
 button, [type="button"], [type="reset"], [type="submit"] {
-	box-sizing: content-box;
-	padding: .4em 1em;
-	border: 0 none;
-	background: transparent;
-	line-height: normal;
-	cursor: pointer;
+  box-sizing: content-box;
+  padding: .4em 1em;
+  border: 0 none;
+  background: transparent;
+  line-height: normal;
+  cursor: pointer;
 }
 input[type="checkbox"],
 input[type="radio"],
 select {
-	vertical-align: middle;
+  vertical-align: middle;
 }
 input[type="search"] {
-	-webkit-appearance: none;
-	border-radius: 0;
+  -webkit-appearance: none;
+  border-radius: 0;
 }
 textarea {
-	vertical-align: top;
-	resize: vertical;
+  vertical-align: top;
+  resize: vertical;
 }
 input:invalid,
 textarea:invalid {
-	background-color: $fog;
+  background-color: $fog;
 }
 table {
-	width: 100%;
-	border-collapse: collapse;
-	border-spacing: 0;
-	empty-cells: show;
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  empty-cells: show;
 }
 td {
-	vertical-align: middle;
+  vertical-align: middle;
 }
 
 ::-moz-selection,
 ::selection {
-	background: $brand;
-	color: $white;
-	text-shadow: none;
+  background: $brand;
+  color: $white;
+  text-shadow: none;
 }
 ::-webkit-input-placeholder,
 :-moz-placeholder {
-	color: $silver;
+  color: $silver;
 }
 
 /* base layout
@@ -114,60 +114,60 @@ input,
 textarea,
 select,
 button {
-	font-family: $font-default;
+  font-family: $font-default;
 }
 html {
-	background-color: $white;
+  background-color: $white;
 }
 body {
-	min-width: 320px;
+  min-width: 320px;
 }
 h1, h2, h3, h4, h5, h6 {
-	margin: 0;
-	font-weight: normal;
+  margin: 0;
+  font-weight: normal;
 }
 p:first-child {
-	margin-top: 0;
+  margin-top: 0;
 }
 img {
-	max-width: 100%;
-	height: auto;
-	vertical-align: top;
-	-ms-interpolation-mode: bicubic;
+  max-width: 100%;
+  height: auto;
+  vertical-align: top;
+  -ms-interpolation-mode: bicubic;
 }
 em {
-	color: $brand;
+  color: $brand;
 }
 .mobile {
-	a,
-	button,
-	input,
-	textarea,
-	select,
-	[tabindex] {
-		outline: 0 none;
-	}
+  a,
+  button,
+  input,
+  textarea,
+  select,
+  [tabindex] {
+    outline: 0 none;
+  }
 }
 
 /* Skip navigation
 -------------------------------------------------- */
 #skipnav {
-	position: absolute;
-	left: -100%;
-	background: $gray-dark;
-	color: $white;
-	font-size: 1.6em;
+  position: absolute;
+  left: -100%;
+  background: $gray-dark;
+  color: $white;
+  font-size: 1.6em;
 }
 #skipnav:focus {
-	display: block;
-	position: fixed;
-	left: 0;
-	z-index: 29999;
-	width: 100%;
-	padding: 20px;
+  display: block;
+  position: fixed;
+  left: 0;
+  z-index: 29999;
+  width: 100%;
+  padding: 20px;
 
-	font-weight: bold;
-	line-height: 1.5;
-	text-align: center;
-	vertical-align: middle;
+  font-weight: bold;
+  line-height: 1.5;
+  text-align: center;
+  vertical-align: middle;
 }
