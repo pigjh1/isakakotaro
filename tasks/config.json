@@ -15,12 +15,6 @@
     "parts": "templates",
     "run": true
   },
-  "htmlmeet": {
-    "dev": "htmlmeet",
-    "dist": "meet",
-    "parts": "templates",
-    "run": true
-  },
   "css": {
     "dev": "sass",
     "dist": "assets/css",

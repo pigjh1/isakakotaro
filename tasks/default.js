@@ -21,10 +21,6 @@ if (config.htmlbook.run) {
   assets.push('htmlbook');
 }
 
-if (config.htmlmeet.run) {
-  assets.push('htmlmeet');
-}
-
 gulp.task('default', (cb) => {
   mode.production
     ? runSequence('clean', assets, ['css', 'js'], 'size', cb)
