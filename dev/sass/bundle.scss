@@ -1,46 +1,32 @@
 @charset 'utf-8';
 
-// @import 'utilities/index';
-
-// utils
 @import 'utils/variables';
 @import 'utils/mixins';
-@import 'utils/helpers';
 @import 'utils/mq';
 
-// vendor
 @import 'vendors/mq';
 @import 'vendors/normalize';
 
-// base
 @import 'base/reset';
 
-// layout
 @import 'layout/header';
 @import 'layout/grid';
 @import 'layout/footer';
 
-// modules
 @import 'modules/helpers';
 @import 'modules/material';
-
 @import 'modules/box';
 @import 'modules/buttons';
 @import 'modules/table';
 @import 'modules/list';
 @import 'modules/legacy';
 
-// pages
 @import 'pages/main';
-
 @import 'pages/profile';
-
 @import 'pages/book';
 @import 'pages/remix';
-
 @import 'pages/world';
 @import 'pages/event';
 @import 'pages/bookcase';
 @import 'pages/relay';
-
 @import 'pages/error';

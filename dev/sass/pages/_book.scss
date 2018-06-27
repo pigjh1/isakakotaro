@@ -24,12 +24,13 @@
 .book-special {
   .main {
     padding-top: 0;
-    margin-top: 60px;
+    padding-top: 56px;
     margin-bottom: 0;
     h1 {
       line-height: 0;
       font-size: 0;
       margin-bottom: 0;
+      text-align: center;
     }
   }
   .col {
@@ -60,8 +61,6 @@
 }
 
 @include mq(large) {
-  $img-special: '/assets/img/special/';
-
   .prayer {
     background: url($img-special + 'prayer-bg.jpg') center 0;
   }

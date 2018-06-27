@@ -31,6 +31,7 @@
 	position: relative;
 	min-height: 300px;
 	padding-top: 80px;
+	padding-bottom: 30px;
 	margin-bottom: 50px;
 	outline: none; // for skipnav
 
@@ -75,7 +76,7 @@
 	margin-top: 5em;
 }
 
-blockquote {
+.blockquote {
 	margin: 20px 0;
 	padding: 40px 60px;
 	position: relative;
