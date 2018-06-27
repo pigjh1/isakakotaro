@@ -57,7 +57,7 @@ document.querySelector('.menu').addEventListener('click', () => drawer.open = tr
 })();
 
 (function() {
-  if ($('#home').length) return;
+  if ($('#home').length === 0) return;
 
   new Vue({
     el: '#home',
@@ -88,7 +88,7 @@ document.querySelector('.menu').addEventListener('click', () => drawer.open = tr
 })();
 
 (function() {
-  if ($('#book').length) return;
+  if ($('#book').length === 0) return;
 
   new Vue({
     el: '#book',
@@ -150,7 +150,7 @@ document.querySelector('.menu').addEventListener('click', () => drawer.open = tr
 
 
 (function() {
-  if ($('#bookcase').length) return;
+  if ($('#bookcase').length === 0) return;
 
   new Vue({
     el: '#bookcase',

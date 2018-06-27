@@ -20,6 +20,9 @@ $mdc-theme-primary: #222222;
 
 .mdc-top-app-bar {
   z-index: 500;
+  a {
+    text-decoration: none;
+  }
   nav {
     display: none;
   }
