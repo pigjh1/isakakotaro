@@ -11,18 +11,18 @@
     @@include('header.html')
     <main id="main" class="main home">
       <div class="l-full">
-        <!-- <div class="func">
+        <div class="func">
           <p><a href="/relay.html"><img src="/assets/img/event/banner-180623.jpg" alt=""></a></p>
           <p><a href="/book/ax.html"><img src="/assets/img/event/banner-180616.jpg" alt=""></a></p>
-        </div> -->
+        </div>
 
         <section class="main-book" id="home">
           <h1 class="a11y">도서 목록</h1>
-          <!-- <span v-for="item in book">
+          <span v-for="item in book">
             <a class="item" :href="'/book/' + item.link + '.html'">
               <img :src="getPic(item.img)" :alt="item.title">
             </a>
-          </span> -->
+          </span>
         </section>
 
         @@include('share.html')

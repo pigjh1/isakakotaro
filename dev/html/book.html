@@ -81,7 +81,7 @@
                 </td>
                 <td class='book-title'>
                   {{ item.title }}<br>원제: {{ item.titlejp }}<br>
-                  <a :href="'/book/' + item.link + '.html'" class='btn' v-if="item.link !== ''">자세히보기</a>
+                  <a :href="'/book/' + item.link + '.html'" class='mdc-button mdc-button--raised mdc-button--dense' v-if="item.link !== ''">자세히보기</a>
                 </td>
                 <td class='date-jp'>{{ item.publicationjp }}</td>
                 <td class='date-ko'>{{ item.publicationko }}</td>
