@@ -23,7 +23,7 @@ $mdc-theme-primary: #424242;
   nav {
     display: none;
   }
-  @media (min-width: $screen-sm-min) {
+  @include mq(medium) {
     nav {
       display: block;
       padding: 20px;

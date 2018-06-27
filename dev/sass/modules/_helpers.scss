@@ -53,7 +53,7 @@
 }
 
 .br {
-	margin-bottom: $margin;
+	margin-bottom: 10px;
 }
 
 .func {
@@ -84,7 +84,7 @@ blockquote {
 
 	&:before,
 	&:after {
-		font-family: $font-family-serif;
+		font-family: $serif;
 		top: -10px;
 		color: #7a7a7a;
 		font-size: 80px;

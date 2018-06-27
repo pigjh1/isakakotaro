@@ -1,13 +1,23 @@
 @charset 'utf-8';
 
-@import 'utilities/index';
-@import 'vendor/index';
+// @import 'utilities/index';
+
+// utils
+@import 'utils/variables';
+@import 'utils/mixins';
+@import 'utils/helpers';
+@import 'utils/mq';
+
+// vendor
+@import 'vendors/mq';
+@import 'vendors/normalize';
 
 // base
-@import 'base/base';
+@import 'base/reset';
 
 // layout
 @import 'layout/header';
+@import 'layout/grid';
 @import 'layout/footer';
 
 // modules

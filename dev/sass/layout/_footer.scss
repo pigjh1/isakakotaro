@@ -38,7 +38,7 @@
     }
   }
 
-  @media (min-width: $screen-md-min) {
+  @include mq(medium) {
     text-align: left;
     position: relative;
 

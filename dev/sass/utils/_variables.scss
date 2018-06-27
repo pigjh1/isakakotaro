@@ -1,0 +1,77 @@
+@charset 'UTF-8';
+/// --------------------------------------------------
+/// _variables: global variables
+/// --------------------------------------------------
+
+
+// layout
+// --------------------------------------------------
+$p-default: 5%;
+$p-portrait: 10px;
+$p-mobile: 5px;
+
+$w-max: 1600px;
+$w-default: 1200px;
+$w-narrow: 768px;
+$w-mobile: 320px;
+
+$w-side: 265px;
+
+$w-base: 1280;
+
+$header-height: 60px;
+$header-height-large: 140px;
+$header-height-folded: 60px;
+
+// image
+// --------------------------------------------------
+$img: '/static/images/';
+$img-book: '#{$img}book/';
+$img-special: '#{$img}special/';
+
+
+// fonts
+// --------------------------------------------------
+$font-default: 'Noto Sans', 'Nanum Gothic', 'Malgun Gothic', '맑은 고딕', 'Nanum Gothic', '나눔 고딕', '돋움', dotum, sans-serif;
+$sans: $font-default;
+$serif: 'Noto Serif', serif;
+$modular-scale-base: 1.4;
+$modular-scale-ratio: 1.313;
+$base-leading-ratio: 1.5;
+$spacing: -0.02em;
+$font-icon: 'fontello';
+$icons: ();
+
+// color guide
+// --------------------------------------------------
+$white: #fff;
+$fog: #f3f3f3;
+$ash: #e0e0e0;
+
+$silver-light: #aaa;
+$silver: #ccc;
+$silver-dark: #888;
+
+$gray-light: #777;
+$gray: #666;
+$gray-dark: #555;
+
+$dark: #444;
+$ink: #222;
+$black: #000;
+
+$tan: #ada8a4;
+$warning: #d92c12;
+$confirm: #12c17c;
+
+$brand: #7FB4BE;
+$brand-sub: #d95141;
+
+// easing
+// --------------------------------------------------
+$ease-in-out: cubic-bezier(.2,.05,.05,1);
+$ease-in-out-s: cubic-bezier(.5,0,0,1);
+$ease-out: cubic-bezier(0,.5,.5,1);
+$ease-bounce: cubic-bezier(.2,1.1,.6,1.2);
+
+$ease-base : cubic-bezier(.19,1,.22,1);

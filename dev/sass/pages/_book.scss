@@ -41,7 +41,6 @@
     background: $white;
   }
   h1.prepare {
-    font-family: $font-family-open;
     font-size: 3em;
     line-height: 1.5;
     margin-top: 100px;
@@ -54,13 +53,13 @@
   }
 }
 
-@media (min-width: $screen-md-min) {
+@include mq(medium) {
   .book-special .mov iframe {
     width: 100%;
   }
 }
 
-@media (min-width: $screen-lg-min) {
+@include mq(large) {
   $img-special: '/assets/img/special/';
 
   .prayer {

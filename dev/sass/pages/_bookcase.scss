@@ -1,76 +1,73 @@
-
 .bookcase {
-	margin: 0 auto;
-	padding-top: 3em;
-	text-align: center;
+  margin: 0 auto;
+  padding-top: 3em;
+  text-align: center;
 
-	.polaroid {
-		background: #fff;
-		padding: 1em;
-		box-shadow: 0 0.2em 1.2em rgba(0,0,0,0.2);
-	}
-	.polaroid > img {
-		max-width: 100%;
-		height: auto;
-	}
-	.caption {
-		text-align: center;
-		line-height: 2em;
-		b {
+  .polaroid {
+    background: #fff;
+    padding: 1em;
+    box-shadow: 0 0.2em 1.2em rgba(0,0,0,0.2);
+    > img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  .caption {
+    text-align: center;
+    line-height: 2em;
+    b {
+      font-size: 1.0em;
+    }
+    span {
+      font-size: 0.8em;
+    }
+  }
 
-			font-size: 1.0em;
-		}
-		span {
+  .item {
+    display: inline-block;
+    margin: -2em -2em 0 0;
+    filter: grayscale(90%);
+    transition: all 0.35s;
+    &:nth-of-type(4n+1) {
+      transform: scale(0.8, 0.8) rotate(5deg);
+    }
+    &:nth-of-type(4n+2) {
+      transform: scale(0.8, 0.8) rotate(-5deg);
+    }
+    &:nth-of-type(4n+3) {
+      transform: scale(0.8, 0.8) rotate(-3deg);
+    }
+    &:nth-of-type(4n+4) {
+      transform: scale(0.8, 0.8) rotate(3deg);
+    }
+    &:hover {
+      filter: none;
+      transform: scale(1, 1) rotate(0deg) !important;
+      transition: all 0.35s;
+      .polaroid:before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        transform: rotate(0deg);
+        height: 90%;
+        width: 90%;
+        bottom: 0%;
+        right: 5%;
+        box-shadow: 0 1em 3em rgba(0, 0, 0, 0.2);
+        transition: all 0.35s;
+      }
+    }
+  }
 
-			font-size: 0.8em;
-		}
-	}
-	.item {
-		display: inline-block;
-		margin: -2em -2em 0 0;
-		filter: grayscale(90%);
-		transition: all 0.35s;
-	}
-	.item:nth-of-type(4n+1) {
-		transform: scale(0.8, 0.8) rotate(5deg);
-	}
-	.item:nth-of-type(4n+2) {
-		transform: scale(0.8, 0.8) rotate(-5deg);
-	}
-	.item:nth-of-type(4n+3) {
-		transform: scale(0.8, 0.8) rotate(-3deg);
-	}
-	.item:nth-of-type(4n+4) {
-		transform: scale(0.8, 0.8) rotate(3deg);
-	}
-	.item:hover {
-		filter: none;
-		transform: scale(1, 1) rotate(0deg) !important;
-		transition: all 0.35s;
-	}
-	.item:hover .polaroid:before {
-		content: '';
-		position: absolute;
-		z-index: -1;
-		transform: rotate(0deg);
-		height: 90%;
-		width: 90%;
-		bottom: 0%;
-		right: 5%;
-		box-shadow: 0 1em 3em rgba(0,0,0,0.2);
-		transition: all 0.35s;
-	}
+  @include mq(medium) {
+    .item {
+      width: 50%;
+    }
+  }
 
-	@media (min-width: $screen-md-min) {
-		.item {
-			width: 50%;
-		}
-	}
-
-	@media (min-width: $screen-lg-min) {
-
-	.item {
-		width: 33%;
-	}
-	}
+  @include mq(large) {
+    .item {
+      width: 33%;
+    }
+  }
 }
