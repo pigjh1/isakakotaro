@@ -1,0 +1,47 @@
+// --------------------------------------------------
+// Utility > Sitemap
+// --------------------------------------------------
+
+.sitemap {
+  .item {
+    float: left;
+    padding-bottom: 14px;
+    padding: 0 10px;
+    width: percentage(1);
+    @include box-sizing;
+    &-h {
+      border-bottom: 2px solid #222;
+      padding: 10px;
+    }
+    li {
+      display: inline-block;
+      vertical-align: top;
+      margin-top: 20px;
+      width: 100%;
+      @include box-sizing;
+    }
+    li li {
+      margin-top: 10px;
+      margin-left: 10px;
+    }
+  }
+
+  .menu-d2 {
+    li {
+      padding: 14px 0;
+      border-bottom: 1px solid #222;
+    }
+  }
+
+  @include mq(medium) {
+    .item {
+      width: percentage(1/2);
+    }
+  }
+
+  @include mq(large) {
+    .item {
+      width: percentage(1/4);
+    }
+  }
+}
