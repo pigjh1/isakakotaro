@@ -24,9 +24,7 @@
 
 #wrap {
 	background: #f3f3f3;
-	background:url(
-	data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAJ0lEQVQYV2N8/PjxfwEBAQYYYPz8+fN/OI+BgQEu8OHDBwaQSgwVAK5EEmWg78EhAAAAAElFTkSuQmCC
-	) repeat;
+	background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAJ0lEQVQYV2N8/PjxfwEBAQYYYPz8+fN/OI+BgQEu8OHDBwaQSgwVAK5EEmWg78EhAAAAAElFTkSuQmCC) repeat;
 }
 
 .main {
@@ -39,22 +37,11 @@
 	.l-wrap {
 		background: $white;
 	}
-	h1 {
-		font-size: 3.5em;
-		text-align: center;
-		font-weight: normal;
-		margin: 0;
-
-	}
 }
 
 .page-header {
-	font-family: $font-family-serif;
-	padding: 2.5em 0 2em;
-
-	span {
-		font-family: $font-family-base;
-	}
+  text-align: center;
+	padding: 1.5em 0 1em;
 }
 
 .a11y {
@@ -72,12 +59,18 @@
 .func {
 	text-align: center;
 }
-.box-gray {
-	margin-top: 3em;
-	padding: 2em;
-	border-radius: 10px;
-	background: #eee;
+
+.share {
+	padding: 50px 0;
+	text-align: center;
+
+	a {
+		font-size: 20px;
+		color: $gray;
+		margin: 0 .3em;
+	}
 }
+
 .disqus {
 	margin-top: 5em;
 }

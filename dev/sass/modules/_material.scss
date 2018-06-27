@@ -8,7 +8,35 @@ $mdc-theme-primary: #424242;
 // $mdc-theme-on-primary: #442b2d;
 // $mdc-theme-on-secondary: #442b2d;
 
-@import "@material/button/mdc-button";
-@import "@material/drawer/mdc-drawer";
 @import "@material/top-app-bar/mdc-top-app-bar";
+@import "@material/drawer/mdc-drawer";
+@import "@material/button/mdc-button";
+@import "@material/typography/mdc-typography";
 @import "@material/list/mdc-list";
+
+.my-card__media {
+  background-image: url("pretty.jpg");
+}
+
+.mdc-top-app-bar {
+  z-index: 10;
+  nav {
+    display: none;
+  }
+  @media (min-width: $screen-sm-min) {
+    nav {
+      display: block;
+      padding: 20px;
+      a {
+        display: inline-block;
+        margin: 0 15px;
+        color: $white;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.mdc-drawer--temporary .mdc-drawer__drawer {
+  max-width: 200px;
+}
