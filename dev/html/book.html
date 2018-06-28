@@ -34,10 +34,10 @@
               <input type="radio" v-model="type" id="text" value="text">
               <label for="text">
                 <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 32 25">
-                  <title>text</title>
+                  <title>list</title>
                   <path d="M5.7 1.5a1 1 0 0 1 1-1h23.9a1 1 0 0 1 0 2H6.7a1 1 0 0 1-1-1zm1 8.3h17.7a.9.9 0 0 0 1-1 1 1 0 0 0-1-1H6.7a1.1 1.1 0 0 0-1 1 1 1 0 0 0 1 1zm23.9 5.4H6.7a1 1 0 0 0-1 1 1.1 1.1 0 0 0 1 1h23.9a1.1 1.1 0 0 0 1-1 1 1 0 0 0-1-1zm-6.2 7.3H6.7a1 1 0 1 0 0 2h17.7a1 1 0 0 0 0-2zM.4 2.7h2.5V.3H.4zm0 7.4h2.5V7.6H.4zm0 7.3h2.5v-2.5H.4zm0 7.3h2.5v-2.4H.4z"/>
                 </svg>
-                TEXT
+                List
               </label>
             </span>
             <select v-model="order">
@@ -80,7 +80,7 @@
                   <span v-if="item.img === ''">-</span>
                 </td>
                 <td class='book-title'>
-                  {{ item.title }}<br>원제: {{ item.titlejp }}<br>
+                  {{ item.title }}<br>원제: <span lang="jp">{{ item.titlejp }}</span><br>
                   <a :href="'/book/' + item.link + '.html'" class='mdc-button mdc-button--raised mdc-button--dense' v-if="item.link !== ''">자세히보기</a>
                 </td>
                 <td class='date-jp'>{{ item.publicationjp }}</td>

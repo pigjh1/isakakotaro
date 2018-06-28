@@ -9,24 +9,61 @@
   @@include('legacy.html')
   <div id="wrap">
     @@include('header.html')
-    <main id="main" class="main home">
-      <div class="l-full">
-        <div class="func">
-          <p><a href="/relay.html"><img src="/assets/img/event/banner-180623.jpg" alt=""></a></p>
-          <p><a href="/book/ax.html"><img src="/assets/img/event/banner-180616.jpg" alt=""></a></p>
-        </div>
+    <main id="main" class="main home" id="home">
 
-        <section class="main-book" id="home">
-          <h1 class="a11y">도서 목록</h1>
+        <!-- <section class="main-book" id="home">
           <span v-for="item in book">
             <a class="item" :href="'/book/' + item.link + '.html'">
               <img :src="getPic(item.img)" :alt="item.title">
             </a>
           </span>
-        </section>
+        </section> -->
 
-        @@include('share.html')
-      </div>
+        <div class="wrapper">
+            <div class="column one">
+                <div class="inner-wrapper">
+                    <h1>Pofile</h1>
+                    <h2>MORE INFO</h2>
+                </div>
+            </div>
+            <div class="column two">
+                <div class="inner-wrapper">
+                    <h1>Book</h1>
+                    <h2>MORE INFO</h2>
+                </div>
+            </div>
+            <div class="column three">
+                <div class="inner-wrapper">
+                    <h1>Isaka World</h1>
+                    <h2>MORE INFO</h2>
+                </div>
+            </div>
+            <div class="column four">
+                <div class="inner-wrapper">
+                    <h1>Link</h1>
+                    <h2>MORE INFO</h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="mdc-elevation-wrap">
+          <a href="/profile.html">작가소개</a>
+
+          <a href="/book.html">작품소개</a>
+          <a href="/remix.html">미디어리믹스</a>
+
+          <a href="/world.html">이사카월드</a>
+          <a href="/character.html">작품별 등장인물 소개</a>
+          <a href="/crossing.html">작품 속 교차점</a>
+
+          <a href="/link.html">링크</a>
+          <a href="/twitter.html">트위터</a>
+          <a href="/event.html">이벤트</a>
+          <a href="/bookcase.html">책장소개</a>
+          <a href="/relay.html">독서 릴레이</a>
+          <a href="/calendar.html">공개 캘린더</a>
+        </div> -->
+
     </main>
     @@include('footer.html')
   </div>

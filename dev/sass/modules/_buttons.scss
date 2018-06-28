@@ -1,44 +1,86 @@
-//==============================================
-// Module/buttons
-//==============================================
+%btn {
+	@include box-sizing;
+	position: relative;
+	display: inline-block;
+	font-weight: normal;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	text-transform: capitalize;
+	@include transition(all 0.2s ease-out);
+}
 
-// .btn {
-// 	@include m-btn-size;
-// 	background-color: $btn-default-bg;
-// 	background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
-// 	border: $b-s-base solid $btn-default-border;
-// 	color: $btn-default-color;
-// 	cursor: pointer;
-// 	display: inline-block;
-// 	font-weight: $btn-font-weight;
-// 	line-height: $line-height-base;
-// 	margin-bottom: 0;
-// 	outline: none;
-// 	text-align: center;
-// 	touch-action: manipulation;
-// 	transition: all $timeline-base !important;
-// 	user-select:none;
-// 	vertical-align: middle;
-// 	white-space: nowrap;
-// 	overflow: hidden;
-// 	text-overflow: ellipsis;
-// 	text-decoration: none;
-// 	max-width: 100%;
-// 	padding: $padding-small-vertical $padding-small-horizontal;
-// 	@include radius(10px);
-// 	&.disabled,
-// 	&[disabled],
-// 	fieldset[disabled] & {
-// 		cursor: $cursor-disabled;
-// 		opacity:.65;
-// 		box-shadow:none;
-// 	}
-// 	@include hover {
-// 		background-color: darken($btn-default-bg, 20%);
-// 		border-color: darken($btn-default-bg, 20%);
-// 		color: $white;
-// 	}
-// 	&.full {
-// 		width: 100%;
-// 	}
-// }
+.btn {
+	@extend %btn;
+	font-size: 14px;
+	line-height: 20px;
+	letter-spacing: 0.02em;
+	padding: 9px 24px;
+	border: 1px solid $silver-dark;
+	border-color: rgba($silver-dark, 0.5);
+	@include radius(50px);
+
+	&:hover,
+	&:focus {
+		color: $white;
+		border-color: $dark;
+		background: $dark;
+		text-decoration: none;
+	}
+
+	// button widh icon
+	.icon {
+		display: inline-block;
+		font-size: 12px;
+		margin-right: -10px;
+		margin-left: 5px;
+		vertical-align: 1px;
+		line-height: 0;
+	}
+
+	// button color variation
+	&-light {
+		color: $white;
+		border: 1px solid $silver;
+		border-color: rgba($silver, 0.5);
+
+		&:hover,
+		&:focus {
+			color: $dark;
+			border-color: $white;
+			background: $white;
+		}
+	}
+
+	&-solid {
+		position: relative;
+		color: $white;
+		border-width: 0;
+		line-height: 22px;
+		background: #0464B3;
+	}
+
+	// button size variation
+	&-wide { // wide
+		display: block;
+		width: 100%;
+	}
+	&-m { // middle
+		font-size: 16px;
+		line-height: 24px;
+		padding: 12px 40px;
+
+		.btn-solid {
+			line-height: 28px;
+		}
+	}
+	&-l { // large
+		font-size: 16px;
+		line-height: 24px;
+		padding: 18px 58px;
+
+		.btn-solid {
+			line-height: 28px;
+		}
+	}
+}
