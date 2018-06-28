@@ -1,24 +1,37 @@
-.main-book {
-  text-align: center;
-  max-width: 1280px;
-  margin: 0 auto;
+.home {
+  margin: 0;
+  padding: 0;
 
   .item  {
     display: inline-block;
     margin: 10px;
     background: $white;
     padding: 0;
-    border: 5px solid $white;
+    border: 2px solid $white;
     @include shadow(1px 1px 5px #333);
     img {
-      width: 80px;
+      width: 40px;
     }
   }
-}
 
-.home {
-  margin: 0;
-  padding: 0;
+  .more {
+    li a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      i {
+        vertical-align: middle;
+      }
+
+    }
+
+    @include mq(medium) {
+      ul {
+        min-height: 200px;
+      }
+    }
+  }
+
   .wrapper {
     .one {
       background: #81d4fa;
@@ -33,7 +46,7 @@
       background: #ef9a9a;
     }
     display: block;
-    height: 100vh;
+    min-height: 100vh;
     align-content: center;
     align-items: stretch;
     justify-content: space-between;
@@ -46,21 +59,19 @@
       justify-content: center;
       align-items: center;
       text-align: center;
-      height: 25vh;
+      min-height: 25vh;
       transition: 0.5s cubic-bezier(0.235, 0.035, 0, 1.53);
-      .inner-wrapper {
-        h1 {
-          font-family: sans-serif;
-          color: white;
-          margin: 0;
-          transition: 0.5s cubic-bezier(0.235, 0.035, 0, 1.53);
-        }
-        h2 {
-          position: relative;
-          color: white;
-          padding: 0;
-          margin: 0;
-        }
+      h1 {
+        font-family: sans-serif;
+        color: white;
+        margin: 0;
+        transition: 0.5s cubic-bezier(0.235, 0.035, 0, 1.53);
+      }
+      .more {
+        position: relative;
+        color: white;
+        padding: 0;
+        margin: 0;
       }
     }
   }
@@ -69,23 +80,23 @@
     .wrapper {
       display: flex;
       .column {
-        height: 100vh;
+        min-height: 100vh;
         &:hover {
           flex: 1 180%;
           cursor: pointer;
         }
-        .inner-wrapper h2 {
+        .more {
           visibility: hidden;
           opacity: 0;
           transition: visibility 0s linear, opacity 0.3s ease-in, transform 0.5s cubic-bezier(0.235, 0.035, 0, 1.53);
           transform: translateY(-20px);
         }
-        &:hover .inner-wrapper {
+        &:hover {
           h1 {
             font-size: 3.0rem;
             opacity: 1;
           }
-          h2 {
+          .more {
             visibility: visible;
             opacity: 1;
             font-size: 1.2rem;
@@ -96,5 +107,4 @@
       }
     }
   }
-
 }

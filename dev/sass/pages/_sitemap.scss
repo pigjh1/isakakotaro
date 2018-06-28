@@ -12,6 +12,7 @@
     &-h {
       border-bottom: 2px solid #222;
       padding: 10px;
+      text-align: center;
     }
     li {
       display: inline-block;
@@ -24,6 +25,9 @@
       margin-top: 10px;
       margin-left: 10px;
     }
+    a {
+      text-decoration: none;
+    }
   }
 
   .menu-d2 {
@@ -33,13 +37,13 @@
     }
   }
 
-  @include mq(medium) {
+  @include mq(small) {
     .item {
       width: percentage(1/2);
     }
   }
 
-  @include mq(large) {
+  @include mq(medium) {
     .item {
       width: percentage(1/4);
     }

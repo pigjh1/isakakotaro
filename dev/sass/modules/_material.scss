@@ -16,11 +16,19 @@ $mdc-theme-primary: #222222;
 @import "@material/card/mdc-card";
 @import "@material/elevation/mdc-elevation";
 
+
+a.mdc-button {
+  text-decoration: none;
+}
+
 .my-card__media {
   background-image: url("pretty.jpg");
 }
 
 .mdc-top-app-bar {
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: 500;
   nav {
     display: none;
@@ -64,5 +72,9 @@ $mdc-theme-primary: #222222;
     margin: 20px;
     align-items: center;
     text-align: center;
+  }
+
+  a {
+    text-decoration: none;
   }
 }

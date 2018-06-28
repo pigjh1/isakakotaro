@@ -75,8 +75,9 @@ document.querySelector('.menu').addEventListener('click', () => drawer.open = tr
     },
     computed: {
       book() {
-        const MAX = 5;
-        return this.books.slice(0, MAX).sort((a, b) => a.publicationko > b.publicationko ? -1 : 1);
+        const MAX = 4;
+        let orderbooks = this.books.sort((a, b) => a.publicationko > b.publicationko ? -1 : 1);
+        return orderbooks.slice(0, MAX);
       }
     },
     methods: {
