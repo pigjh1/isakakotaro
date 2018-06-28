@@ -13,8 +13,9 @@ a {
   text-decoration: none;
 }
 a:hover,
+a:focus,
 a:active {
-  text-decoration: underline;
+  text-decoration: none;
 }
 blockquote {
   margin: 1em 40px;
