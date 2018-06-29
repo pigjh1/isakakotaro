@@ -51,8 +51,8 @@ const webpackConfig = {
 };
 
 /**
-* Modify webpackConfig depends on mode
-*/
+ * Modify webpackConfig depends on mode
+ */
 if (mode.production) {
   webpackConfig.plugins.push(
     new webpack.optimize.UglifyJsPlugin({
