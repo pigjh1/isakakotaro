@@ -90,3 +90,66 @@
 		line-height: 1.8;
 	}
 }
+
+.meet {
+	.top-banner {
+		text-align: center;
+		margin: 20px 0;
+
+		dl {
+			text-align: left;
+			padding: 15px 10px;
+			margin: 10px 0;
+			border: 1px dashed #ccc;
+			border-radius: 10px;
+		}
+		dt {
+			font-weight: bold;
+			display: inline-block;
+			width: 20%;
+		}
+		dd {
+			display: inline-block;
+			width: 80%;
+		}
+	}
+	.speaker {
+		display: inline-block;
+		font-weight: bold;
+		margin-right: 5px;
+	}
+
+	.isaka {
+		.speaker{
+			color: #03A9F4;
+
+		}
+	}
+	.mc {
+		.speaker{
+			color: #ff9800;
+		}
+	}
+	.audience {
+		.speaker{
+
+			color: #673ab7;
+		}
+	}
+
+	@include mq(medium) {
+		.top-banner {
+			dl {
+				margin: 10px 5%;
+				padding: 30px 20px;
+			}
+			dt {
+				display: inline-block;
+				width: 9%;
+			}
+			dd {
+				width: 40%
+			}
+		}
+	}
+}
