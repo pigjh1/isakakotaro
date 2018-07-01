@@ -12,6 +12,7 @@
     "price": 10000,
     "isbn": "978-89-91312-37-3",
     "img": "s-01-03.jpg",
+    "bgcolor": "#95A573",
     "link": "prayer"
   },
   {
@@ -27,6 +28,7 @@
     "price": 11000,
     "isbn": "978-89-5975-045-X",
     "img": "s-02-03.jpg",
+    "bgcolor": "#E3E3E3",
     "link": "lush-life"
   },
   {
@@ -42,6 +44,7 @@
     "price": 9800,
     "isbn": "978-89-5660-189-2",
     "img": "s-03-03.jpg",
+    "bgcolor": "#C35C6C",
     "link": "gang-turns"
   },
   {
@@ -57,6 +60,7 @@
     "price": 12000,
     "isbn": "978-89-7288-281-X",
     "img": "s-04-03.jpg",
+    "bgcolor": "#B3D892",
     "link": "pierrot"
   },
   {
@@ -72,6 +76,7 @@
     "price": 10000,
     "isbn": "978-89-91312-53-5",
     "img": "s-05-03.jpg",
+    "bgcolor": "#D5BD59",
     "link": "coin-locker"
   },
   {
@@ -87,6 +92,7 @@
     "price": 9500,
     "isbn": "978-89-7288-244-5",
     "img": "s-06-03.jpg",
+    "bgcolor": "#7BA9DE",
     "link": "children"
   },
   {
@@ -102,6 +108,7 @@
     "price": 12800,
     "isbn": "978-89-255-3500-5",
     "img": "s-07-04.jpg",
+    "bgcolor": "#6D6459",
     "link": "grasshopper"
   },
   {
@@ -117,6 +124,7 @@
     "price": 10000,
     "isbn": "978-89-01-05734-4",
     "img": "s-09-03.jpg",
+    "bgcolor": "#214092",
     "link": "accuracy-of-death"
   },
   {
@@ -132,6 +140,7 @@
     "price": 10000,
     "isbn": "978-89-01-05959-2",
     "img": "s-11-03.jpg",
+    "bgcolor": "#5F99D8",
     "link": "devil"
   },
   {
@@ -147,6 +156,7 @@
     "price": 12000,
     "isbn": "978-89-91312-50-0",
     "img": "s-12-04.jpg",
+    "bgcolor": "#1D81AF",
     "link": "campus-life"
   },
   {
@@ -162,6 +172,7 @@
     "price": 10000,
     "isbn": "978-89-255-0072-8",
     "img": "s-13-03.jpg",
+    "bgcolor": "#FBFB74",
     "link": "fool"
   },
   {
@@ -177,6 +188,7 @@
     "price": 9800,
     "isbn": "978-89-5660-209-7",
     "img": "s-14-03.jpg",
+    "bgcolor": "#68AFF2",
     "link": "gang-day"
   },
   {
@@ -192,6 +204,7 @@
     "price": 10000,
     "isbn": "978-89-01-06624-0",
     "img": "s-15-03.jpg",
+    "bgcolor": "#E9E9E9",
     "link": "fish-story"
   },
   {
@@ -207,6 +220,7 @@
     "price": 13000,
     "isbn": "978-89-01-08281-3",
     "img": "s-16-02.jpg",
+    "bgcolor": "#84624D",
     "link": "golden-slumber"
   },
   {
@@ -222,6 +236,7 @@
     "price": 15000,
     "isbn": "978-89-01-09931-6",
     "img": "s-20-05.jpg",
+    "bgcolor": "#FFF314",
     "link": "modern-times"
   },
   {
@@ -237,6 +252,7 @@
     "price": 12000,
     "isbn": "978-89-01-11466-8",
     "img": "s-23-04.jpg",
+    "bgcolor": "#C6B69C",
     "link": "king"
   },
   {
@@ -252,6 +268,7 @@
     "price": 12800,
     "isbn": "978-89-255-3935-5",
     "img": "s-24-03.jpg",
+    "bgcolor": "#1E1709",
     "link": "sos"
   },
   {
@@ -267,6 +284,7 @@
     "price": 13800,
     "isbn": "978-89-258-5629-2",
     "img": "s-26-02.jpg",
+    "bgcolor": "#D2C1A1",
     "link": "oh-father"
   },
   {
@@ -282,6 +300,7 @@
     "price": 12800,
     "isbn": "978-89-255-4313-0",
     "img": "s-27-04.jpg",
+    "bgcolor": "#96BABD",
     "link": "bye-bye-blackbird"
   },
   {
@@ -297,6 +316,7 @@
     "price": 14300,
     "isbn": "978-89-509-2903-9",
     "img": "s-28-04.jpg",
+    "bgcolor": "#67553D",
     "link": "maria-beetle"
   },
   {
@@ -312,6 +332,7 @@
     "price": 14800,
     "isbn": "978-89-3748-942-6",
     "img": "s-37-03.jpg",
+    "bgcolor": "#E75B66",
     "link": "yoruno-kuni"
   },
   {
@@ -327,6 +348,7 @@
     "price": 13000,
     "isbn": "978-89-01-20425-3",
     "img": "s-38-03.jpg",
+    "bgcolor": "#4DBDDA",
     "link": "vacation"
   },
   {
@@ -342,6 +364,7 @@
     "price": 14800,
     "isbn": "978-89-7275-685-9 ",
     "img": "s-39-03.jpg",
+    "bgcolor": "#019A43",
     "link": "gasoline"
   },
   {
@@ -357,6 +380,7 @@
     "price": 15000,
     "isbn": "978-89-0116-586-8",
     "img": "s-40-02.jpg",
+    "bgcolor": "#035AAA",
     "link": "furyoku"
   },
   {
@@ -372,6 +396,7 @@
     "price": 13800,
     "isbn": "978-89-7275-742-9",
     "img": "s-41-02.jpg",
+    "bgcolor": "#245D9C",
     "link": "kubiori"
   },
   {
@@ -387,6 +412,7 @@
     "price": 13800,
     "isbn": "978-89-7275-799-3",
     "img": "s-42-02.jpg",
+    "bgcolor": "#481C75",
     "link": "aine"
   },
   {
@@ -402,6 +428,7 @@
     "price": 12000,
     "isbn": "978-89-3743-192-0",
     "img": "s-43-02.jpg",
+    "bgcolor": "#D38C02",
     "link": "ctb"
   },
   {
@@ -417,6 +444,7 @@
     "price": 12000,
     "isbn": "978-89-3743-193-7",
     "img": "s-43-03.jpg",
+    "bgcolor": "#D38C02",
     "link": "ctb"
   },
   {
@@ -432,6 +460,7 @@
     "price": 15000,
     "isbn": "978-89-5097-168-7",
     "img": "s-44-02.jpg",
+    "bgcolor": "#8E4F4C",
     "link": "mars"
   },
   {
@@ -447,6 +476,7 @@
     "price": 14800,
     "isbn": "978-89-2556-371-8",
     "img": "s-52-02.jpg",
+    "bgcolor": "#3C2F2D",
     "link": "ax"
   },
   {
@@ -462,6 +492,7 @@
     "price": 13800,
     "isbn": "978-89-7275-880-8",
     "img": "s-51-02.jpg",
+    "bgcolor": "#103B73",
     "link": "rabbit"
   },
   {
@@ -477,6 +508,7 @@
     "price": 13000,
     "isbn": "978-89-0116-637-7",
     "img": "s-30-02.jpg",
+    "bgcolor": "#F9F7E3",
     "link": 3652
   },
   {
@@ -492,6 +524,7 @@
     "price": 8000,
     "isbn": "978-89-8957-138-4",
     "img": "s-08-02.jpg",
+    "bgcolor": "#AB87B7",
     "link": "life"
   },
   {
@@ -507,6 +540,7 @@
     "price": 11800,
     "isbn": "978-89-7337-870-8",
     "img": "s-10-03.jpg",
+    "bgcolor": "#F8F5CF",
     "link": "polarbear"
   },
   {
@@ -522,6 +556,7 @@
     "price": 15000,
     "isbn": "977-12-2715-9",
     "img": "s-31-02.jpg",
+    "bgcolor": "#DEB377",
     "link": "christmas"
   },
   {
@@ -537,6 +572,7 @@
     "price": 13800,
     "isbn": "978-89-7275-698-9",
     "img": "s-05-04.jpg",
+    "bgcolor": "#4374C0",
     "link": "coin-locker"
   },
   {
@@ -552,6 +588,7 @@
     "price": 13800,
     "isbn": "978-89-7275-699-6",
     "img": "s-12-05.jpg",
+    "bgcolor": "#FABE30",
     "link": "campus-life"
   },
   {
@@ -567,6 +604,7 @@
     "price": 13000,
     "isbn": "978-89-7275-726-9",
     "img": "s-13-04.jpg",
+    "bgcolor": "#58D883",
     "link": "fool"
   },
   {
@@ -582,6 +620,7 @@
     "price": 13000,
     "isbn": "978-89-7275-738-2",
     "img": "s-06-04.jpg",
+    "bgcolor": "#F4C2D9",
     "link": "children"
   },
   {
@@ -597,6 +636,7 @@
     "price": 14000,
     "isbn": "978-89-374-3187-6",
     "img": "s-01-05.jpg",
+    "bgcolor": "#E33E89",
     "link": "prayer"
   },
   {
@@ -612,6 +652,7 @@
     "price": 13800,
     "isbn": "978-89-727-5776-4",
     "img": "s-02-04.jpg",
+    "bgcolor": "#2A1E1A",
     "link": "lush-life"
   },
   {
@@ -627,6 +668,7 @@
     "price": 15000,
     "isbn": "978-89-012-1587-7",
     "img": "s-20-06.jpg",
+    "bgcolor": "#00ABEC",
     "link": "modern-times"
   },
   {
@@ -642,6 +684,7 @@
     "price": 13000,
     "isbn": "978-89-012-2210-3",
     "img": "s-15-04.jpg",
+    "bgcolor": "#31438A",
     "link": "fish-story"
   },
   {
@@ -657,6 +700,7 @@
     "price": "-",
     "isbn": "-",
     "img": "s-36-02.jpg",
+    "bgcolor": "#8C9FA7",
     "link": "pk"
   },
   {
@@ -672,6 +716,7 @@
     "price": "-",
     "isbn": "-",
     "img": "s-46-01.jpg",
+    "bgcolor": "#C2BCC8",
     "link": "gyroscope"
   },
   {
@@ -687,6 +732,7 @@
     "price": "-",
     "isbn": "-",
     "img": "s-49-01.jpg",
+    "bgcolor": "#DE231A",
     "link": "gang-three"
   },
   {
@@ -702,6 +748,7 @@
     "price": "-",
     "isbn": "-",
     "img": "s-50-01.jpg",
+    "bgcolor": "#EE8203",
     "link": "submarine"
   },
   {
@@ -717,6 +764,7 @@
     "price": "-",
     "isbn": "",
     "img": "s-17-01.jpg",
+    "bgcolor": "#92E558",
     "link": ""
   },
   {
@@ -732,6 +780,7 @@
     "price": "-",
     "isbn": "-",
     "img": "s-18-01.jpg",
+    "bgcolor": "#6E7DB4",
     "link": ""
   },
   {
@@ -747,6 +796,7 @@
     "price": "-",
     "isbn": "-",
     "img": "s-22-01.jpg",
+    "bgcolor": "#FAFAFA",
     "link": ""
   },
   {
@@ -762,6 +812,7 @@
     "price": "-",
     "isbn": "-",
     "img": "s-19-01.jpg",
+    "bgcolor": "#FAFAFA",
     "link": ""
   },
   {
@@ -777,6 +828,7 @@
     "price": "-",
     "isbn": "-",
     "img": "s-21-01.jpg",
+    "bgcolor": "#FAFAFA",
     "link": ""
   },
   {
@@ -792,6 +844,7 @@
     "price": "-",
     "isbn": "-",
     "img": "s-25-01.jpg",
+    "bgcolor": "#FAFAFA",
     "link": ""
   },
   {
@@ -807,6 +860,7 @@
     "price": "-",
     "isbn": "-",
     "img": "s-47-01.jpg",
+    "bgcolor": "#FAFAFA",
     "link": ""
   },
   {
@@ -867,6 +921,7 @@
     "price": "-",
     "isbn": "-",
     "img": "s-29-01.jpg",
+    "bgcolor": "#8DB419",
     "link": ""
   },
   {
@@ -882,6 +937,7 @@
     "price": "-",
     "isbn": "-",
     "img": "s-35-01.jpg",
+    "bgcolor": "#2EB4B2",
     "link": ""
   },
   {
@@ -897,6 +953,7 @@
     "price": "-",
     "isbn": "-",
     "img": "s-34-01.jpg",
+    "bgcolor": "#A1C23A",
     "link": ""
   },
   {
@@ -912,6 +969,7 @@
     "price": "-",
     "isbn": "-",
     "img": "s-48-01.jpg",
+    "bgcolor": "#FAFAFA",
     "link": ""
   },
   {
@@ -927,6 +985,7 @@
     "price": "-",
     "isbn": "-",
     "img": "s-45-01.jpg",
+    "bgcolor": "#FAFAFA",
     "link": ""
   }
 ]

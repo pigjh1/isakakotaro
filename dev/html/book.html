@@ -15,6 +15,7 @@
           <h1>작품 소개</h1>
         </header>
 
+
         <p>자세히보기 버튼을 클릭하면 특설페이지로 이동합니다.</p>
         <p>작품목록 엑셀시트 : <a href="https://goo.gl/BzdATx" target="_blank">https://goo.gl/BzdATx</a></p>
 
@@ -49,12 +50,25 @@
             </select>
           </div>
 
-          <ul v-if="isImageType">
-             <li v-for="item in paagBoooks">
-                <a :href="'/book/' + item.link + '.html'" v-if="item.link !== ''">
-                  <img :src="getPic(item.img)" :alt="item.title">
-                </a>
-              <!-- <p>{{ item.title }}</p> -->
+          <ul class="book-image row" v-if="isImageType">
+            <li class="book-item col-s-6 col-m-4 col-l-3" v-for="item in paagBoooks">
+              <div class="book-wrapper">
+                <div class="bk-img">
+                  <div class="bk-wrapper">
+                    <div class="bk-book bk-bookdefault">
+                      <div class="bk-front">
+                        <div class="bk-cover" :style="getBg(item.img)"></div>
+                      </div>
+                      <div class="bk-back"></div>
+                      <div class="bk-left" :style="{ background: item.bgcolor }"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item-details">
+                  <p>{{ item.title }}</p>
+                  <a :href="'/book/' + item.link + '.html'" class='mdc-button mdc-button--raised mdc-button--dense' v-if="  item.link !== ''">자세히보기</a>
+                </div>
+              </div>
             </li>
           </ul>
 

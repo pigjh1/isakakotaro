@@ -9,11 +9,13 @@
   @@include('legacy.html')
   <div id="wrap">
     @@include('header.html')
-    <main id="main" class="main link">
+    <main id="main" class="main world">
       <div class="l-wrap">
         <header class="page-header">
           <h1>센다이 정보</h1>
         </header>
+
+        <div id="map-container" class="map-container"></div>
 
         @@include('disqus.html')
 
@@ -22,6 +24,112 @@
     </main>
     @@include('footer.html')
   </div>
+
   <script src="/assets/js/bundle.js"></script>
+
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDgcVgXVKyWxM2oujTdjfXBO56dCXVTeg&callback=initMap&language=ko&region=KR" async defer></script>
+<script type="text/javascript">
+const mapIcon = '/assets/img/marker.png';
+const mapData = [
+    {
+        id: 1,
+        lat: 38.260297,
+        lng: 140.88205,
+        name: '센다이역',
+        note: ''
+    },
+    {
+        id: 2,
+        lat: 38.260305,
+        lng: 140.8726,
+        name: '후지사키 백화점',
+        note: ''
+    }, {
+        id: 3,
+        lat: 38.262196,
+        lng: 140.87202,
+        name: '센다이 포리스',
+        note: ''
+    }, {
+        id: 4,
+        lat: 38.26217,
+        lng: 140.87006,
+        name: '죠젠지 거리',
+        note: ''
+    }, {
+        id: 5,
+        lat: 38.266946,
+        lng: 140.8718,
+        name: '고토다이 공원',
+        note: ''
+    }
+];
+const mapStyle = [
+    {
+        'featureType': 'landscape.man_made',
+        'stylers': [ { 'color': '#92bab4' } ]
+    },{
+        'featureType': 'road.arterial',
+        'elementType': 'geometry.stroke',
+        'stylers': [ { 'color': '#6a6a6a' } ]
+    },{
+        'featureType': 'road.arterial',
+        'stylers': [ { 'color': '#a2c2c3' } ]
+    },{
+        'featureType': 'road.arterial',
+        'elementType': 'labels.text.fill',
+        'stylers': [ { 'color': '#ffffff' } ]
+    },{
+        'featureType': 'road.arterial',
+        'elementType': 'labels.icon',
+        'stylers': [ { 'color': '#ffffff' } ]
+    },{
+        'featureType': 'road.arterial',
+        'elementType': 'geometry.stroke',
+        'stylers': [ { 'color': '#83aaa7' } ]
+    },{
+        'featureType': 'road.local',
+        'elementType': 'geometry.stroke',
+        'stylers': [ { 'color': '#82ada7' } ]
+    }
+];
+let map = null;
+
+function initMap() {
+    let styledMap = new google.maps.StyledMapType(mapStyle, {name: "Styled Map"});
+
+    map = new google.maps.Map(document.getElementById('map-container'), {
+        zoom: 16,
+        center: {lat: 38.263556, lng: 140.872429},
+        mapTypeControlOptions: {
+            mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
+        }
+    });
+
+    for (let i = 0; i < mapData.length; i++) {
+        let data = mapData[i];
+        let note = `<p>${data.name}</p>`;
+
+        let marker = new google.maps.Marker({
+            position: { lat: data.lat, lng: data.lng },
+            map: map,
+            icon: mapIcon,
+            title: data.name
+        });
+
+        let infowindow = new google.maps.InfoWindow({
+            content: note
+        });
+
+        marker.addListener('click', function() {
+            infowindow.open(map, marker);
+        });
+    }
+
+    map.mapTypes.set('map_style', styledMap);
+    map.setMapTypeId('map_style');
+}
+</script>
 </body>
 </html>

@@ -102,7 +102,7 @@ document.querySelector('.menu').addEventListener('click', () => drawer.open = tr
     },
     data() {
       return {
-        type: 'text',
+        type: 'image',
         order: 'no',
         books: [],
       };
@@ -141,9 +141,12 @@ document.querySelector('.menu').addEventListener('click', () => drawer.open = tr
         return !!(this.type === 'image');
       }
     },
-    methods: {
+    methods: {      
       getPic(imgsrc) {
         return imgsrc !== '-' ? '/assets/img/book/' + imgsrc : '/assets/img/book/blank.jpg';
+      },
+      getBg(imgsrc) {
+        return imgsrc !== '-' ? 'background-image: url("/assets/img/book/' + imgsrc : 'background-image: url("/assets/img/book/blank.jpg")';
       }
     }
   });
