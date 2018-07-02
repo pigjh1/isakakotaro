@@ -7,7 +7,7 @@ const runSequence = require('run-sequence');
 const mode = require('./lib/mode');
 const config = require('./config');
 
-const assets = ['img', 'fonts', 'static', 'svg'];
+const assets = ['img', 'fonts', 'static'];
 
 /**
  * Enable/Disable html build using config
