@@ -1,5 +1,5 @@
 // --------------------------------------------------
-// Utility > Sitemap
+// Pages/sitemap
 // --------------------------------------------------
 
 .sitemap {
@@ -9,11 +9,13 @@
     padding: 0 10px;
     width: percentage(1);
     @include box-sizing;
+
     &-h {
-      border-bottom: 2px solid #222;
+      border-bottom: 2px solid $gray9;
       padding: 10px;
       text-align: center;
     }
+
     li {
       display: inline-block;
       vertical-align: top;
@@ -21,19 +23,14 @@
       width: 100%;
       @include box-sizing;
     }
+
     li li {
       margin-top: 10px;
       margin-left: 10px;
     }
+
     a {
       text-decoration: none;
-    }
-  }
-
-  .menu-d2 {
-    li {
-      padding: 14px 0;
-      border-bottom: 1px solid #222;
     }
   }
 

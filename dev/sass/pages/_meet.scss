@@ -1,0 +1,103 @@
+// --------------------------------------------------
+// Pages/meet
+// --------------------------------------------------
+
+.meet {
+  .top-banner {
+    text-align: center;
+    margin: 20px 0;
+
+    dl {
+      text-align: left;
+      padding: 15px 10px;
+      margin: 10px 0;
+      border: 1px dashed #ccc;
+      border-radius: 10px;
+    }
+    dt {
+      font-weight: bold;
+      display: inline-block;
+      width: 20%;
+    }
+    dd {
+      display: inline-block;
+      width: 80%;
+    }
+  }
+
+  .speaker {
+    display: inline-block;
+    font-weight: bold;
+    margin-right: 5px;
+  }
+
+  .isaka {
+    .speaker {
+      color: $primary;
+    }
+  }
+  .mc {
+    .speaker {
+      color: $quaternary;
+    }
+  }
+  .audience {
+    .speaker {
+      color: $secondary;
+    }
+  }
+
+  @include mq(medium) {
+    .top-banner {
+      dl {
+        margin: 10px 5%;
+        padding: 30px 20px;
+      }
+      dt {
+        display: inline-block;
+        width: 9%;
+      }
+      dd {
+        width: 40%
+      }
+    }
+  }
+}
+
+// qna
+.qna-list {
+  border-bottom: 1px solid #ddd;
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .tit {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    border-top: 1px solid #ddd;
+    background: #fafafa;
+    @include clearfix();
+
+    b {
+      float: left;
+      width: 70%;
+      padding: 10px 15px;
+      color: #333;
+      text-align: left;
+    }
+
+    .rag-date {
+      float: right;
+      text-align: right;
+      width: 25%;
+      margin-top: 10px;
+      margin-right: 10px;
+    }
+  }
+  .cont {
+    margin: 0;
+    padding: 10px 15px;
+  }
+}

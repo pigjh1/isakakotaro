@@ -1,0 +1,36 @@
+// --------------------------------------------------
+// Module/common
+// --------------------------------------------------
+
+.main {
+  position: relative;
+  min-height: 300px;
+  padding-top: 90px;
+  margin-bottom: 50px;
+  outline: none; // for skipnav
+
+  .l-wrap {
+    padding-bottom: 50px;
+    background: $white;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    margin: 20px 0;
+    font-weight: bold;
+  }
+}
+
+.page-header {
+  text-align: center;
+  padding: 1.5em 0 1em;
+  margin-bottom: 20px;
+  border-bottom: 1px solid $gray2;
+
+  h1 {
+    font-size: 2.5em;
+  }
+}
+
+.disqus {
+  margin-top: 5em;
+}

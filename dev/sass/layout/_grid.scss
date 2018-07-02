@@ -1,58 +1,7 @@
-@charset 'UTF-8';
+// --------------------------------------------------
+// Layout/grid
+// --------------------------------------------------
 
-/* --------------------------------------------------
-* layout grid
-* -------------------------------------------------- */
-html, body {
-  min-height: 100%;
-}
-
-body {
-  background-color: $white;
-  -webkit-overflow-scrolling: touch;
-}
-
-#wrap {
-  -webkit-user-drag: none;
-  touch-action: pan-y;
-
-  &:after {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    opacity: 0;
-    z-index: -1;
-    background-color: $silver;
-    @include transition(all 0.2s);
-  }
-}
-
-
-/* layout (.l-*)
--------------------------------------------------- */
-.l-wrap {
-  position: relative;
-  margin: 0 20px;
-  padding: 10px 20px;
-  max-width: $w-default;
-  @include box-sizing();
-  @include clearfix();
-
-  @include mq(x-large) {
-    margin: 0 auto;
-    padding: 10px 40px;
-  }
-}
-
-.l-full {
-  padding: 0 5%;
-}
-
-/* column ( 12 grid )
--------------------------------------------------- */
 $grid-columns	: 12;
 $grid-gutter	: 10px;
 

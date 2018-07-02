@@ -1,41 +1,39 @@
 <!DOCTYPE html>
 <html class="no-js" lang="ko">
 <head>
-  @@include('header-share.html')
-  <meta name="description" content="이사카코타로 책장 소개">
-  <title>책장 소개 | 이사카코타로</title>
+@@include('header-share.html')
+<meta name="description" content="이사카코타로 책장 소개">
+<title>책장 소개 | 이사카코타로</title>
 </head>
-<body data-nav="4.1">
-  @@include('legacy.html')
-  <div id="wrap">
-    @@include('header.html')
-    <main id="main" class="main bookcase">
-      <div class="l-wrap">
-        <header class="page-header">
-          <h1>책장 소개</h1>
-        </header>
+<body data-nav="4.4">
+@@include('legacy.html')
+<div id="wrap">
+  @@include('header.html')
+  <main id="main" class="main bookcase">
+    <div class="l-wrap">
+      <header class="page-header">
+        <h1>책장 소개</h1>
+      </header>
 
-        <p>SNS에 <b>#이사카코타로책장</b> 해시태그를 포함하여 사진을 올려주세요!</p>
+      <p>SNS에 <b>#이사카코타로책장</b> 해시태그를 포함하여 사진을 올려주세요!</p>
 
-        <div id="bookcase">
-          <div class="item" v-for="item in photos">
-            <div class="polaroid">
-              <img :src="getPic(item.img)" alt="">
-              <div class="caption">
-                <b>Photo By {{ item.user }}</b>
-                <span>({{ item.date }})</span>
-              </div>
+      <div id="bookcase">
+        <div class="item" v-for="item in photos">
+          <div class="polaroid">
+            <img :src="getPic(item.img)" alt="">
+            <div class="caption">
+              <b>Photo By {{ item.user }}</b>
+              <span>({{ item.date }})</span>
             </div>
           </div>
         </div>
-
-        @@include('disqus.html')
-
-        @@include('share.html')
       </div>
-    </main>
-    @@include('footer.html')
-  </div>
-  <script src="/assets/js/bundle.js"></script>
+
+      @@include('disqus.html')
+    </div>
+  </main>
+  @@include('footer.html')
+</div>
+<script src="/assets/js/bundle.js"></script>
 </body>
 </html>

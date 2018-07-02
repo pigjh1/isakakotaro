@@ -1,21 +1,17 @@
-//==============================================
+// --------------------------------------------------
 // Layout/footer
-//==============================================
+// --------------------------------------------------
 
 .footer {
   padding: 20px 0 10px;
   text-align: center;
-  border-top: 1px solid $ash;
+  border-top: 1px solid $gray1;
   background: $white;
-  font-size: 15px;
-
-  a {
-    text-decoration: none;
-  }
+  font-size: 14px;
 
   &-info {
     a {
-      color: #337ab7;
+      color: $primary;
     }
   }
 
@@ -24,6 +20,7 @@
   }
 
   &-sns {
+    text-transform: uppercase;
     margin-bottom: .5em;
     a {
       &:before {

@@ -1,3 +1,7 @@
+// --------------------------------------------------
+// Pages/profile
+// --------------------------------------------------
+
 .profile {
 	dt {
 		display: block;
@@ -22,134 +26,6 @@
 		img {
 			width: 100px;
 			height: 100px;
-		}
-	}
-}
-
-/* qna-list */
-.qna p {
-	margin-bottom: 10px;
-}
-
-.qna-list {
-	border-bottom: 1px solid #ddd;
-	.hgroup {
-		text-align: right;
-		.trigger {
-			border: 0;
-			padding: 0;
-			background: none;
-			font-size: 12px;
-			cursor: pointer;
-		}
-	}
-	ul {
-		margin: 0;
-		padding: 0;
-		list-style: none;
-	}
-	.tit {
-		position: relative;
-		width: 100%;
-		margin: 0;
-		border-top: 1px solid #ddd;
-		background: #fafafa;
-		@include clearfix();
-		a.trigger {
-			float: left;
-			width: 70%;
-			// @include box-sizing();
-			padding: 10px 15px;
-			color: #333;
-			text-align: left;
-			text-decoration: none !important;
-			font-weight: bold;
-		}
-		.rag-date {
-			float: right;
-			text-align: right;
-			width: 25%;
-			margin-top: 10px;
-			margin-right: 10px;
-			// @include box-sizing();
-		}
-	}
-	.hide .tit a.trigger {
-		background: none;
-		font-weight: normal;
-	}
-	.tit a.trigger {
-		&:hover, &:active, &:focus {
-			background: #f8f8f8;
-			color: #000;
-		}
-	}
-	.cont {
-		margin: 0;
-		padding: 10px 15px;
-		line-height: 1.8;
-	}
-}
-
-.meet {
-	.top-banner {
-		text-align: center;
-		margin: 20px 0;
-
-		dl {
-			text-align: left;
-			padding: 15px 10px;
-			margin: 10px 0;
-			border: 1px dashed #ccc;
-			border-radius: 10px;
-		}
-		dt {
-			font-weight: bold;
-			display: inline-block;
-			width: 20%;
-		}
-		dd {
-			display: inline-block;
-			width: 80%;
-		}
-	}
-	.speaker {
-		display: inline-block;
-		font-weight: bold;
-		margin-right: 5px;
-	}
-
-	.isaka {
-		.speaker{
-			color: #03A9F4;
-
-		}
-	}
-	.mc {
-		.speaker{
-			color: #ff9800;
-		}
-	}
-	.audience {
-		.speaker{
-
-			color: #673ab7;
-		}
-	}
-
-	@include mq(medium) {
-		.top-banner {
-			dl {
-				margin: 10px 5%;
-				padding: 30px 20px;
-			}
-			dt {
-				display: inline-block;
-				width: 9%;
-			}
-			dd {
-				width: 40%
-			}
 		}
 	}
 }

@@ -1,6 +1,6 @@
-//==============================================
+// --------------------------------------------------
 // Module/table
-//==============================================
+// --------------------------------------------------
 
 .table {
   &-caption {
@@ -39,14 +39,14 @@
 .base-table {
   width: 100%;
   border-collapse: collapse;
-  border-top: solid #424242 2px;
-  border-bottom: solid #646464 1px;
+  border-top: solid $gray6 1px;
+  border-bottom: solid $gray7 1px;
 
   th,
   td {
     padding: 8px 10px;
-    border-bottom: 1px solid $silver;
-    border-left: 1px solid $silver;
+    border-bottom: 1px solid $gray3;
+    border-left: 1px solid $gray3;
     &:first-child {
       border-left: 0 none;
     }
@@ -54,6 +54,6 @@
   th {
     text-align: center;
     font-weight: normal;
-    background-color: $fog;
+    background-color: $gray1;
   }
 }

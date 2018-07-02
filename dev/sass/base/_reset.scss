@@ -1,15 +1,13 @@
-/* --------------------------------------------------
-* base styles
-* -------------------------------------------------- */
+// --------------------------------------------------
+// base styles
+// --------------------------------------------------
 
 body {
   padding: 0;
   font-size: 1em;
-  line-height: $base-leading-ratio;
-  color: $dark;
+  line-height: 1.5;
 }
 a {
-  color: $dark;
   text-decoration: none;
 }
 a:hover,
@@ -19,6 +17,13 @@ a:active {
 }
 blockquote {
   margin: 1em 40px;
+}
+hr {
+  height: 1px;
+  margin: 1em 0;
+  padding: 0;
+  border: 0;
+  border-top: 1px solid #ccc;
 }
 pre {
   white-space: pre;
@@ -96,39 +101,52 @@ table {
 td {
   vertical-align: middle;
 }
-
-::-moz-selection,
-::selection {
-  background: $brand;
+::-moz-selection {
+  background: $dark;
   color: $white;
   text-shadow: none;
 }
-::-webkit-input-placeholder,
+::selection {
+  background: $dark;
+  color: $white;
+  text-shadow: none;
+}
+::-webkit-input-placeholder {
+  color: #ccc;
+}
 :-moz-placeholder {
-  color: $silver;
+  color: #ccc;
 }
 
-/* base layout
--------------------------------------------------- */
+// base layout
 body,
 input,
 textarea,
 select,
 button {
   font-family: $font-default;
+  color: $dark;
 }
 html {
+  min-width: 320px;
+  min-height: 100%;
   background-color: $white;
+  line-height: $base-leading-ratio;
 }
 body {
   min-width: 320px;
+  -webkit-overflow-scrolling: touch;
 }
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
+  padding: 0;
   font-weight: normal;
 }
-p:first-child {
-  margin-top: 0;
+a {
+  color: $dark;
+}
+p {
+  margin: 0;
 }
 img {
   max-width: 100%;
@@ -137,38 +155,8 @@ img {
   -ms-interpolation-mode: bicubic;
 }
 em {
-  color: $brand;
+  color: $dark;
 }
-.mobile {
-  a,
-  button,
-  input,
-  textarea,
-  select,
-  [tabindex] {
-    outline: 0 none;
-  }
-}
-
-/* Skip navigation
--------------------------------------------------- */
-#skipnav {
-  position: absolute;
-  left: -100%;
-  background: $gray-dark;
-  color: $white;
-  font-size: 1.6em;
-}
-#skipnav:focus {
-  display: block;
-  position: fixed;
-  left: 0;
-  z-index: 29999;
-  width: 100%;
-  padding: 20px;
-
-  font-weight: bold;
-  line-height: 1.5;
-  text-align: center;
-  vertical-align: middle;
+mark {
+  background-color: $dark;
 }

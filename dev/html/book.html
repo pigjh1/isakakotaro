@@ -1,116 +1,112 @@
 <!DOCTYPE html>
 <html class="no-js" lang="ko">
 <head>
-  @@include('header-share.html')
-  <meta name="description" content="이사카코타로 출판도서 목록">
-  <title>작품 소개 | 이사카코타로</title>
+@@include('header-share.html')
+<meta name="description" content="이사카코타로 출판도서 목록">
+<title>작품 소개 | 이사카코타로</title>
 </head>
 <body data-nav="2.1">
-  @@include('legacy.html')
-  <div id="wrap">
-    @@include('header.html')
-    <main id="main" class="main book book-index">
-      <div class="l-wrap">
-        <header class="page-header">
-          <h1>작품 소개</h1>
-        </header>
+@@include('legacy.html')
+<div id="wrap">
+  @@include('header.html')
+  <main id="main" class="main book book-index">
+    <div class="l-wrap">
+      <header class="page-header">
+        <h1>작품 소개</h1>
+      </header>
 
+      <p>작품목록 엑셀시트 : <a href="https://goo.gl/BzdATx" target="_blank">https://goo.gl/BzdATx</a></p>
 
-        <p>자세히보기 버튼을 클릭하면 특설페이지로 이동합니다.</p>
-        <p>작품목록 엑셀시트 : <a href="https://goo.gl/BzdATx" target="_blank">https://goo.gl/BzdATx</a></p>
+      <div class="sort-type">
+        <span class="sort-image" :class="{ 'is-active': isImageType }">
+          <input type="radio" v-model="type" id="image" value="image">
+          <label for="image">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 25 25">
+              <title>image</title>
+              <path d="M9 0H1a.9.9 0 0 0-1 1v8a.9.9 0 0 0 1 1h8a.9.9 0 0 0 1-1V1a.9.9 0 0 0-1-1zM8 8H2V2h6zm16-8h-8a.9.9 0 0 0-1 1v8a.9.9 0 0 0 1 1h8a.9.9 0 0 0 1-1V1a.9.9 0 0 0-1-1zm-1 8h-6V2h6zM9 15H1a.9.9 0 0 0-1 1v8a.9.9 0 0 0 1 1h8a.9.9 0 0 0 1-1v-8a.9.9 0 0 0-1-1zm-1 8H2v-6h6zm16-8h-8a.9.9 0 0 0-1 1v8a.9.9 0 0 0 1 1h8a.9.9 0 0 0 1-1v-8a.9.9 0 0 0-1-1zm-1 8h-6v-6h6z"/>
+            </svg>
+            IMAGE
+          </label>
+        </span>
+        <span class="sort-text" :class="{ 'is-active': !isImageType }">
+          <input type="radio" v-model="type" id="text" value="text">
+          <label for="text">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 32 25">
+              <title>list</title>
+              <path d="M5.7 1.5a1 1 0 0 1 1-1h23.9a1 1 0 0 1 0 2H6.7a1 1 0 0 1-1-1zm1 8.3h17.7a.9.9 0 0 0 1-1 1 1 0 0 0-1-1H6.7a1.1 1.1 0 0 0-1 1 1 1 0 0 0 1 1zm23.9 5.4H6.7a1 1 0 0 0-1 1 1.1 1.1 0 0 0 1 1h23.9a1.1 1.1 0 0 0 1-1 1 1 0 0 0-1-1zm-6.2 7.3H6.7a1 1 0 1 0 0 2h17.7a1 1 0 0 0 0-2zM.4 2.7h2.5V.3H.4zm0 7.4h2.5V7.6H.4zm0 7.3h2.5v-2.5H.4zm0 7.3h2.5v-2.4H.4z"/>
+            </svg>
+            List
+          </label>
+        </span>
+        <select v-model="order">
+          <option value="no">정렬순서</option>
+          <option value="publicationko">국내출간일</option>
+          <option value="publicationjp">일본출간일</option>
+          <option value="title">제목</option>
+          <option value="publisher">출판사</option>
+        </select>
+      </div>
 
-        <div id="book">
-          <div class="sort-type">
-            <span class="sort-image" :class="{ 'is-active': isImageType }">
-              <input type="radio" v-model="type" id="image" value="image">
-              <label for="image">
-                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 25 25">
-                  <title>image</title>
-                  <path d="M9 0H1a.9.9 0 0 0-1 1v8a.9.9 0 0 0 1 1h8a.9.9 0 0 0 1-1V1a.9.9 0 0 0-1-1zM8 8H2V2h6zm16-8h-8a.9.9 0 0 0-1 1v8a.9.9 0 0 0 1 1h8a.9.9 0 0 0 1-1V1a.9.9 0 0 0-1-1zm-1 8h-6V2h6zM9 15H1a.9.9 0 0 0-1 1v8a.9.9 0 0 0 1 1h8a.9.9 0 0 0 1-1v-8a.9.9 0 0 0-1-1zm-1 8H2v-6h6zm16-8h-8a.9.9 0 0 0-1 1v8a.9.9 0 0 0 1 1h8a.9.9 0 0 0 1-1v-8a.9.9 0 0 0-1-1zm-1 8h-6v-6h6z"/>
-                </svg>
-                IMAGE
-              </label>
-            </span>
-            <span class="sort-text" :class="{ 'is-active': !isImageType }">
-              <input type="radio" v-model="type" id="text" value="text">
-              <label for="text">
-                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 32 25">
-                  <title>list</title>
-                  <path d="M5.7 1.5a1 1 0 0 1 1-1h23.9a1 1 0 0 1 0 2H6.7a1 1 0 0 1-1-1zm1 8.3h17.7a.9.9 0 0 0 1-1 1 1 0 0 0-1-1H6.7a1.1 1.1 0 0 0-1 1 1 1 0 0 0 1 1zm23.9 5.4H6.7a1 1 0 0 0-1 1 1.1 1.1 0 0 0 1 1h23.9a1.1 1.1 0 0 0 1-1 1 1 0 0 0-1-1zm-6.2 7.3H6.7a1 1 0 1 0 0 2h17.7a1 1 0 0 0 0-2zM.4 2.7h2.5V.3H.4zm0 7.4h2.5V7.6H.4zm0 7.3h2.5v-2.5H.4zm0 7.3h2.5v-2.4H.4z"/>
-                </svg>
-                List
-              </label>
-            </span>
-            <select v-model="order">
-              <option value="no">정렬순서</option>
-              <option value="publicationko">국내출간일</option>
-              <option value="publicationjp">일본출간일</option>
-              <option value="title">제목</option>
-              <option value="publisher">출판사</option>
-            </select>
-          </div>
-
-          <ul class="book-image row" v-if="isImageType">
-            <li class="book-item col-s-6 col-m-4 col-l-3" v-for="item in paagBoooks">
-              <div class="book-wrapper">
-                <div class="bk-img">
-                  <div class="bk-wrapper">
-                    <div class="bk-book bk-bookdefault">
-                      <div class="bk-front">
-                        <div class="bk-cover" :style="getBg(item.img)"></div>
-                      </div>
-                      <div class="bk-back"></div>
-                      <div class="bk-left" :style="{ background: item.bgcolor }"></div>
+      <div id="book">
+        <ul class="row" v-if="isImageType">
+          <li class="item" v-for="item in paagBoooks">
+            <div class="item-img">
+              <div class="bk-img">
+                <div class="bk-wrapper">
+                  <div class="bk-book bk-bookdefault">
+                    <div class="bk-front">
+                      <div class="bk-cover" :style="getBg(item.img)"></div>
                     </div>
+                    <div class="bk-back"></div>
+                    <div class="bk-left" :style="{ background: item.bgcolor }"></div>
                   </div>
                 </div>
-                <div class="item-details">
-                  <p>{{ item.title }}</p>
-                  <a :href="'/book/' + item.link + '.html'" class='mdc-button mdc-button--raised mdc-button--dense' v-if="  item.link !== ''">자세히보기</a>
-                </div>
               </div>
-            </li>
-          </ul>
+              <div class="item-details">
+                <p>{{ item.title }}</p>
+                <a :href="'/book/' + item.link + '.html'" class='mdc-button mdc-button--raised mdc-button--dense' v-if="item.link !== ''">자세히보기</a>
+              </div>
+            </div>
+          </li>
+        </ul>
 
-          <table class="base-table" v-if="!isImageType">
-            <thead>
-              <tr>
-                <th>NO</th>
-                <th>구분</th>
-                <th>표지</th>
-                <th>제목</th>
-                <th>일본출간일</th>
-                <th>국내출간일</th>
-                <th>출판사</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr v-for="item in paagBoooks">
-                <td>{{ item.no }}</td>
-                <td>{{ item.category }}</td>
-                <td>
-                  <img :src="getPic(item.img)" :alt="item.title" v-if="item.img !== ''">
-                  <span v-if="item.img === ''">-</span>
-                </td>
-                <td class='book-title'>
-                  {{ item.title }}<br>원제: <span lang="jp">{{ item.titlejp }}</span><br>
-                  <a :href="'/book/' + item.link + '.html'" class='mdc-button mdc-button--raised mdc-button--dense' v-if="item.link !== ''">자세히보기</a>
-                </td>
-                <td class='date-jp'>{{ item.publicationjp }}</td>
-                <td class='date-ko'>{{ item.publicationko }}</td>
-                <td>{{ item.publisher }}</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        @@include('disqus.html')
-
-        @@include('share.html')
+        <table class="base-table" v-if="!isImageType">
+          <thead>
+            <tr>
+              <th>NO</th>
+              <th>구분</th>
+              <th>표지</th>
+              <th>제목</th>
+              <th>일본출간일</th>
+              <th>국내출간일</th>
+              <th>출판사</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr v-for="item in paagBoooks">
+              <td>{{ item.no }}</td>
+              <td>{{ item.category }}</td>
+              <td>
+                <img :src="getPic(item.img)" :alt="item.title" v-if="item.img !== ''">
+                <span v-if="item.img === ''">-</span>
+              </td>
+              <td class='book-title'>
+                {{ item.title }}<br>원제: <span lang="jp">{{ item.titlejp }}</span><br>
+                <a :href="'/book/' + item.link + '.html'" class='mdc-button mdc-button--raised mdc-button--dense' v-if="item.link !== ''">자세히보기</a>
+              </td>
+              <td class='date-jp'>{{ item.publicationjp }}</td>
+              <td class='date-ko'>{{ item.publicationko }}</td>
+              <td>{{ item.publisher }}</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-    </main>
-    @@include('footer.html')
-  </div>
-  <script src="/assets/js/bundle.js"></script>
+
+      @@include('disqus.html')
+    </div>
+  </main>
+  @@include('footer.html')
+</div>
+<script src="/assets/js/bundle.js"></script>
 </body>
 </html>

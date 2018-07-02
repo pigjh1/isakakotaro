@@ -1,29 +1,34 @@
+// --------------------------------------------------
+// Pages/remix
+// --------------------------------------------------
+
 .movie-list {
-	border-bottom: 1px solid #ddd;
+	border-bottom: 1px solid $gray6;
 	padding: 9px 0 24px;
+
+  .movie-img {
+    img {
+      width: 200px;
+      height: 300px;
+    }
+  }
 }
 
-.movie-img {
-	img {
-		width: 200px;
-    height: 300px;
-	}
-}
 
 .comic-list {
-	border-bottom: 1px solid #ddd;
+	border-bottom: 1px solid $gray6;
 	position: relative;
 	width: 100%;
 	padding: 9px 0 24px;
-}
 
-.comic-img {
-	float: left;
-	img {
-		width: 80px;
-	}
-}
+  .comic-img {
+    float: left;
+    img {
+      width: 80px;
+    }
+  }
 
-.comic-info {
-	float: left;
+  .comic-info {
+    float: left;
+  }
 }

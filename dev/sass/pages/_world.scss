@@ -1,11 +1,10 @@
-.world {
-  p {
-    padding-bottom: 15px;
-  }
-  .txt {
-    padding: 10px 0;
-    line-height: 1.8;
-  }
+// --------------------------------------------------
+// Pages/world
+// --------------------------------------------------
 
-  .map-container {width: 100%; height: 80vh;}
+.world {
+  .map-container {
+    width: 100%;
+    height: 80vh;
+  }
 }

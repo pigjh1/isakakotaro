@@ -42,27 +42,32 @@ $icons: ();
 // color guide
 // --------------------------------------------------
 $white: #fff;
-$fog: #f3f3f3;
-$ash: #e0e0e0;
-
-$silver-light: #aaa;
-$silver: #ccc;
-$silver-dark: #888;
-
-$gray-light: #777;
-$gray: #666;
-$gray-dark: #555;
-
-$dark: #444;
-$ink: #222;
 $black: #000;
 
-$tan: #ada8a4;
+$gray0: #FAFAFA;
+$gray1: #F5F5F5;
+$gray2: #EEEEEE;
+$gray3: #E0E0E0;
+$gray4: #BDBDBD;
+$gray5: #9E9E9E;
+$gray6: #757575;
+$gray7: #616161;
+$gray8: #424242;
+$gray9: #212121;
+
+$fog: $gray0;
+$ash: $gray1;
+$silver-light: $gray2;
+$silver: $gray3;
+$silver-dark: $gray4;
+$gray-light: $gray5;
+$gray: $gray6;
+$gray-dark: $gray7;
+$dark: $gray8;
+$ink: $gray9;
+
 $warning: #d92c12;
 $confirm: #12c17c;
-
-$brand: #222;
-$brand-sub: #7FB4BE;
 
 $primary: #81d4fa;
 $secondary: #80cbc4;

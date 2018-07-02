@@ -1,6 +1,6 @@
-//==============================================
+// --------------------------------------------------
 // Module/material
-//==============================================
+// --------------------------------------------------
 
 $mdc-theme-primary: #222222;
 // $mdc-theme-primary: #fcb8ab;
@@ -13,16 +13,10 @@ $mdc-theme-primary: #222222;
 @import "@material/button/mdc-button";
 @import "@material/typography/mdc-typography";
 @import "@material/list/mdc-list";
-@import "@material/card/mdc-card";
 @import "@material/elevation/mdc-elevation";
-
 
 a.mdc-button {
   text-decoration: none;
-}
-
-.my-card__media {
-  background-image: url("pretty.jpg");
 }
 
 .mdc-top-app-bar {

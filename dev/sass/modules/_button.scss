@@ -1,5 +1,8 @@
+// --------------------------------------------------
+// Module/button
+// --------------------------------------------------
+
 %btn {
-	@include box-sizing;
 	position: relative;
 	display: inline-block;
 	font-weight: normal;
@@ -7,6 +10,7 @@
 	white-space: nowrap;
 	vertical-align: middle;
 	text-transform: capitalize;
+  @include box-sizing;
 	@include transition(all 0.2s ease-out);
 }
 
@@ -57,7 +61,7 @@
 		color: $white;
 		border-width: 0;
 		line-height: 22px;
-		background: #0464B3;
+		background: $primary;
 	}
 
 	// button size variation

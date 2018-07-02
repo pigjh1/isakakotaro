@@ -1,0 +1,29 @@
+// --------------------------------------------------
+// Paragraph
+// --------------------------------------------------
+
+.blockquote {
+  margin: 20px 0;
+  padding: 40px 60px;
+  position: relative;
+  color: $gray8;
+  background: $gray2;
+
+  &:before,
+  &:after {
+    font-family: $serif;
+    top: -10px;
+    color: $gray6;
+    font-size: 80px;
+    position: absolute;
+  }
+  &:before {
+    content: "\201C";
+    left: 10px;
+  }
+
+  &:after {
+    content: "\201D";
+    right: 10px;
+  }
+}

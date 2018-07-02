@@ -1,112 +1,102 @@
 <!DOCTYPE html>
 <html class="no-js" lang="ko">
 <head>
-  @@include('header-share.html')
-  <title>디자인 가이드</title>
-  <style>
-  .guide-h {position: relative;text-align: center; margin: 30px 0; z-index:10;}
-  .guide-h::before {content: '';display: inline-block;position: absolute;left: 0;right: 0;top: 50%;height: 1px;background: #ccc;z-index: 5;}
-  .guide-h span {position: relative;font-size:15px; display: inline-block;background: #fff;z-index: 10;padding: 0.5em 1em; text-transform: capitalize; border-radius: 10px;}
-  </style>
+@@include('header-share.html')
+<title>디자인 가이드</title>
+<style>
+.guide-h {position: relative;text-align: center; margin: 30px 0; z-index:10;}
+.guide-h::before {content: '';display: inline-block;position: absolute;left: 0;right: 0;top: 50%;height: 1px;background: #ccc;z-index: 5;}
+.guide-h span {position: relative;font-size:15px; display: inline-block;background: #fff;z-index: 10;padding: 0.5em 1em; text-transform: capitalize; border-radius: 10px;}
+</style>
 </head>
 <body>
-  @@include('legacy.html')
-  <div id="wrap">
-    @@include('header.html')
-    <main id="main" class="main">
-      <div class="l-wrap">
-        <header class="page-header">
-          <h1>디자인 가이드</h1>
-        </header>
+@@include('legacy.html')
+<div id="wrap">
+  @@include('header.html')
+  <main id="main" class="main">
+    <div class="l-wrap">
+      <header class="page-header">
+        <h1>디자인 가이드</h1>
+      </header>
 
-        <div class="guide">
-          <h2 class="guide-h"><span>material typography</span></h2>
-          <h1 class="mdc-typography--headline1">Headline 1</h1>
-          <h2 class="mdc-typography--headline2">Headline 2</h2>
-          <h3 class="mdc-typography--headline3">Headline 3</h3>
-          <h4 class="mdc-typography--headline4">Headline 4</h4>
-          <h5 class="mdc-typography--headline5">Headline 5</h5>
-          <h6 class="mdc-typography--headline6">Headline 6</h6>
-          <h6 class="mdc-typography--subtitle1">Subtitle 1</h6>
-          <h6 class="mdc-typography--subtitle2">Subtitle 2</h6>
-          <p class="mdc-typography--body1">Body 1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur unde suscipit, quam beatae rerum inventore consectetur, neque doloribus, cupiditate numquam dignissimos laborum fugiat deleniti? Eum quasi quidem quibusdam.</p>
-          <p class="mdc-typography--body2">Body 2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate aliquid ad quas sunt voluptatum officia dolorum cumque, possimus nihil molestias sapiente necessitatibus dolor saepe inventore, soluta id accusantium voluptas beatae.</p>
-          <div><span class="mdc-typography--button">Button text</span></div>
-          <div><span class="mdc-typography--caption">Caption text</span></div>
-          <div><span class="mdc-typography--overline">Overline text</span></div>
-        </div>
+      <div class="guide">
+        <h2 class="guide-h"><span>material typography</span></h2>
+        <h1 class="mdc-typography--headline1">Headline 1</h1>
+        <h2 class="mdc-typography--headline2">Headline 2</h2>
+        <h3 class="mdc-typography--headline3">Headline 3</h3>
+        <h4 class="mdc-typography--headline4">Headline 4</h4>
+        <h5 class="mdc-typography--headline5">Headline 5</h5>
+        <h6 class="mdc-typography--headline6">Headline 6</h6>
+        <h6 class="mdc-typography--subtitle1">Subtitle 1</h6>
+        <h6 class="mdc-typography--subtitle2">Subtitle 2</h6>
+        <p class="mdc-typography--body1">Body 1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur unde suscipit, quam beatae rerum inventore consectetur, neque doloribus, cupiditate numquam dignissimos laborum fugiat deleniti? Eum quasi quidem quibusdam.</p>
+        <p class="mdc-typography--body2">Body 2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate aliquid ad quas sunt voluptatum officia dolorum cumque, possimus nihil molestias sapiente necessitatibus dolor saepe inventore, soluta id accusantium voluptas beatae.</p>
+        <div><span class="mdc-typography--button">Button text</span></div>
+        <div><span class="mdc-typography--caption">Caption text</span></div>
+        <div><span class="mdc-typography--overline">Overline text</span></div>
+      </div>
 
-        <div class="guide">
-          <h2 class="guide-h"><span>material button</span></h2>
-          <button type="button" class="mdc-button">
-            버튼
-          </button>
-          <button class="mdc-button mdc-button--outlined">
-            버튼
-          </button>
-          <button class="mdc-button mdc-button--raised mdc-button--dense">
-            버튼
-          </button>
-          <button class="mdc-button mdc-button--raised">
-            버튼
-          </button>
-          <button class="mdc-button mdc-button--raised">
-            <i class="material-icons mdc-button__icon">favorite</i>
-            버튼
-          </button>
-          <button class="mdc-button" disabled>
-            버튼
-          </button>
-        </div>
+      <div class="guide">
+        <h2 class="guide-h"><span>material button</span></h2>
+        <button type="button" class="mdc-button">
+          버튼
+        </button>
+        <button class="mdc-button mdc-button--outlined">
+          버튼
+        </button>
+        <button class="mdc-button mdc-button--raised mdc-button--dense">
+          버튼
+        </button>
+        <button class="mdc-button mdc-button--raised">
+          버튼
+        </button>
+        <button class="mdc-button mdc-button--raised">
+          <i class="material-icons mdc-button__icon">favorite</i>
+          버튼
+        </button>
+        <button class="mdc-button" disabled>
+          버튼
+        </button>
+      </div>
 
-        <div class="guide">
-          <h2 class="guide-h"><span>material tab</span></h2>
-          <nav class="mdc-tab-bar">
-            <a class="mdc-tab mdc-tab--active" href="#one">Home</a>
-            <a class="mdc-tab" href="#two">Merchandise</a>
-            <a class="mdc-tab" href="#three">About Us</a>
-            <span class="mdc-tab-bar__indicator"></span>
-          </nav>
-        </div>
-
-        <div class="guide">
-          <h2 class="guide-h"><span>material List</span></h2>
-          <div class="mdc-list-group">
-            <h3 class="mdc-list-group__subheader">List 1</h3>
-            <ul class="mdc-list" aria-orientation="vertical">
-              <li class="mdc-list-item">line item</li>
-              <li class="mdc-list-item">line item</li>
-              <li class="mdc-list-item">line item</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="guide">
-          <h2 class="guide-h"><span>table</span></h2>
-          <table class="base-table">
-            <tr>
-              <th>Firstname</th>
-              <th>Lastname</th>
-              <th>Age</th>
-            </tr>
-            <tr>
-              <td>Jill</td>
-              <td>Smith</td>
-              <td>50</td>
-            </tr>
-            <tr>
-              <td>Eve</td>
-              <td>Jackson</td>
-              <td>94</td>
-            </tr>
-          </table>
+      <div class="guide">
+        <h2 class="guide-h"><span>material List</span></h2>
+        <div class="mdc-list-group">
+          <h3 class="mdc-list-group__subheader">List 1</h3>
+          <ul class="mdc-list" aria-orientation="vertical">
+            <li class="mdc-list-item">line item</li>
+            <li class="mdc-list-item">line item</li>
+            <li class="mdc-list-item">line item</li>
+          </ul>
         </div>
       </div>
-    </main>
 
-    @@include('footer.html')
-  </div>
+      <div class="guide">
+        <h2 class="guide-h"><span>table</span></h2>
+        <table class="base-table">
+          <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+          </tr>
+          <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+          </tr>
+          <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </main>
 
-  <!-- <script src="/assets/js/bundle.js"></script> -->
+  @@include('footer.html')
+</div>
+
+<!-- <script src="/assets/js/bundle.js"></script> -->
 </body>
 </html>
