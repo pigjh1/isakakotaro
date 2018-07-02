@@ -32,12 +32,9 @@ $img-special: '#{$img}special/';
 $font-default: 'Noto Sans', 'Nanum Gothic', 'Malgun Gothic', '맑은 고딕', 'Nanum Gothic', '나눔 고딕', '돋움', dotum, sans-serif;
 $sans: $font-default;
 $serif: 'Noto Serif', serif;
-$modular-scale-base: 1.4;
-$modular-scale-ratio: 1.313;
+$base-font-size: 15px;
 $base-leading-ratio: 1.8;
 $spacing: -0.02em;
-$font-icon: 'fontello';
-$icons: ();
 
 // color guide
 // --------------------------------------------------
@@ -73,7 +70,6 @@ $primary: #81d4fa;
 $secondary: #80cbc4;
 $tertiary: #b39ddb;
 $quaternary: #ef9a9a;
-
 
 // easing
 // --------------------------------------------------

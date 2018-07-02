@@ -1,12 +1,16 @@
 // --------------------------------------------------
-// Pages/book-special
+// Pages/special
 // --------------------------------------------------
 
-.book-special {
+.special {
   margin-top: 56px;
 
   @include mq(medium) {
     margin-top: 64px;
+  }
+
+  #wrap {
+    background: $white;
   }
 
   .main {
@@ -20,14 +24,7 @@
       text-align: center;
     }
   }
-  .col {
-    img {
-      width: 150px;
-    }
-  }
-  #wrap {
-    background: $white;
-  }
+
   h1.prepare {
     font-size: 3em;
     line-height: 1.5;
@@ -36,121 +33,161 @@
   div.prepare {
     text-align: center;
     padding: 20px;
-    background: #eee;
+    background: $gray2;
     border-radius: 10px;
   }
 
+  .sp {
+    &-link {
+      a {
+        &:before {
+          content: "·";
+          padding: 0 .5em;
+        }
+        &:first-child {
+          &:before {
+            display: none;
+          }
+        }
+      }
+    }
+
+    &-cover {
+      img {
+        width: 120px;
+      }
+    }
+  }
+
+  // background setting
   @include mq(large) {
+    .main {
+      background-position: center top;
+    }
     .prayer {
-      background: url($img-special + 'prayer-bg.jpg') center 0;
+      background-image: url($img-special + 'prayer-bg.jpg');
     }
     .lush {
-      background: url($img-special + 'lush-bg.jpg') center 0 $white no-repeat;
+      background-image: url($img-special + 'lush-bg.jpg');
+      background-color: $white;
+      background-repeat: no-repeat;
     }
     .gturns {
-      background: url($img-special + 'gturns-bg.jpg') center 0;
+      background-image: url($img-special + 'gturns-bg.jpg');
     }
     .pierrot {
-      background: url($img-special + 'pierrot-bg.jpg') center 0;
+      background-image: url($img-special + 'pierrot-bg.jpg');
     }
     .coin {
-      background: url($img-special + 'coin-bg.jpg') center 0;
+      background-image: url($img-special + 'coin-bg.jpg');
     }
     .children {
-      background: url($img-special + 'children-bg.jpg') center 0;
+      background-image: url($img-special + 'children-bg.jpg');
     }
     .grasshopper {
-      background: url($img-special + 'grasshopper-bg.jpg') center 0;
+      background-image: url($img-special + 'grasshopper-bg.jpg');
     }
     .death {
-      background: url($img-special + 'death-bg.jpg') center 0;
+      background-image: url($img-special + 'death-bg.jpg');
     }
     .devil {
-      background: url($img-special + 'devil-bg.jpg') center 0;
+      background-image: url($img-special + 'devil-bg.jpg');
     }
     .campus {
-      background: url($img-special + 'campus-bg.jpg') center 0;
+      background-image: url($img-special + 'campus-bg.jpg');
     }
     .fool {
-      background: url($img-special + 'fool-bg.jpg') center 0;
+      background-image: url($img-special + 'fool-bg.jpg');
     }
     .gday {
-      background: url($img-special + 'gday-bg.jpg') center 0;
+      background-image: url($img-special + 'gday-bg.jpg');
     }
     .fish {
-      background: url($img-special + 'fish-bg.jpg') center 0;
+      background-image: url($img-special + 'fish-bg.jpg');
     }
     .golden {
-      background: url($img-special + 'golden-bg.jpg') center 0;
+      background-image: url($img-special + 'golden-bg.jpg');
     }
     .modern {
-      background: url($img-special + 'modern-bg.jpg') center 0;
+      background-image: url($img-special + 'modern-bg.jpg');
     }
     .king {
-      background: url($img-special + 'king-bg.jpg') center 0;
+      background-image: url($img-special + 'king-bg.jpg');
     }
     .sos {
-      background: url($img-special + 'sos-bg2.jpg') center top;
+      background-image: url($img-special + 'sos-bg2.jpg');
       .bg {
-        background: url($img-special + 'sos-bg.jpg') center 0 no-repeat;
+        background-image: url($img-special + 'sos-bg.jpg');
+        background-repeat: no-repeat;
       }
     }
     .father {
-      background: url($img-special + 'father-bg2.jpg') center top;
+      background-image: url($img-special + 'father-bg2.jpg');
       .bg {
-        background: url($img-special + 'father-bg.jpg') center 0 no-repeat;
+        background-image: url($img-special + 'father-bg.jpg');
+        background-repeat: no-repeat;
       }
     }
     .bye {
       background: #D0E1E4;
     }
     .maria {
-      background: url($img-special + 'maria-bg.jpg') center 0 $white no-repeat;
+      background-image: url($img-special + 'maria-bg.jpg');
+      background-color: $white;
+      background-repeat: no-repeat;
     }
     .yoruno {
-      background: url($img-special + 'yoruno-bg.jpg') center 0;
+      background-image: url($img-special + 'yoruno-bg.jpg');
     }
     .vacation {
-      background: url($img-special + 'vacation-bg.jpg') center 0 #4ebfdd;
+      background-image: url($img-special + 'vacation-bg.jpg');
+      background-color: #4ebfdd;
     }
     .gasoline {
-      background: url($img-special + 'gasoline-bg.jpg') center 0;
+      background-image: url($img-special + 'gasoline-bg.jpg');
     }
     .furyoku {
-      background: url($img-special + 'furyoku-bg.jpg') center 0;
+      background-image: url($img-special + 'furyoku-bg.jpg');
     }
     .yoruno {
-      background: url($img-special + 'yoruno-bg.jpg') center 0;
+      background-image: url($img-special + 'yoruno-bg.jpg');
     }
     .kubiori {
-      background: url($img-special + 'kubiori-bg2.jpg');
+      background-image: url($img-special + 'kubiori-bg2.jpg');
       .bg {
-        background: url($img-special + 'kubiori-bg.jpg') center 0 no-repeat;
+        background-image: url($img-special + 'kubiori-bg.jpg');
+        background-repeat: no-repeat;
       }
     }
     .ctb {
-      background: url($img-special + 'ctb-bg.jpg') center 0;
+      background-image: url($img-special + 'ctb-bg.jpg');
     }
     .e3652 {
-      background: url($img-special + 'e3652-bg.jpg') center 0;
+      background-image: url($img-special + 'e3652-bg.jpg');
     }
     .aine {
-      background: url($img-special + 'aine-bg.jpg') center 0;
+      background-image: url($img-special + 'aine-bg.jpg');
     }
     .mars {
-      background: url($img-special + 'mars-bg.jpg') center 0 #833B3C no-repeat;
+      background-image: url($img-special + 'mars-bg.jpg');
+      background-color: #833B3C;
+      background-repeat: no-repeat;
     }
     .rabbit {
-      background: url($img-special + 'rabbit-bg.jpg') center 0 #f9f9f9 no-repeat;
+      background-image: url($img-special + 'rabbit-bg.jpg');
+      background-color: #f9f9f9;
+      background-repeat: no-repeat;
     }
     .ax {
-      background: url($img-special + 'ax-bg.jpg') center 0 #E1E1E1 no-repeat;
+      background-image: url($img-special + 'ax-bg.jpg');
+      background-color: #E1E1E1;
+      background-repeat: no-repeat;
     }
     .submarine {
-      background: url($img-special + 'submarine-bg.jpg') center 0;
+      background-image: url($img-special + 'submarine-bg.jpg');
     }
     .gthree {
-      background: url($img-special + 'gthree-bg.jpg') center 0;
+      background-image: url($img-special + 'gthree-bg.jpg');
     }
   }
 }

@@ -25,6 +25,10 @@
     }
   }
 
+  p {
+    margin: 10px 0;
+  }
+
   .speaker {
     display: inline-block;
     font-weight: bold;
@@ -66,12 +70,9 @@
 
 // qna
 .qna-list {
+  margin-top: 10px;
   border-bottom: 1px solid #ddd;
-  ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
+
   .tit {
     position: relative;
     width: 100%;
@@ -99,5 +100,8 @@
   .cont {
     margin: 0;
     padding: 10px 15px;
+  }
+  & + p {
+    margin-top: 30px;
   }
 }

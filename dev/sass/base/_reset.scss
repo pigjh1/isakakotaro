@@ -125,13 +125,14 @@ textarea,
 select,
 button {
   font-family: $font-default;
+  font-size: $base-font-size;
   color: $dark;
+  line-height: $base-leading-ratio;
 }
 html {
   min-width: 320px;
   min-height: 100%;
   background-color: $white;
-  line-height: $base-leading-ratio;
 }
 body {
   min-width: 320px;
