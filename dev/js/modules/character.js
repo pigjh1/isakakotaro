@@ -2,7 +2,6 @@
   if (document.getElementById('character')) {
     new Vue({
       el: '#character',
-
       mounted() {
         fetch('/assets/static/book.json')
           .then(response => response.json())
@@ -10,14 +9,12 @@
             this.books = books;
           });
       },
-
       data() {
         return {
           books: [],
           opt: 'ax'
         };
       },
-
       computed: {
         book() {
           let orderbooks = this.books.filter(function(v) {
@@ -28,7 +25,6 @@
           return orderbooks;
         }
       },
-
       methods: {
         gotoArticle() {
           console.log('gotoArticle');

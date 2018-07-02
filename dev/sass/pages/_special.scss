@@ -42,8 +42,8 @@
     &-link {
       a {
         &:before {
-          content: "·";
-          padding: 0 .5em;
+          content: ",";
+          padding-right: 5px;
         }
         &:first-child {
           &:before {

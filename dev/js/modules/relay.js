@@ -3,7 +3,7 @@
     new Vue({
       el: '#relay',
       mounted() {
-        fetch('/assets/data/relay.json')
+        fetch('/assets/static/relay.json')
           .then(response => response.json())
           .then(posts => {
             this.posts = posts;

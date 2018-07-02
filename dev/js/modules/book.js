@@ -2,7 +2,6 @@
   if (document.getElementById('book')) {
     new Vue({
       el: '#book',
-
       mounted() {
         fetch('/assets/static/book.json')
           .then(response => response.json())
@@ -10,7 +9,6 @@
             this.books = books;
           });
       },
-
       data() {
         return {
           type: 'image',
@@ -18,7 +16,6 @@
           books: [],
         };
       },
-
       computed: {
         paagBoooks() {
           let orderOpt = this.order;
@@ -53,7 +50,6 @@
           return !!(this.type === 'image');
         }
       },
-
       methods: {
         getPic(imgsrc) {
           return imgsrc !== '-' ? '/assets/img/book/' + imgsrc : '/assets/img/book/blank.jpg';

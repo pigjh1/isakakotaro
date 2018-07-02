@@ -42,8 +42,9 @@
 
     &-img {
       padding: 10px;
+      margin: 0 10px;
       cursor: pointer;
-      border: 1px solid $ash;
+      border: 1px solid $gray3;
       @include radius(3px);
     }
 

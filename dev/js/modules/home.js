@@ -1,8 +1,7 @@
 (function() {
-  if(document.getElementById('home')) {
+  if (document.getElementById('home')) {
     new Vue({
       el: '#home',
-
       mounted() {
         fetch('/assets/static/book.json')
           .then(response => response.json())
@@ -10,13 +9,11 @@
             this.books = books;
           });
       },
-
       data() {
         return {
           books: []
         };
       },
-
       computed: {
         book() {
           const MAX = 4;
@@ -24,7 +21,6 @@
           return orderbooks.slice(0, MAX);
         }
       },
-
       methods: {
         getPic(imgsrc) {
           return imgsrc !== '-' ? '/assets/img/book/' + imgsrc : '/assets/img/book/blank.jpg';
