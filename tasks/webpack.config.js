@@ -12,6 +12,7 @@ const publicPath = config.browserSync.proxy.target
 
 const webpackConfig = {
   context: JS_DEV,
+  mode: 'production',
   entry: {
     app: [
       './main.js',
@@ -47,13 +48,16 @@ const webpackConfig = {
     ],
     extensions: config.js.extensions,
   },
+  performance: {
+    hints: false
+  },
   plugins: [],
 };
 
 /**
  * Modify webpackConfig depends on mode
  */
-if (mode.production) {
+if (mode.development) {
   webpackConfig.plugins.push(
     new webpack.optimize.UglifyJsPlugin({
       compress: {

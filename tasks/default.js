@@ -22,7 +22,7 @@ if (config.htmlbook.run) {
 }
 
 gulp.task('default', (cb) => {
-  mode.production
+  mode.development
     ? runSequence('clean', assets, ['css', 'js'], 'size', cb)
     : runSequence(assets, 'css', 'watch', cb);
 });

@@ -38,7 +38,7 @@ const unCssIgnore = [
 gulp.task('css', () =>
   gulp
     .src(path.join(config.root.dev, config.css.dev, 'bundle.scss'))
-    .pipe(gulpif(!mode.production, sourcemaps.init()))
+    .pipe(gulpif(!mode.development, sourcemaps.init()))
     .pipe(plumber({ errorHandler: notify.onError('Error: <%= error.message %>') }))
     .pipe(sass({
       includePaths: ['./node_modules', './bower_components'],
@@ -67,11 +67,11 @@ gulp.task('css', () =>
     }))
 
     .pipe(gulpif(
-      mode.production,
+      mode.development,
       minify({
         keepSpecialComments: 0,
       }),
     ))
-    .pipe(gulpif(!mode.production, sourcemaps.write()))
+    .pipe(gulpif(!mode.development, sourcemaps.write()))
     .pipe(gulp.dest(path.join(config.root.dist, config.css.dist)))
     .pipe(reload({ stream: true })));

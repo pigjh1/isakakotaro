@@ -34,10 +34,10 @@ gulp.task('deploy', () => {
     folderToPush = ['./assets', '*.+(html|php)'];
   }
 
-  if (!mode.production) {
+  if (!mode.development) {
     new Log(
       'Deploy Task',
-      'You can run Deploy Task only in Production Mode.\nUse: npm run deploy',
+      'You can run Deploy Task only in Development Mode.\nUse: npm run deploy',
     ).error();
   }
 

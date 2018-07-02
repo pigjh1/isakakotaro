@@ -36,7 +36,7 @@ if (config.browserSync.proxy.target) {
   };
 }
 
-if (!mode.production) {
+if (!mode.development) {
   browserSyncConfig.middleware = [
     webpackDevMiddleware(webpackCompiler, {
       publicPath: webpackConfig.output.publicPath,
