@@ -8,3 +8,4 @@ document.querySelector('.menu').addEventListener('click', () => drawer.open = tr
 require('modules/book');
 require('modules/bookcase');
 require('modules/home');
+require('modules/character');
