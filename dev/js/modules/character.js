@@ -12,7 +12,7 @@
       data() {
         return {
           books: [],
-          opt: 'ax'
+          opt: 'prayer'
         };
       },
       computed: {
@@ -23,11 +23,6 @@
             return a.publicationko < b.publicationko ? 1 : -1;
           });
           return orderbooks;
-        }
-      },
-      methods: {
-        gotoArticle() {
-          console.log('gotoArticle');
         }
       }
     });

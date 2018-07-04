@@ -21,13 +21,13 @@
       </p>
 
       <div id="character">
-        <!-- <div class="sort-type">
-          <select v-model="opt" @change="gotoArticle(opt)">
+        <div class="sort-type">
+          <select v-model="opt">
             <option v-for="item in book" :value="item.link">{{ item.title }}</option>
           </select>
-        </div> -->
+        </div>
 
-        <article id="prayer">
+        <article id="prayer" :class="{'is-active' : opt === 'prayer'}">
           <h2>오듀본의 기도</h2>
           <div class="contents">
             <h3>등장인물</h3>
@@ -87,7 +87,7 @@
           </div>
         </article>
 
-        <article id="lush-life">
+        <article id="lush-life" :class="{'is-active' : opt === 'lush-life'}">
           <h2>러시라이프</h2>
           <div class="contents">
             <h3>등장인물</h3>
@@ -161,7 +161,7 @@
           </div>
         </article>
 
-        <article id="gang-turns">
+        <article id="gang-turns" :class="{'is-active' : opt === 'gang-turns'}">
           <h2>명랑한 갱이 지구를 돌린다</h2>
           <div class="contents">
             <h3>등장인물</h3>
@@ -213,7 +213,7 @@
           </div>
         </article>
 
-        <article id="pierrot">
+        <article id="pierrot" :class="{'is-active' : opt === 'pierrot'}">
           <h2>중력삐에로</h2>
           <div class="contents">
             <h3>등장인물</h3>
@@ -301,7 +301,7 @@
           </div>
         </article>
 
-        <article id="coin-locker">
+        <article id="coin-locker" :class="{'is-active' : opt === 'coin-locker'}">
           <h2>집오리와 들오리의 코인로커</h2>
           <div class="contents">
             <h3>등장인물</h3>
@@ -334,7 +334,7 @@
           </div>
         </article>
 
-        <article id="children">
+        <article id="children" :class="{'is-active' : opt === 'children'}">
           <h2>칠드런</h2>
           <div class="contents">
             <h3>등장인물</h3>
@@ -400,7 +400,7 @@
           </div>
         </article>
 
-        <article id="grasshopper">
+        <article id="grasshopper" :class="{'is-active' : opt === 'grasshopper'}">
           <h2>그래스호퍼</h2>
           <div class="contents">
             <h3>등장인물</h3>
@@ -464,7 +464,7 @@
           </div>
         </article>
 
-        <article id="life">
+        <article id="life" :class="{'is-active' : opt === 'life'}">
           <h2>라이프(비밀)</h2>
           <div class="contents">
             <h3>등장인물</h3>
@@ -477,7 +477,7 @@
           </div>
         </article>
 
-        <article id="accuracy-of-death">
+        <article id="accuracy-of-death" :class="{'is-active' : opt === 'accuracy-of-death'}">
           <h2>사신치바</h2>
           <div class="contents">
             <h3>등장인물</h3>
@@ -540,7 +540,7 @@
           </div>
         </article>
 
-        <article id="polarbear">
+        <article id="polarbear" :class="{'is-active' : opt === 'polarbear'}">
           <h2>투명한 북극곰(I Love You)</h2>
           <div class="contents">
             <h3>등장인물</h3>
@@ -562,7 +562,7 @@
           </div>
         </article>
 
-        <article id="devil">
+        <article id="devil" :class="{'is-active' : opt === 'devil'}">
           <h2>마왕</h2>
           <div class="contents">
             <h3>등장인물</h3>
@@ -622,7 +622,7 @@
           </div>
         </article>
 
-        <article id="campus-life">
+        <article id="campus-life" :class="{'is-active' : opt === 'campus-life'}">
           <h2>사막</h2>
           <div class="contents">
             <h3>등장인물</h3>
@@ -658,7 +658,7 @@
           </div>
         </article>
 
-        <article id="fool">
+        <article id="fool" :class="{'is-active' : opt === 'fool'}">
           <h2>종말의바보</h2>
           <div class="contents">
             <h3>등장인물</h3>
@@ -775,7 +775,7 @@
           </div>
         </article>
 
-        <article id="gang-day">
+        <article id="gang-day" :class="{'is-active' : opt === 'gang-day'}">
           <h2>명랑한 갱의 일상과 습격</h2>
           <div class="contents">
             <h3>등장인물</h3>
@@ -809,7 +809,7 @@
           </div>
         </article>
 
-        <article id="fish-story">
+        <article id="fish-story" :class="{'is-active' : opt === 'fish-story'}">
           <h2>피쉬스토리</h2>
           <div class="contents">
             <h3>등장인물</h3>
@@ -875,7 +875,7 @@
           </div>
         </article>
 
-        <article id="golden-slumber">
+        <article id="golden-slumber" :class="{'is-active' : opt === 'golden-slumber'}">
           <h2>골든슬럼버</h2>
           <div class="contents">
             <h3>등장인물</h3>
@@ -959,7 +959,7 @@
           </div>
         </article>
 
-        <article id="modern-times">
+        <article id="modern-times" :class="{'is-active' : opt === 'modern-times'}">
           <h2>모던타임스</h2>
           <div class="contents">
             <h3>등장인물</h3>
@@ -1034,7 +1034,7 @@
           </div>
         </article>
 
-        <article id="king">
+        <article id="king" :class="{'is-active' : opt === 'king'}">
           <h2>왕을 위한 팬클럽은 없다</h2>
           <div class="contents">
             <h3>등장인물</h3>
@@ -1083,7 +1083,7 @@
           </div>
         </article>
 
-        <article id="sos">
+        <article id="sos" :class="{'is-active' : opt === 'sos'}">
           <h2>SOS 원숭이</h2>
           <div class="contents">
             <h3>등장인물</h3>
@@ -1119,7 +1119,7 @@
           </div>
         </article>
 
-        <article id="oh-father">
+        <article id="oh-father" :class="{'is-active' : opt === 'oh-father'}">
           <h2>오파더</h2>
           <div class="contents">
             <h3>등장인물</h3>
@@ -1161,7 +1161,7 @@
           </div>
         </article>
 
-        <article id="bye-bye-blackbird">
+        <article id="bye-bye-blackbird" :class="{'is-active' : opt === 'bye-bye-blackbird'}">
           <h2>바이바이 블랙버드</h2>
           <div class="contents">
             <h3>등장인물</h3>
@@ -1206,7 +1206,7 @@
           </div>
         </article>
 
-        <article id="maria-beetle">
+        <article id="maria-beetle" :class="{'is-active' : opt === 'maria-beetle'}">
           <h2>마리아비틀</h2>
           <div class="contents">
             <h3>등장인물</h3>
@@ -1256,21 +1256,21 @@
           </div>
         </article>
 
-        <article id="yoruno-kuni">
+        <article id="yoruno-kuni" :class="{'is-active' : opt === 'yoruno-kuni'}">
           <h2>밤의 나라 쿠파</h2>
           <div class="contents">
             콘텐츠를 준비 중입니다.
           </div>
         </article>
 
-        <article id="vacation">
+        <article id="vacation" :class="{'is-active' : opt === 'vacation'}">
           <h2>남은 날은 전부 휴가</h2>
           <div class="contents">
             콘텐츠를 준비 중입니다.
           </div>
         </article>
 
-        <article id="gasoline">
+        <article id="gasoline" :class="{'is-active' : opt === 'gasoline'}">
           <h2>가솔린생활</h2>
           <div class="contents">
             <h3>등장인물</h3>
@@ -1321,7 +1321,7 @@
           </div>
         </article>
 
-        <article id="furyoku">
+        <article id="furyoku" :class="{'is-active' : opt === 'furyoku'}">
           <h2>사신의7일</h2>
           <div class="contents">
             <h3>등장인물</h3>
@@ -1389,7 +1389,7 @@
           </div>
         </article>
 
-        <article id="kubiori">
+        <article id="kubiori" :class="{'is-active' : opt === 'kubiori'}">
           <h2>목 부러뜨리는 남자를 위한 협주곡</h2>
           <div class="contents">
             <ul class="dot-list">
@@ -1406,35 +1406,35 @@
           </div>
         </article>
 
-        <article id="aine">
+        <article id="aine" :class="{'is-active' : opt === 'aine'}">
           <h2>아이네 클라이네 나흐트 무지크</h2>
           <div class="contents">
             콘텐츠를 준비 중입니다.
           </div>
         </article>
 
-        <article id="ctb">
+        <article id="ctb" :class="{'is-active' : opt === 'ctb'}">
           <h2>캡틴 선더볼트</h2>
           <div class="contents">
             콘텐츠를 준비 중입니다.
           </div>
         </article>
 
-        <article id="mars">
+        <article id="mars" :class="{'is-active' : opt === 'mars'}">
           <h2>화성에 살것인가?</h2>
           <div class="contents">
             콘텐츠를 준비 중입니다.
           </div>
         </article>
 
-        <article id="ax">
+        <article id="ax" :class="{'is-active' : opt === 'ax'}">
           <h2>악스</h2>
           <div class="contents">
             콘텐츠를 준비 중입니다.
           </div>
         </article>
 
-        <article id="rabbit">
+        <article id="rabbit" :class="{'is-active' : opt === 'rabbit'}">
           <h2>화이트래빗</h2>
           <div class="contents">
             콘텐츠를 준비 중입니다.

@@ -10,9 +10,19 @@
 }
 
 .character {
-  //
+  article {display: none;}
+  article.is-active {display: block;}
 }
 
 .goods {
-  //
+  &-list {
+    td {
+      text-align: center;
+    }
+  }
+  &-img {
+    img {
+      width: 150px;
+    }
+  }
 }

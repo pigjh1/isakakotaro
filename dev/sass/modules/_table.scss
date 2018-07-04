@@ -6,12 +6,13 @@
   &-caption {
     margin-bottom: 15px;
     text-align: center;
-    font-size: 2.6em;
-    color: $ink;
+    font-size: 1.6em;
+    color: $gray9;
   }
   &-note {
     font-style: italic;
-    color: $gray-light;
+    color: $gray6;
+    margin-top: 10px;
     margin-left: 5px;
     margin-right: 5px;
     p {

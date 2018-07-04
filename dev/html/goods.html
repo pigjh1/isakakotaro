@@ -5,7 +5,7 @@
 <meta name="description" content="이사카코타로 관련 굿즈 정보">
 <title>굿즈 정보 | 이사카코타로</title>
 </head>
-<body data-nav="3.5">
+<body data-nav="3.4">
 @@include('legacy.html')
 <div id="wrap">
   @@include('header.html')
@@ -15,28 +15,84 @@
         <h1>굿즈 정보</h1>
       </header>
 
-      <ul>
-        <li>
-          화이트 래빗
-          라인 북마크
-        </li>
-        <li>
-          화성에 살 생각인가?
-          마우스패드
-        </li>
-        <li>
-          아이네 클라이네 나흐트 무지크
-          머그컵
-        </li>
-        <li>
-          남은날은 전부휴가
-          잠꾸러기 목배개
-        </li>
-        <li>
-          사신의 7일
-          사신의 우산
-        </li>
-      </ul>
+      <h2>출판사 제작</h2>
+      <table class="base-table goods-list">
+        <colgroup>
+          <col>
+          <col class="table-cell-1of5">
+          <col class="table-cell-1of5">
+          <col class="table-cell-1of4">
+        </colgroup>
+        <thead>
+          <tr>
+            <th>관련도서</th>
+            <th>출판사</th>
+            <th>이름</th>
+            <th>이미지</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>화이트 래빗</td>
+            <td>현대문학</td>
+            <td>라인 북마크</td>
+            <td class="goods-img"><img src="/assets/img/goods/rabbit-bookmark.jpg" alt=""></td>
+          </tr>
+          <tr>
+            <td>화성에 살 생각인가?</td>
+            <td>아르테</td>
+            <td>마우스패드</td>
+            <td class="goods-img"><img src="/assets/img/goods/mars-mousepad.jpg" alt=""></td>
+          </tr>
+          <tr>
+            <td>아이네 클라이네 나흐트 무지크</td>
+            <td>현대문학</td>
+            <td>머그컵</td>
+            <td class="goods-img"><img src="/assets/img/goods/aine-mug.jpg" alt=""></td>
+          </tr>
+          <tr>
+            <td>남은날은 전부휴가</td>
+            <td>웅진지식하우스</td>
+            <td>잠꾸러기 목배개</td>
+            <td class="goods-img"><img src="/assets/img/goods/vacation-neckpillow.jpg" alt=""></td>
+          </tr>
+          <tr>
+            <td>사신의 7일</td>
+            <td>웅진지식하우스</td>
+            <td>사신의 우산</td>
+            <td class="goods-img"><img src="/assets/img/goods/furyoku-umbrella.jpg" alt=""></td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="table-note">* 이미지는 출판사에서 공개한 이미지를 사용했습니다. 문제가 될 경우 삭제하겠습니다.</p>
+
+      <h2>자체 제작</h2>
+      <table class="base-table goods-list">
+        <colgroup>
+          <col>
+          <col class="table-cell-1of5">
+          <col class="table-cell-1of4">
+        </colgroup>
+        <thead>
+          <tr>
+            <th>이름</th>
+            <th>제작일</th>
+            <th>이미지</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>이사카 코타로 방한 기념 제작 엽서</td>
+            <td>2018-06-15</td>
+            <td class="goods-img"><img src="/assets/img/goods/home-180615.jpg" alt=""></td>
+          </tr>
+          <tr>
+            <td>네이버 팬카페 정모 기념 사진 인화</td>
+            <td>2009-09-05</td>
+            <td class="goods-img"><img src="/assets/img/goods/home-090905.jpg" alt=""></td>
+          </tr>
+        </tbody>
+      </table>
 
       @@include('disqus.html')
     </div>
