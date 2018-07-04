@@ -21,7 +21,8 @@
       </p>
 
       <div id="character">
-        <div class="sort-type">
+        <div class="sort">
+          작품 선택 : 
           <select v-model="opt">
             <option v-for="item in book" :value="item.link">{{ item.title }}</option>
           </select>

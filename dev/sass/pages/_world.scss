@@ -12,6 +12,10 @@
 .character {
   article {display: none;}
   article.is-active {display: block;}
+  
+  .sort {
+    text-align: right;
+  }
 }
 
 .goods {
