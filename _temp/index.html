@@ -11,7 +11,7 @@
   <title>Document</title>
   <style>
     * {margin: 0;padding: 0;}
-    .world {position: relative;width: 100%; height: 100vh;}
+    .world {position: relative;width: 100%; height: 100vh; max-width: 1200px; margin: 0 auto;}
     .world * {font-family: 'Noto Sans'}
     .d3plus_tooltip_data_title,
     .d3plus_tooltip_data_block:first-child {display: none !important;}
@@ -37,7 +37,6 @@
       this.source = [];
       this.target = [];
       this.link = [];
-      this.pos = [];
       this.nodes = [];
       this.val = [];
       this.sourcesLen = 0;
@@ -59,7 +58,7 @@
     dataFetch() {
       let self = this;
 
-      fetch('book-source.json')
+      fetch('world-source.json')
         .then(response => response.json())
         .then(item => {
           self.sources = item;
@@ -68,11 +67,6 @@
         .then(response => response.json())
         .then(item => {
           self.targets = item;
-        });
-      fetch('world-pos.json')
-        .then(response => response.json())
-        .then(item => {
-          self.pos = item;
         });
       fetch('world.json')
         .then(response => response.json())
@@ -111,15 +105,14 @@
       sou.forEach(function(el) {
         el.size = 2;
       });
-      tar.forEach(function(el) {
+      tar.forEach(function(el, i) {
+        let breker = 8;
+        let range = 100;
         el.size = 1;
+        el.x = Math.floor(i%breker) * range + range;
+        el.y = Math.floor(i/breker) * range + range;
       });
       self.nodes = sou.concat(tar);
-
-      // pos
-      self.pos.forEach(function(el, i) {
-        el.name = self.nodes[i].name;
-      });
     }
 
     setD3plus() {
@@ -129,7 +122,7 @@
         .container("#world")
         .type("network")
         .data(self.nodes)
-        .nodes(self.pos)
+        .nodes(self.nodes)
         .edges({"value": self.val})
         .size("size")
         .id("name")
