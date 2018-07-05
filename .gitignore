@@ -8,5 +8,3 @@ dist
 *.map
 *.bundle.js
 debug.log
-
-_temp

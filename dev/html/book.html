@@ -91,7 +91,7 @@
                 <span v-if="item.img === ''">-</span>
               </td>
               <td class='book-title'>
-                {{ item.title }}<br>원제: <span lang="jp">{{ item.titlejp }}</span><br>
+                {{ item.title }}<br>원제: <span lang="ja">{{ item.titlejp }}</span><br>
                 <a :href="'/book/' + item.link + '.html'" class='mdc-button mdc-button--raised mdc-button--dense' v-if="item.link !== ''">자세히보기</a>
               </td>
               <td class='date-jp'>{{ item.publicationjp }}</td>
