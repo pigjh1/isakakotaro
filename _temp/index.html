@@ -109,6 +109,7 @@
         let breker = 8;
         let range = 100;
         el.size = 1;
+        el.color = '#DDD';
         el.x = Math.floor(i%breker) * range + range;
         el.y = Math.floor(i/breker) * range + range;
       });
@@ -125,6 +126,7 @@
         .nodes(self.nodes)
         .edges({"value": self.val})
         .size("size")
+        .color("color")
         .id("name")
         .draw()
     }
