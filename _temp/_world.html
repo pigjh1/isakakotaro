@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<script src="https://cdn.bootcss.com/d3/3.5.15/d3.js"></script>
+<script src="https://cdn.bootcss.com/d3plus/1.9.8/d3plus.js"></script>
+<title>Document</title>
+</head>
+<body>
+
+<div id="viz"></div>
+
+<script type="text/javascript">
+var nodes = [
+    // 작품
+    { "name": "오듀본의 기도", "size": 20, "color": "#ccc" },
+    { "name": "러시라이프", "size": 20, "color": "#ccc" },
+    { "name": "명랑한 갱이 지구를 돌린다", "size": 20, "color": "#ccc" },
+    { "name": "중력삐에로", "size": 20, "color": "#ccc" },
+    { "name": "집오리와 들오리의 코인로커", "size": 20, "color": "#ccc" },
+    { "name": "칠드런", "size": 20, "color": "#ccc" },
+    { "name": "그래스호퍼", "size": 20, "color": "#ccc" },
+    { "name": "사신치바", "size": 20, "color": "#ccc" },
+    { "name": "마왕", "size": 20, "color": "#ccc" },
+    { "name": "사막", "size": 20, "color": "#ccc" },
+    { "name": "종말의바보", "size": 20, "color": "#ccc" },
+    { "name": "명랑한 갱의 일상과 습격", "size": 20, "color": "#ccc" },
+    { "name": "피쉬스토리", "size": 20, "color": "#ccc" },
+    { "name": "골든슬럼버", "size": 20, "color": "#ccc" },
+    { "name": "모던타임스", "size": 20, "color": "#ccc" },
+    { "name": "왕을 위한 팬클럽은 없다", "size": 20, "color": "#ccc" },
+    { "name": "SOS 원숭이", "size": 20, "color": "#ccc" },
+    { "name": "오파더", "size": 20, "color": "#ccc" },
+    { "name": "바이바이, 블랙버드", "size": 20, "color": "#ccc" },
+    { "name": "마리아비틀", "size": 20, "color": "#ccc" },
+    { "name": "밤의 나라 쿠파", "size": 20, "color": "#ccc" },
+    { "name": "남은 날은 전부 휴가", "size": 20, "color": "#ccc" },
+    { "name": "가솔린 생활", "size": 20, "color": "#ccc" },
+    { "name": "사신의7일", "size": 20, "color": "#ccc" },
+    { "name": "목 부러뜨리는 남자를 위한 협주곡", "size": 20, "color": "#ccc" },
+    { "name": "아이네 클라이네 나흐트 무지크", "size": 20, "color": "#ccc" },
+    { "name": "캡틴 선더볼트", "size": 20, "color": "#ccc" },
+    { "name": "화성에 살 생각인가?", "size": 20, "color": "#ccc" },
+    { "name": "악스", "size": 20, "color": "#ccc" },
+    { "name": "화이트래빗", "size": 20, "color": "#ccc" },
+    { "name": "그것도 괜찮겠네", "size": 20, "color": "#ccc" },
+    { "name": "라이프", "size": 20, "color": "#ccc" },
+    { "name": "투명한 북극곰", "size": 20, "color": "#ccc" },
+    { "name": "명랑한갱은 셋을 세라", "size": 20, "color": "#ccc" },
+    { "name": "잠수함", "size": 20, "color": "#ccc" },
+    // 등장인물
+    { "name": "이토", "size": 10, "color": "#666" },
+    { "name": "가와라자키 아버지", "size": 10, "color": "#666" },
+    { "name": "다카하시", "size": 10, "color": "#666" },
+    { "name": "구로사와", "size": 10, "color": "#666" },
+    { "name": "사사오카", "size": 10, "color": "#666" },
+    { "name": "하루", "size": 10, "color": "#666" },
+    { "name": "이즈미", "size": 10, "color": "#666" },
+    { "name": "치바", "size": 10, "color": "#666" },
+    { "name": "쇼코", "size": 10, "color": "#666" },
+    { "name": "이와무라 다다시와 나카무라 두목", "size": 10, "color": "#666" },
+    // 장소
+    { "name": "다무라 소바", "size": 10, "color": "#888" },
+    { "name": "선술집 덴덴", "size": 10, "color": "#888" },
+    { "name": "후지사와 긴고초", "size": 10, "color": "#888" },
+];
+var links = [
+    // 등장인물
+    { "target": "이토", "source": "오듀본의 기도", "label": "" },
+    { "target": "이토", "source": "러시라이프", "label": "" },
+    { "target": "이토", "source": "중력삐에로", "label": "" },
+    { "target": "이토", "source": "라이프", "label": "" },
+    { "target": "이토", "source": "피쉬스토리", "label": "" },
+    { "target": "가와라자키 아버지", "source": "러시라이프", "label": "" },
+    { "target": "가와라자키 아버지", "source": "피쉬스토리", "label": "" },
+    { "target": "다카하시", "source": "러시라이프", "label": "" },
+    { "target": "다카하시", "source": "중력삐에로", "label": "" },
+    { "target": "구로사와", "source": "러시라이프", "label": "" },
+    { "target": "구로사와", "source": "중력삐에로", "label": "" },
+    { "target": "구로사와", "source": "피쉬스토리", "label": "" },
+    { "target": "구로사와", "source": "화이트래빗", "label": "" },
+    { "target": "사사오카", "source": "러시라이프", "label": "" },
+    { "target": "사사오카", "source": "피쉬스토리", "label": "" },
+    { "target": "하루", "source": "중력삐에로", "label": "" },
+    { "target": "하루", "source": "집오리와 들오리의 코인로커", "label": "" },
+    { "target": "하루", "source": "사신치바", "label": "" },
+    { "target": "이즈미", "source": "중력삐에로", "label": "" },
+    { "target": "이즈미", "source": "피쉬스토리", "label": "" },
+    { "target": "치바", "source": "사신치바", "label": "" },
+    { "target": "치바", "source": "사신의7일", "label": "" },
+    { "target": "치바", "source": "마왕", "label": "" },
+    { "target": "치바", "source": "악스", "label": "" },
+    { "target": "치바", "source": "사신의7일", "label": "" },
+    { "target": "쇼코", "source": "명랑한 갱이 지구를 돌린다", "label": "" },
+    { "target": "쇼코", "source": "집오리와 들오리의 코인로커", "label": "" },
+    { "target": "이와무라 다다시와 나카무라 두목", "source": "러시라이프", "label": "" },
+    { "target": "이와무라 다다시와 나카무라 두목", "source": "피쉬스토리", "label": "" },
+    { "target": "이와무라 다다시와 나카무라 두목", "source": "화이트래빗", "label": "" },
+    // 장소
+    { "target": "다무라 소바", "source": "중력삐에로", "label": "" },
+    { "target": "다무라 소바", "source": "집오리와 들오리의 코인로커", "label": "" },
+    { "target": "선술집 덴덴", "source": "명랑한 갱의 일상과 습격", "label": "" },
+    { "target": "선술집 덴덴", "source": "마왕", "label": "" },
+    { "target": "선술집 덴덴", "source": "칠드런", "label": "" },
+    { "target": "후지사와 긴고초", "source": "마왕", "label": "" },
+    { "target": "후지사와 긴고초", "source": "그래스호퍼", "label": "" },
+    { "target": "후지사와 긴고초", "source": "사신의7일", "label": "" },
+    { "target": "후지사와 긴고초", "source": "마리아비틀", "label": "" },
+    { "target": "후지사와 긴고초", "source": "악스", "label": "" },
+];
+
+// instantiate d3plus
+d3plus.viz()
+    .container("#viz")
+    .type("network")
+    .data(nodes)
+    .edges({
+        "large": 100,
+        "label": "label",
+        "value": links,
+    })
+    .color("color")
+    .size("size")
+    .id("name")
+    .draw()
+</script>
+</body>
+</html>

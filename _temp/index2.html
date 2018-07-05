@@ -33,6 +33,7 @@
       this.source = [];
       this.target = [];
       this.link = [];
+      this.pos = [];
       this.nodes = [];
       this.val = [];
 
@@ -103,6 +104,15 @@
       });
       self.nodes = sou.concat(tar);
 
+      // pos
+      let breker = 10;
+      let range = 60;
+
+      self.pos = self.nodes;
+      self.pos.forEach(function(el, i) {
+        el.x = Math.floor(i%breker) * range;
+        el.y = Math.floor(i/breker) * range;
+      });
     }
 
     setD3plus() {
@@ -112,6 +122,7 @@
         .container("#world")
         .type("network")
         .data(self.nodes)
+        .nodes(self.pos)
         .edges({"value": self.val})
         .size("size")
         .id("name")
