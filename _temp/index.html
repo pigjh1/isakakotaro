@@ -15,6 +15,9 @@
     .world * {font-family: 'Noto Sans'}
     .d3plus_tooltip_data_title,
     .d3plus_tooltip_data_block:first-child {display: none !important;}
+    .list {padding: 20px;}
+    .list h2 {margin-top: 40px;}
+    .list .item:before {content: "- "; line-height: 1.8;}
   </style>
 </head>
 <body>
@@ -25,9 +28,11 @@
         <h2>{{ item.target.name }}</h2>
         <p v-if="item.desc">* {{ item.desc }}</p>
       </div>
-      <b>{{ item.source.name }}</b>
-      <span>{{ item.label }}</span>
-      <span v-if="!!item.page">({{ item.page }})</span>
+      <p class="item">
+        <b>{{ item.source.name }} <span v-if="!!item.sub">({{ item.sub }})</span></b>
+        <span>{{ item.label }}</span>
+        <span v-if="!!item.page">({{ item.page }})</span>
+      </p>
     </div>
   </div>
 
