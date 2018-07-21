@@ -22,7 +22,7 @@
 
       <h2>등장인물별 연결고리</h2>
       <div id="list" class="list">
-        <div v-for="item in val">
+        <div v-for="item in val" class="item">
           <div class="" v-if="item.break">
             <h3>{{ item.target.name }}</h3>
             <p v-if="item.desc">* {{ item.desc }}</p>
