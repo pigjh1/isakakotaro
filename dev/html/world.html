@@ -1,55 +1,56 @@
 <!DOCTYPE html>
 <html class="no-js" lang="ko">
 <head>
-  @@include('header-share.html')
-  <meta name="description" content="이사카 월드">
-  <title>이사카 월드 | 이사카코타로</title>
+@@include('header-share.html')
+<meta name="description" content="이사카 월드">
+<title>이사카 월드 | 이사카코타로</title>
 </head>
 <body data-nav="3.1">
-  @@include('legacy.html')
-  <div id="wrap">
-    @@include('header.html')
-    <main id="main" class="main world">
-      <div class="l-wrap">
-        <header class="page-header">
-          <h1>이사카 월드</h1>
-        </header>
+@@include('legacy.html')
+<div id="wrap">
+  @@include('header.html')
+  <main id="main" class="main world">
+    <div class="l-wrap">
+      <header class="page-header">
+        <h1>이사카 월드</h1>
+      </header>
 
-        <p>
-          이사카씨의 작품을 말하는데 있어 빠뜨릴수 없는, 등장인물이나 사건 등 작품간으로의 링크를 정리해 보았습니다.<br>
-          ※ 추측 부분도 포함되어 있으므로 주의하시기 바랍니다.
-        </p>
+      <p>
+        이사카씨의 작품을 말하는데 있어 빠뜨릴수 없는, 등장인물이나 사건 등 작품간으로의 링크를 정리해 보았습니다.<br>
+        ※ 추측 부분도 포함되어 있으므로 주의하시기 바랍니다.
+      </p>
 
-        <h2>등장인물별 연결고리</h2>
-        <div id="list" class="list">
-          <div v-for="item in val" class="item">
-            <div class="" v-if="item.break">
-              <h3>{{ item.target.name }}</h3>
-              <p v-if="item.desc">* {{ item.desc }}</p>
-            </div>
-            <b>「{{ item.source.name }}」</b>
-            <span>{{ item.label }}</span>
-            <span v-if="!!item.page">({{ item.page }})</span>
+      <h2>등장인물별 연결고리</h2>
+      <div id="list" class="list">
+        <div v-for="item in val">
+          <div class="" v-if="item.break">
+            <h3>{{ item.target.name }}</h3>
+            <p v-if="item.desc">* {{ item.desc }}</p>
           </div>
+          <b>「{{ item.source.name }}」</b>
+          <span>{{ item.label }}</span>
+          <span v-if="!!item.page">({{ item.page }})</span>
         </div>
-
-        <h2>작품별 관게도</h2>
-        <div id="world-d3" class="world-d3"></div>
-
-        <div class="box-gray">
-          <p>아래 링크를 참고하였습니다.</p>
-          <ul class="dot-list">
-            <li>이사카 코타로 작품 속 교차점 찾기 (- 2009.12.31 갱신) : <a href="http://blog.naver.com/elephanttt/20054951792" target="_blank">http://blog.naver.com/elephanttt/20054951792</a></li>
-          </ul>
-        </div>
-
-        @@include('disqus.html')
       </div>
-    </main>
-    @@include('footer.html')
-  </div>
-  <script src="https://cdn.bootcss.com/d3/3.5.15/d3.js"></script>
-  <script src="https://cdn.bootcss.com/d3plus/1.9.8/d3plus.js"></script>
-  @@include('footer-share.html')
+
+      <h2>작품별 관게도</h2>
+      <div id="world-d3" class="world-d3"></div>
+
+      <div class="box-gray">
+        <p>아래 링크를 참고하였습니다.</p>
+        <ul class="dot-list">
+          <li>이사카 코타로 작품 속 교차점 찾기 (- 2009.12.31 갱신) : <a href="http://blog.naver.com/elephanttt/20054951792" target="_blank">http://blog.naver.com/elephanttt/20054951792</a></li>
+          <li>이사카 코타로 월드 X 윌리를 찾아라 (Part 1) : <a href="https://blog.naver.com/ida1432/220905931401" target="_blank">https://blog.naver.com/ida1432/220905931401</a></li>
+        </ul>
+      </div>
+
+      @@include('disqus.html')
+    </div>
+  </main>
+  @@include('footer.html')
+</div>
+<script src="https://cdn.bootcss.com/d3/3.5.15/d3.js"></script>
+<script src="https://cdn.bootcss.com/d3plus/1.9.8/d3plus.js"></script>
+@@include('footer-share.html')
 </body>
 </html>
