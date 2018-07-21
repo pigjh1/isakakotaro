@@ -18,17 +18,20 @@
       <div class="box-gray">
         <div class="row">
           <div class="col-m-6">
-            <h2>1회차 도서</h2>
-            <p>오듀본의 기도 / 7월 1일 ~ 7월 14일</p>
-            <a href="/book/prayer.html">
-              <img src="/assets/img/book/s-01-05.jpg" alt="">
-            </a>
-          </div>
-          <div class="col-m-6">
             <h2>2회차 도서</h2>
             <p>러시라이프 / 7월 15일 ~ 7월 28일</p>
             <a href="/book/lush-life.html">
               <img src="/assets/img/book/s-02-04.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-m-6">
+            <h2>3회차 도서</h2>
+            <p>명랑한 갱이 지구를 돌린다, 명랑한 갱의 일상과 습격 / 7월 29일 ~ 8월 18일 (3주)</p>
+            <a href="/book/gang-turns.html">
+              <img src="/assets/img/book/s-03-03.jpg" alt="">
+            </a>
+            <a href="/book/gang-day.html">
+              <img src="/assets/img/book/s-14-03.jpg" alt="">
             </a>
           </div>
         </div>
@@ -57,12 +60,12 @@
       </ul>
 
       <h2>참여 현황</h2>
-      <h3>1회차</h3>
-      <ul id="relay">
+      <ul id="relay" class="dot-list">
         <li v-for="item in posts">
           <a :href="item.link" target="_blank">
-            <span>{{ item.user }}</span>
+            <span>{{ item.booktitle }}</span>
             <span>{{ item.date }}</span>
+            <span>({{ item.user }})</span>
           </a>
         </li>
       </ul>
