@@ -13,6 +13,8 @@ class World {
   init() {
     let self = this;
 
+    if (document.querySelectorAll('world') === 0) return;
+
     self.dataFetch();
 
     setTimeout(function() {
