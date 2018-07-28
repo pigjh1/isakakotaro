@@ -28,7 +28,7 @@
   { "id": "source10", "name": "사막", "x": 400, "y": 700, "color": "#1D81AF" },
   { "id": "source11", "name": "종말의바보", "x": 500, "y": 700, "color": "#FBFB74" },
   { "id": "source14", "name": "골든슬럼버", "x": 600, "y": 700, "color": "#84624D" },
-  { "id": "source18", "name": "오파더", "x": 700, "y": 700, "color": "#D2C1A1" },
+  { "id": "source18", "name": "오! 파더", "x": 700, "y": 700, "color": "#D2C1A1" },
   { "id": "source23", "name": "가솔린 생활", "x": 800, "y": 700, "color": "#019A43" },
 
   { "id": "source31", "name": "그것도 괜찮겠네", "x": 100, "y": 850, "color": "#F9F7E3" },

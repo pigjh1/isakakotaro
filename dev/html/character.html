@@ -22,7 +22,7 @@
 
       <div id="character">
         <div class="sort">
-          작품 선택 : 
+          작품 선택 :
           <select v-model="opt">
             <option v-for="item in book" :value="item.link">{{ item.title }}</option>
           </select>
@@ -1121,7 +1121,7 @@
         </article>
 
         <article id="oh-father" :class="{'is-active' : opt === 'oh-father'}">
-          <h2>오파더</h2>
+          <h2>오! 파더</h2>
           <div class="contents">
             <h3>등장인물</h3>
             <ul class="dot-list">

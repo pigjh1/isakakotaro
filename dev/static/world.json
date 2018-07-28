@@ -126,5 +126,6 @@
   { "target": "target44", "source": "source7", "label": "" },
   { "target": "target44", "source": "source9", "label": "두체가 안도에게 준 녹색의 칵테일", "page": "p63" },
   { "target": "target45", "source": "source16", "label": "학교 끝나고 야마다가 연습하러 간다", "page": "p58" },
-  { "target": "target45", "source": "source5", "label": "고토미가 정기권 케이스를 잃어버리고 불길함 기분을 떨치려 야구 연습장에 간다. 쾌음을 발하고있는 초등학생(야마다)이 있다고 하는데 못찾겠습니다.", "page": "p105" }
+  { "target": "target45", "source": "source5", "label": "고토미가 정기권 케이스를 잃어버리고 불길함 기분을 떨치려 야구 연습장에 간다. 쾌음을 발하고있는 초등학생(야마다)이 있다고 하는데 못찾겠습니다.", "page": "p105" },
+  { "target": "target32", "source": "source30", "label": "", "page": "" }
 ]
